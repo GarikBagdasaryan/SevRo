@@ -406,3 +406,106 @@ header {
     width: 100%;
   }
 }
+
+.Directions-slice {
+  padding-top: 80px;
+
+  .Directions-slice-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+
+    .Directions-slice__info__header {
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .Directions-slice__info__name {
+      padding-top: 8px;
+      width: 580px;
+      color: #FFF;
+      font-family: Gotham;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%;
+      text-transform: capitalize;
+    }
+
+    .Directions-slice__info__description {
+      padding-top: 33px;
+      width: 576px;
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+    }
+
+    .Directions-slice__info__button {
+      padding-top: 24px;
+
+      .Directions-slice__info__button__stylebtn {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: inline-flex;
+        padding: 8px 16px;
+        text-align: left;
+        gap: 32px;
+        width: 210px;
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.20);
+        background: #0078B7;
+        box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25), -6px -6px 8px 0px rgba(0, 0, 0, 0.50);
+        background-image: url(../public/img/arrow-right.png);
+        background-repeat: no-repeat;
+        background-position: 165px;
+        outline: none;
+      }
+    }
+
+
+    .Directions-slice__icons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      .Directions-slice__icons__card__style>img {
+
+        width: 180px;
+        height: 180px;
+      }
+
+
+
+    }
+
+    .Directions-slice__icons>.Directions-slice__icons__card__style:nth-child(1) {
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+    }
+
+    .Directions-slice__icons>.Directions-slice__icons__card__style:nth-child(4n+0) {
+      img {
+        padding-left: 20px;
+      }
+    }
+
+  }
+}

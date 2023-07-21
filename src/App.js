@@ -79,9 +79,37 @@ function App() {
         </video>
       </div>
       <div className="Directions-slice">
-        <div className="container">
-          <div className="directions__text"></div>
-          <div className="directions__icons"></div>
+        <div className="container Directions-slice-container">
+          <div className="Directions-slice__info">
+            <div className="Directions-slice__info__header">направления</div>
+            <div className="Directions-slice__info__name"> Студенческие Педагогические Отряды</div>
+            <div className="Directions-slice__info__description">Молодежная общероссийская общественная организация «Российские Студенческие Отряды» (РСО) – крупнейшая молодежная организация страны, которая обеспечивает временной трудовой занятостью более 150 тысяч молодых людей из 81 субъекта РФ, а также занимается гражданским.</div>
+            <div className="Directions-slice__info__button">
+              <button className="Directions-slice__info__button__stylebtn"><span>Перейти</span></button>
+            </div>
+          </div>
+          <div className="Directions-slice__icons">
+
+            <div className="Directions-slice__icons__card__style">
+              <img src="img/directions.png"></img>
+            </div>
+            <div className="Directions-slice__icons__card__style">
+              <img src="img/directions.png"></img>
+            </div>
+            <div className="Directions-slice__icons__card__style">
+              <img src="img/directions.png"></img>
+            </div>
+            <div className="Directions-slice__icons__card__style">
+              <img src="img/directions.png"></img>
+            </div>
+            <div className="Directions-slice__icons__card__style">
+              <img src="img/directions.png"></img>
+            </div>
+            <div className="Directions-slice__icons__card__style">
+              <img src="img/directions.png"></img>
+            </div>
+
+          </div>
         </div>
       </div>
       <div className="News-slice">
