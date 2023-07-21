@@ -481,13 +481,15 @@ header {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      padding-left: 10px;
+
+
 
       .Directions-slice__icons__card__style>img {
-
+        margin-left: -10px;
         width: 190px;
         height: 190px;
       }
-
     }
 
     .Directions-slice__icons>.Directions-slice__icons__card__style:nth-child(1) {
@@ -495,7 +497,12 @@ header {
         width: 210px;
         height: 210px;
       }
+    }
 
+    .Directions-slice__icons>.Directions-slice__icons__card__style:nth-child(1n+2) {
+      img:hover {
+        content: url("../public/img/directionsfon.png");
+      }
     }
 
     .Directions-slice__icons>.Directions-slice__icons__card__style:nth-child(4n+0) {
@@ -505,5 +512,10 @@ header {
       }
     }
 
+    .Directions-slice__icons>.Directions-slice__icons__card__style:nth-child(1n+4) {
+      img {
+        margin-top: -20px;
+      }
+    }
   }
 }

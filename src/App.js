@@ -92,21 +92,24 @@ function App() {
 
             <div className="Directions-slice__icons__card__style">
               <img src="img/directions.png"></img>
+
             </div>
             <div className="Directions-slice__icons__card__style">
-              <img src="img/directions.png"></img>
+              <img src="img/directions (1).png"></img>
+              <div className="Directions-slice__icons__card__style_ico">
+              </div>
             </div>
             <div className="Directions-slice__icons__card__style">
-              <img src="img/directions.png"></img>
+              <img src="img/directions (2).png"></img>
             </div>
             <div className="Directions-slice__icons__card__style">
-              <img src="img/directions.png"></img>
+              <img src="img/directions (3).png"></img>
             </div>
             <div className="Directions-slice__icons__card__style">
-              <img src="img/directions.png"></img>
+              <img src="img/directions (4).png"></img>
             </div>
             <div className="Directions-slice__icons__card__style">
-              <img src="img/directions.png"></img>
+              <img src="img/directions (5).png"></img>
             </div>
 
           </div>
