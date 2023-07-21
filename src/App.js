@@ -74,9 +74,9 @@ function App() {
         </div>
       </div>
       <div className="Video-slice">
-        <div className="container">
-
-        </div>
+        <video autoPlay loop playsInline controls className="Video-slice__style">
+          <source src="video/promo.mp4" type="video/mp4"></source>
+        </video>
       </div>
       <div className="Directions-slice">
         <div className="container">
