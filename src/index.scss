@@ -546,6 +546,8 @@ header {
 
 .News-slice {
 
+  padding-top: 80px;
+
   .News-slice__header-slice {
     color: #FFF;
     font-family: Montserrat;
@@ -626,7 +628,7 @@ header {
           align-items: center;
           border-radius: 10px;
           border: 1px solid rgba(0, 0, 0, 0.20);
-          background: var(--block-dark, #1A1A1A);
+          background: #1A1A1A;
           box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
           background-image: url(../public/img/arrow-right.png);
           background-size: 50%;
@@ -637,7 +639,53 @@ header {
       }
     }
 
+    .News-slice__slider__content {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
 
+      .News-slice__slider__card {
+        width: 280px;
+        height: 400px;
+        border-radius: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.20);
+        background: #1A1A1A;
+        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
+
+        .News-slice__slider__card__photo {
+
+          width: 280px;
+          height: 150px;
+          border-radius: 15px 15px 0px 0px;
+          background: url(../public/img/new__photo.png);
+        }
+
+        .News-slice__slider__card__name {
+          margin-top: 8px;
+          color: #FFF;
+          padding-left: 12px;
+          font-family: Montserrat;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 130%;
+        }
+
+        .News-slice__slider__card__description {
+          margin-top: 12px;
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 20px;
+          padding-left: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 110%;
+        }
+      }
+    }
 
   }
 }

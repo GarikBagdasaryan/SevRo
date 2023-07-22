@@ -168,6 +168,21 @@ function App() {
                 <div className="News-slice__slider__card__name"> 8 лет СевРо</div>
                 <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
               </div>
+              <div className="News-slice__slider__card">
+                <div className="News-slice__slider__card__photo"></div>
+                <div className="News-slice__slider__card__name"> 8 лет СевРо</div>
+                <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+              </div>
+              <div className="News-slice__slider__card">
+                <div className="News-slice__slider__card__photo"></div>
+                <div className="News-slice__slider__card__name"> 8 лет СевРо</div>
+                <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+              </div>
+              <div className="News-slice__slider__card">
+                <div className="News-slice__slider__card__photo"></div>
+                <div className="News-slice__slider__card__name"> 8 лет СевРо</div>
+                <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+              </div>
             </div>
           </div>
           ...
