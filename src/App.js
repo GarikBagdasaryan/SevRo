@@ -10,7 +10,6 @@ function App() {
     for (i in cards) {
       if (cards[i].classList.contains('active')) { cards[i].classList.remove('active'); break; }
     }
-
     event.currentTarget.classList.add('active');
   };
 
