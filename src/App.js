@@ -149,11 +149,25 @@ function App() {
           <div className="News-slice__header-slice">новости</div>
           <div className="News-slice__slider">
             <div className="News-slice__slider__header">
-              <div className="News-slice__slider__header__name">Следите за новостями в:</div>
-              <div className="News-slice__slider__header__arrows"></div>
+              <div className="News-slice__slider__header__info">
+                <div className="News-slice__slider__header-name">Следите за новостями в:
+                </div>
+                <div className="News-slice__slider__header-icons">
+                  <img width={64} height={64} src="img/ico13-tg.svg"></img>
+                  <img width={64} height={64} src="img/ico12-vk.svg"></img>
+                </div>
+              </div>
+              <div className="News-slice__slider__header-arrows">
+                <div className="News-slice__slider__header-arrows_left"></div>
+                <div className="News-slice__slider__header-arrows_right"></div>
+              </div>
             </div>
-            <div className="News-slice__slider__card">
-
+            <div className="News-slice__slider__content">
+              <div className="News-slice__slider__card">
+                <div className="News-slice__slider__card__photo"></div>
+                <div className="News-slice__slider__card__name"> 8 лет СевРо</div>
+                <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+              </div>
             </div>
           </div>
           ...
