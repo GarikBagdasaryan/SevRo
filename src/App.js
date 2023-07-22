@@ -5,9 +5,8 @@ function App() {
 
   };
   const ActionImg = event => {
-    var cards = document.querySelectorAll('.Directions-slice__icons__card')
-    var i;
-    for (i in cards) {
+    const cards = document.querySelectorAll('.Directions-slice__icons__card')
+    for (let i in cards) {
       if (cards[i].classList.contains('active')) { cards[i].classList.remove('active'); break; }
     }
     event.currentTarget.classList.add('active');
