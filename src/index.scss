@@ -532,13 +532,16 @@ a:hover {
           flex-direction: row;
           gap: 16px;
 
-          .News-slice__slider__header-icons__tg:hover, .News-slice__slider__header-icons__vk:hover{
-            path{
+          .News-slice__slider__header-icons__tg:hover,
+          .News-slice__slider__header-icons__vk:hover {
+            path {
               fill: $color-secondary;
             }
           }
-          .News-slice__slider__header-icons__tg:active, .News-slice__slider__header-icons__vk:active{
-            path{
+
+          .News-slice__slider__header-icons__tg:active,
+          .News-slice__slider__header-icons__vk:active {
+            path {
               fill: $color-primary;
             }
           }
@@ -576,18 +579,21 @@ a:hover {
           box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
         }
 
-        .News-slice__slider__header-arrows_left:hover, .News-slice__slider__header-arrows_right:hover{
-          svg path{
+        .News-slice__slider__header-arrows_left:hover,
+        .News-slice__slider__header-arrows_right:hover {
+          svg path {
             fill: $color-secondary;
           }
         }
-        .News-slice__slider__header-arrows_left:active, .News-slice__slider__header-arrows_right:active{
-          svg path{
+
+        .News-slice__slider__header-arrows_left:active,
+        .News-slice__slider__header-arrows_right:active {
+          svg path {
             fill: $color-rarly;
           }
         }
 
-        
+
       }
     }
 
@@ -615,22 +621,26 @@ a:hover {
           background: url(../public/img/new__photo.png);
           transition: 0.4s;
           box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
-          margin-bottom: 8px;
         }
 
         .News-slice__slider__card__text {
-          padding-bottom: 23px;
-          padding-left: 12px;
-          padding-right: 12px;
+          padding: 8px 12px 23px 12px;
 
           .News-slice__slider__card__text__title {
             margin-bottom: 12px;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
           }
 
           .News-slice__slider__card__text__description {
             margin-top: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
           }
         }
       }
