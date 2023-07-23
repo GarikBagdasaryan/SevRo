@@ -98,7 +98,10 @@ function App() {
             <div className="Directions-slice__info__name"> Студенческие Педагогические Отряды</div>
             <div className="Directions-slice__info__description">Молодежная общероссийская общественная организация «Российские Студенческие Отряды» (РСО) – крупнейшая молодежная организация страны, которая обеспечивает временной трудовой занятостью более 150 тысяч молодых людей из 81 субъекта РФ, а также занимается гражданским.</div>
             <div className="Directions-slice__info__button">
-              <button className="Directions-slice__info__button__stylebtn"><span>Перейти</span></button>
+              <button className="Directions-slice__info__button__stylebtn">
+                Перейти
+                <img src="./img/arrow-right.png"></img>
+              </button>
             </div>
           </div>
           <div className="Directions-slice__icons">
@@ -177,7 +180,8 @@ function App() {
                 </div>
               </div>
               <div className="News-slice__slider__header-arrows">
-                <div className="swiper-button-prev News-slice__slider__header-arrows_left"></div>
+                <div className="swiper-button-prev News-slice__slider__header-arrows_left">
+                </div>
                 <div className="swiper-button-next News-slice__slider__header-arrows_right"></div>
               </div>
             </div>
