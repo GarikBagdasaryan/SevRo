@@ -22,7 +22,6 @@
 @font-face {
   font-family: "Montserrat";
   font-weight: 500;
-  font-style: italic;
   src: local("Montserrat"),
     url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
 }
@@ -86,11 +85,12 @@ body {
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1a1a1a;
+  background-color: $color-dark;
+  color: $color-white;
 
 }
 
@@ -195,11 +195,7 @@ header {
       background: #0078B7;
 
       span {
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 20px;
         font-weight: 500;
-        line-height: normal;
       }
     }
   }
@@ -209,29 +205,13 @@ header {
 .Statistics-slice {
   padding-top: 80px;
 
-
   .Statistics-slice-container {
     padding-top: 16px;
     padding-bottom: 16px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-  }
-
-  .Statistics-slice__directions {
-    display: flex;
-    flex-direction: column;
-
-    .Statistics-slice__directions_text {
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%;
-    }
-
-    .Statistics-slice__directions_cout {
+    .Statistics-slice__title{
       color: #FFF;
       font-family: Montserrat;
       font-size: 64px;
@@ -242,79 +222,10 @@ header {
     }
   }
 
-  .Statistics-slice__detachment {
+  .Statistics-slice__directions, .Statistics-slice__detachment, .Statistics-slice__fighters, .Statistics-slice__years{
     display: flex;
     flex-direction: column;
-
-    .Statistics-slice__detachment_text {
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%;
-    }
-
-    .Statistics-slice__detachment_cout {
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: 130%;
-      text-align: left;
-    }
   }
-
-  .Statistics-slice__fighters {
-    display: flex;
-    flex-direction: column;
-
-    .Statistics-slice__fighters_text {
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%;
-    }
-
-    .Statistics-slice__fighters_cout {
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: 130%;
-      text-align: left;
-    }
-  }
-
-  .Statistics-slice__years {
-    display: flex;
-    flex-direction: column;
-
-    .Statistics-slice__years_text {
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%;
-    }
-
-    .Statistics-slice__years_cout {
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: 130%;
-      text-align: left;
-    }
-  }
-
-
 }
 
 .Rso-slice {
@@ -328,47 +239,25 @@ header {
     flex-direction: row;
 
     .Rso-slice__info__header {
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 500;
-      line-height: normal;
+      @include font-title-italic;
     }
 
     .Rso-slice__info__name {
       padding-top: 8px;
       width: 580px;
-      color: #FFF;
-      font-family: Gotham;
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 130%;
-      text-transform: capitalize;
+      @include font-title;
     }
 
     .Rso-slice__info__description {
       padding-top: 33px;
       width: 576px;
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%;
     }
 
     .Rso-slice__info__button {
       padding-top: 24px;
 
       .Rso-slice__info__button__stylebtn {
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 20px;
-        font-style: normal;
         font-weight: 500;
-        line-height: normal;
         display: inline-flex;
         padding: 8px 16px;
         text-align: left;
@@ -490,35 +379,18 @@ header {
 
 
     .Directions-slice__info__header {
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 500;
-      line-height: normal;
+      @include font-title-italic;
     }
 
     .Directions-slice__info__name {
       padding-top: 8px;
       width: 580px;
-      color: #FFF;
-      font-family: Gotham;
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 130%;
-      text-transform: capitalize;
+      @include font-title;
     }
 
     .Directions-slice__info__description {
       padding-top: 33px;
       width: 576px;
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%;
     }
 
     .Directions-slice__info__button {
@@ -617,12 +489,7 @@ header {
   padding-top: 80px;
 
   .News-slice__header-slice {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: normal;
+    @include font-title-italic;
   }
 
   .News-slice__slider {
@@ -642,12 +509,8 @@ header {
         .News-slice__slider__header-name {
           padding-top: 8px;
           width: auto;
-          color: #FFF;
-          font-family: Gotham;
-          font-size: 36px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 130%;
+          @include font-title;
+          text-transform: none;
         }
 
         .News-slice__slider__header-icons {
@@ -733,24 +596,14 @@ header {
 
         .News-slice__slider__card__name {
           margin-top: 8px;
-          color: #FFF;
           padding-left: 12px;
-          font-family: Montserrat;
           font-size: 24px;
-          font-style: normal;
           font-weight: 500;
-          line-height: 130%;
         }
 
         .News-slice__slider__card__description {
           margin-top: 12px;
-          color: #FFF;
-          font-family: Montserrat;
-          font-size: 20px;
           padding-left: 12px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 110%;
         }
       }
     }
@@ -768,28 +621,21 @@ header {
     justify-content: space-between;
     padding-top: 16px;
 
-    .Footer-slice__content__links {
-      color: #FFF;
-      font-family: Montserrat;
+    .Footer-slice__content__links, .Footer-slice__content__contact {
       font-size: 22px;
-      font-style: normal;
       font-weight: 600;
-
-
-
-      .Footer-slice__content__links__nav {
+      .Footer-slice__content__links__nav, .Footer-slice__content__contact_nav {
 
         font-weight: 500;
 
         ul {
           padding-top: 16px;
-          font-size: 20px;
           list-style: none;
           padding-left: 0;
           display: flex;
-          font-weight: 400;
           flex-direction: column;
           gap: 10px;
+          font-weight: 400;
         }
 
         a {
@@ -800,45 +646,14 @@ header {
       }
     }
 
-    .Footer-slice__content__contact {
-
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 22px;
-      font-style: normal;
-      font-weight: 600;
-
-      .Footer-slice__content__contact_nav {
-        font-weight: 500;
-
-        ul {
-          padding-top: 16px;
-          font-size: 20px;
-          list-style: none;
-          padding-left: 0;
-          display: flex;
-          font-weight: 400;
-          flex-direction: column;
-          gap: 10px;
-        }
-
-        a {
-          text-decoration: none;
-          user-select: none;
-          color: white;
-        }
-      }
-    }
 
     .Footer-slice__content__info {
       margin-top: -10px;
 
       .Footer-slice__content__info__name {
         max-width: 578px;
-        color: #FFF;
         font-family: Gotham;
         font-size: 48px;
-        font-style: normal;
         font-weight: 700;
         line-height: 130%;
       }
@@ -847,10 +662,7 @@ header {
         padding-top: 24px;
 
         .Footer-slice__content__info__button-style {
-          color: #FFF;
-          font-family: Montserrat;
           font-size: 24px;
-          font-style: normal;
           font-weight: 600;
           width: 235px;
           line-height: normal;
@@ -866,6 +678,7 @@ header {
           background-repeat: no-repeat;
           background-position: 180px;
           outline: none;
+          color: #fff;
         }
       }
     }
@@ -876,12 +689,8 @@ header {
     padding-bottom: 16px;
 
     .Footer-slice__copyright__text {
-      color: #FFF;
-      font-family: Montserrat;
       font-size: 16px;
-      font-style: normal;
       font-weight: 300;
-      line-height: normal;
       letter-spacing: 0.32px;
       text-transform: uppercase;
     }
