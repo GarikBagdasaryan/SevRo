@@ -93,6 +93,12 @@ body {
   background-color: $color-dark;
   color: $color-white;
 }
+a{
+  color: $color-white;
+}
+a:hover{
+  color: $color-primary;
+}
 
 .container {
   max-width: 1180px;
@@ -190,7 +196,6 @@ header {
     a {
       text-decoration: none;
       user-select: none;
-      color: white;
     }
 
     a:hover {
@@ -211,7 +216,6 @@ header {
       border-color: $color-primary;
       border-bottom: $color-primary;
       border-right: $color-primary;
-      color: white;
       background: $color-primary;
       cursor: pointer;
 
@@ -752,7 +756,6 @@ header {
         a {
           text-decoration: none;
           user-select: none;
-          color: white;
         }
 
         a:hover {
@@ -784,14 +787,13 @@ header {
           letter-spacing: 0.48px;
           text-transform: uppercase;
           display: inline-flex;
+          justify-content: space-between;
+          align-items: center;
           padding: 9px 19px;
           border-radius: 10px;
           border: 3px solid rgba(0, 0, 0, 0.20);
           box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25), -6px -6px 8px 0px rgba(0, 0, 0, 0.50);
           background-color: $color-dark;
-          background-image: url(../public/img/arrow-right.png);
-          background-repeat: no-repeat;
-          background-position: 180px;
           outline: none;
           color: $color-white;
           transition: 0.3s;
@@ -799,22 +801,12 @@ header {
         }
 
         .Footer-slice__content__info__button-style:hover {
-          border-radius: 10px;
-          border: 3px solid rgba(0, 0, 0, 0.20);
           background: #0096C8;
-          box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25), -6px -6px 8px 0px rgba(0, 0, 0, 0.50);
-          background-position: 180px;
-          background-image: url(../public/img/arrow-right.png);
-          background-repeat: no-repeat;
         }
 
         .Footer-slice__content__info__button-style:active {
-          border: 3px solid rgba(0, 0, 0, 0.20);
           background: #033E8A;
           box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
-          background-position: 180px;
-          background-image: url(../public/img/arrow-right.png);
-          background-repeat: no-repeat;
         }
       }
     }
