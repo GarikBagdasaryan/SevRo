@@ -188,8 +188,38 @@ function App() {
       </div>
       <div className="Footer-slice">
         <div className="container">
-          <div className="Footer-slice__links"></div>
-          <div className="Footer-slice__info"></div>
+          <div className="Footer-slice__content">
+            <div className="Footer-slice__content__links">навигация
+              <div className="Footer-slice__content__links__nav">
+                <ul>
+                  <li><a href="">О нас</a></li>
+                  <li><a href="">Деятельность</a></li>
+                  <li><a href="">Новости</a></li>
+                  <li><a href="">Галерея</a></li>
+                  <li><a href="">Другое</a></li>
+                  <li><a href="">Q/A</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="Footer-slice__content__contact">контакты
+              <div className="Footer-slice__content__contact_nav">
+                <ul>
+                  <li><a href="">вконтакте</a></li>
+                  <li><a href="">телеграм</a></li>
+                  <li><a href="">+79780002255</a></li>
+                  <li><a href="">sevro@mai.ru</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="Footer-slice__content__info">
+              <div className="Footer-slice__content__info__name">
+                Найди работу в студенческих отрядах
+              </div>
+              <div className="Footer-slice__content__info__button">
+                <button className="Footer-slice__content__info__button-style"><span>Вступить</span></button>
+              </div>
+            </div>
+          </div>
           <div className="Footer-slice__copyright"></div>
         </div>
       </div>
