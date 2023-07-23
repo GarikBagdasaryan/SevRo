@@ -31,14 +31,17 @@ function App() {
               </ul>
             </div>
             <div className="Header-slice__headerButton">
-              <button className="Header-slice__headerButton__button"><span>Вступить</span></button>
+              <button className="Header-slice__headerButton__button">Вступить</button>
             </div>
           </header>
           <div className="Promo-slice__info">
             Найди работу в студенческих отрядах
           </div>
           <div className="Promo-slice__button">
-            <button className="Promo-slice__button__stylebtn"><span>Вступить</span></button>
+            <button className="Promo-slice__button__stylebtn">
+              Вступить
+              <img src="./img/arrow-right.png"></img>
+            </button>
           </div>
         </div>
       </div>
@@ -65,7 +68,7 @@ function App() {
       </div>
       <div className="Rso-slice">
         <div className="container Rso-slice-container">
-          <div className="Rso-slice__button">
+          <div className="Rso-slice__buttons">
             <div className="Rso-slice__button__love">
             <img src="./img/ico-love.png"></img>
               любовь
@@ -81,7 +84,7 @@ function App() {
           </div>
           <div className="Rso-slice__info">
             <div className="Rso-slice__info__header">о нас</div>
-            <div className="Rso-slice__info__name"> Российские Студенческие Отряды</div>
+            <div className="Rso-slice__info__title"> Российские Студенческие Отряды</div>
             <div className="Rso-slice__info__description">Молодежная общероссийская общественная организация «Российские Студенческие Отряды» (РСО) – крупнейшая молодежная организация страны, которая обеспечивает временной трудовой занятостью более 150 тысяч молодых людей из 81 субъекта РФ, а также занимается гражданским и патриотическим воспитанием, развивает творческий и спортивный потенциал молодежи.</div>
             <div className="Rso-slice__info__button">
               <button className="Rso-slice__info__button__stylebtn">
@@ -101,7 +104,7 @@ function App() {
         <div className="container Directions-slice-container">
           <div className="Directions-slice__info">
             <div className="Directions-slice__info__header">направления</div>
-            <div className="Directions-slice__info__name"> Студенческие Педагогические Отряды</div>
+            <div className="Directions-slice__info__title"> Студенческие Педагогические Отряды</div>
             <div className="Directions-slice__info__description">Молодежная общероссийская общественная организация «Российские Студенческие Отряды» (РСО) – крупнейшая молодежная организация страны, которая обеспечивает временной трудовой занятостью более 150 тысяч молодых людей из 81 субъекта РФ, а также занимается гражданским.</div>
             <div className="Directions-slice__info__button">
               <button className="Directions-slice__info__button__stylebtn">
@@ -157,7 +160,7 @@ function App() {
           <div className="News-slice__slider">
             <div className="News-slice__slider__header">
               <div className="News-slice__slider__header__info">
-                <div className="News-slice__slider__header-name">Следите за новостями в:
+                <div className="News-slice__slider__header-title">Следите за новостями в:
                 </div>
                 <div className="News-slice__slider__header-icons">
                   <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" className="News-slice__slider__header-icons__tg">
@@ -186,33 +189,33 @@ function App() {
                 </div>
               </div>
               <div className="News-slice__slider__header-arrows">
-                <button className="swiper-button-prev News-slice__slider__header-arrows_left">
+                <button className="News-slice__slider__header-arrows_left">
                 <img src="./img/arrow-right.png"></img>
                 </button>
-                <button className="swiper-button-next News-slice__slider__header-arrows_right">
+                <button className="News-slice__slider__header-arrows_right">
                 <img src="./img/arrow-right.png"></img>
                 </button>
               </div>
             </div>
-            <div className="swiper-wrapper News-slice__slider__content">
-              <div className="swiper-slide News-slice__slider__card">
+            <div className="News-slice__slider__content">
+              <div className="News-slice__slider__card">
                 <div className="News-slice__slider__card__photo"></div>
-                <div className="News-slice__slider__card__name"> 8 лет СевРо</div>
+                <div className="News-slice__slider__card__title"> 8 лет СевРо</div>
                 <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
               </div>
-              <div className="swiper-slide News-slice__slider__card">
+              <div className="News-slice__slider__card">
                 <div className="News-slice__slider__card__photo"></div>
-                <div className="News-slice__slider__card__name"> 8 лет СевРо</div>
+                <div className="News-slice__slider__card__title"> 8 лет СевРо</div>
                 <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
               </div>
-              <div className="swiper-slide News-slice__slider__card">
+              <div className="News-slice__slider__card">
                 <div className="News-slice__slider__card__photo"></div>
-                <div className="News-slice__slider__card__name"> 8 лет СевРо</div>
+                <div className="News-slice__slider__card__title"> 8 лет СевРо</div>
                 <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
               </div>
-              <div className="swiper-slide News-slice__slider__card">
+              <div className="News-slice__slider__card">
                 <div className="News-slice__slider__card__photo"></div>
-                <div className="News-slice__slider__card__name"> 8 лет СевРо</div>
+                <div className="News-slice__slider__card__title"> 8 лет СевРо</div>
                 <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
               </div>
             </div>
