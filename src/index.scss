@@ -151,11 +151,9 @@ button:hover {
       border-radius: 10px;
       border: 3px solid $color-primary;
       background: transparent;
-      background-image: url(../public/img/arrow-right.png);
-      background-repeat: no-repeat;
-      background-position: 180px;
       outline: none;
       display: flex;
+      justify-content: space-between;
       align-items: center;
       cursor: pointer;
       transition: 0.3s;
@@ -169,10 +167,6 @@ button:hover {
   .Promo-slice__button__stylebtn:active {
     background: $color-rarly;
     box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
-    background-image: url(../public/img/arrow-right.png);
-    background-repeat: no-repeat;
-    background-position: 180px;
-
   }
 }
 
@@ -223,15 +217,12 @@ button:hover {
       border-right: $color-primary;
       background: $color-primary;
       cursor: pointer;
-
-      span {
-        margin-top: -2px;
-        font-family: Montserrat;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-      }
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      align-items: center;
+      font-weight: 400;
+      line-height: normal;
     }
 
     .Header-slice__headerButton__button:hover {

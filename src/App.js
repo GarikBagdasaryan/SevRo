@@ -31,14 +31,17 @@ function App() {
               </ul>
             </div>
             <div className="Header-slice__headerButton">
-              <button className="Header-slice__headerButton__button"><span>Вступить</span></button>
+              <button className="Header-slice__headerButton__button">Вступить</button>
             </div>
           </header>
           <div className="Promo-slice__info">
             Найди работу в студенческих отрядах
           </div>
           <div className="Promo-slice__button">
-            <button className="Promo-slice__button__stylebtn"><span>Вступить</span></button>
+            <button className="Promo-slice__button__stylebtn">
+              Вступить
+              <img src="./img/arrow-right.png"></img>
+            </button>
           </div>
         </div>
       </div>
