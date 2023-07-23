@@ -150,24 +150,20 @@ body {
       cursor: pointer;
       transition: 0.3s;
     }
-
-
   }
-
 
   .Promo-slice__button__stylebtn:hover {
     background-color: $color-secondary;
   }
 
   .Promo-slice__button__stylebtn:active {
-    background: #033E8A;
+    background: $color-rarly;
     box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
     background-image: url(../public/img/arrow-right.png);
     background-repeat: no-repeat;
     background-position: 180px;
 
   }
-
 }
 
 header {
@@ -197,7 +193,6 @@ header {
       user-select: none;
       color: white;
     }
-
   }
 
   .Promo-slice__headerButton {
@@ -224,7 +219,6 @@ header {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-
       }
     }
 
@@ -235,11 +229,10 @@ header {
     }
 
     .Promo-slice__headerButton__button:active {
-      background: #033E8A;
+      background: $color-rarly;
       box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
     }
   }
-
 }
 
 .Statistics-slice {
@@ -334,13 +327,11 @@ header {
     }
 
     .Rso-slice__info__button__stylebtn:active {
-
-      background: #033E8A;
+      background: $color-rarly;
       box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
       background-image: url(../public/img/arrow-right.png);
       background-repeat: no-repeat;
       background-position: 165px;
-
     }
 
     .Rso-slice__button {
@@ -438,7 +429,6 @@ header {
 .Directions-slice {
   padding-top: 80px;
 
-
   .Directions-slice-container {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -498,7 +488,7 @@ header {
     }
 
     .Directions-slice__info__button__stylebtn:active {
-      background: #033E8A;
+      background: $color-rarly;
       box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
       background-image: url(../public/img/arrow-right.png);
       background-repeat: no-repeat;
@@ -519,7 +509,6 @@ header {
       }
 
       .Directions-slice__icons__card:hover .Directions-slice__icons__card__overlay {
-
         background: rgba(0, 0, 0, 0.6);
       }
 
@@ -533,7 +522,6 @@ header {
         position: relative;
         transition: 0.3s;
         cursor: pointer;
-
 
         .Directions-slice__icons__card__style {
           border-radius: 10px;
@@ -557,7 +545,6 @@ header {
           justify-content: center;
           border-radius: 10px;
           z-index: 12;
-
         }
       }
 
@@ -571,7 +558,6 @@ header {
 }
 
 .News-slice {
-
   padding-top: 80px;
 
   .News-slice__header-slice {
@@ -579,7 +565,6 @@ header {
   }
 
   .News-slice__slider {
-
 
     .News-slice__slider__header {
       display: flex;
@@ -633,7 +618,6 @@ header {
           transform: scaleX(-1);
           filter: FlipH;
           -ms-filter: "FlipH";
-
         }
 
         .News-slice__slider__header-arrows_left:hover {
@@ -663,7 +647,6 @@ header {
           background-size: 50%;
           background-repeat: no-repeat;
           background-position: center center;
-
         }
 
         .News-slice__slider__header-arrows_right:hover {
@@ -671,7 +654,6 @@ header {
           background-size: 50%;
           background-repeat: no-repeat;
           background-position: center center;
-
         }
       }
     }
@@ -691,18 +673,15 @@ header {
         border: 1px solid rgba(0, 0, 0, 0.20);
         background: $color-dark;
         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
-
         cursor: pointer;
 
         .News-slice__slider__card__photo {
-
           width: 280px;
           height: 150px;
           border-radius: 15px 15px 0px 0px;
           background: url(../public/img/new__photo.png);
           transition: 0.4s;
           box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
-
         }
 
         .News-slice__slider__card__name {
@@ -721,15 +700,12 @@ header {
 
       .News-slice__slider__card:hover {
         box-shadow: 0px 0px 8px 0px rgba(0, 120, 183, 0.25);
-
       }
 
       .News-slice__slider__card:active {
         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
-
       }
     }
-
   }
 }
 
@@ -750,7 +726,6 @@ header {
 
       .Footer-slice__content__links__nav,
       .Footer-slice__content__contact_nav {
-
         font-weight: 500;
 
         ul {
@@ -770,7 +745,6 @@ header {
         }
       }
     }
-
 
     .Footer-slice__content__info {
       margin-top: -10px;
@@ -849,8 +823,5 @@ header {
 
   .Directions-slice__icons__card__overlay {
     opacity: 0 !important;
-
   }
-
-
 }
