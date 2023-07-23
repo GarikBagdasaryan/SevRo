@@ -93,10 +93,12 @@ body {
   background-color: $color-dark;
   color: $color-white;
 }
-a{
+
+a {
   color: $color-white;
 }
-a:hover{
+
+a:hover {
   color: $color-primary;
 }
 
@@ -115,6 +117,7 @@ a:hover{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 80px;
 
   .Promo-slice__info {
     padding-top: 151px;
@@ -171,7 +174,7 @@ a:hover{
   }
 }
 
-header {
+.Header-slice {
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;
@@ -243,7 +246,7 @@ header {
 }
 
 .Statistics-slice {
-  padding-top: 80px;
+  margin-bottom: 80px;
 
   .Statistics-slice-container {
     padding-top: 16px;
@@ -273,7 +276,7 @@ header {
 }
 
 .Rso-slice {
-  padding-top: 117px;
+  margin-bottom: 80px;
 
   .Rso-slice-container {
     padding-top: 16px;
@@ -425,7 +428,7 @@ header {
 }
 
 .Video-slice {
-  padding-top: 80px;
+  margin-bottom: 80px;
 
   .Video-slice__style {
     width: 100%;
@@ -434,7 +437,7 @@ header {
 }
 
 .Directions-slice {
-  padding-top: 80px;
+  margin-bottom: 80px;
 
   .Directions-slice-container {
     padding-top: 16px;
@@ -565,7 +568,7 @@ header {
 }
 
 .News-slice {
-  padding-top: 80px;
+  margin-bottom: 80px;
 
   .News-slice__header-slice {
     @include font-title-italic;
@@ -724,9 +727,8 @@ header {
   }
 }
 
-
 .Footer-slice {
-  padding-top: 80px;
+
 
   .Footer-slice__content {
     display: flex;
