@@ -4,42 +4,49 @@
   src: local("Montserrat"),
     url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-weight: 300;
   src: local("Montserrat"),
     url("./fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-weight: 500;
   src: local("Montserrat"),
     url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-weight: 500;
   src: local("Montserrat"),
     url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-weight: 600;
   src: local("Montserrat"),
     url("./fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-weight: 700;
   src: local("Montserrat"),
     url("./fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-weight: 800;
   src: local("Montserrat"),
     url("./fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Gotham";
   font-weight: 700;
@@ -612,11 +619,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 16px;
 
     .Footer-slice__content__links {
       color: #FFF;
       font-family: Montserrat;
-      font-size: 20px;
+      font-size: 22px;
       font-style: normal;
       font-weight: 600;
 
@@ -627,13 +635,14 @@ header {
         font-weight: 500;
 
         ul {
-          padding-top: 32px;
+          padding-top: 16px;
+          font-size: 20px;
           list-style: none;
           padding-left: 0;
           display: flex;
+          font-weight: 400;
           flex-direction: column;
-          justify-content: space-between;
-          gap: 20px;
+          gap: 10px;
         }
 
         a {
@@ -648,7 +657,7 @@ header {
 
       color: #FFF;
       font-family: Montserrat;
-      font-size: 20px;
+      font-size: 22px;
       font-style: normal;
       font-weight: 600;
 
@@ -656,13 +665,14 @@ header {
         font-weight: 500;
 
         ul {
-          padding-top: 32px;
+          padding-top: 16px;
+          font-size: 20px;
           list-style: none;
           padding-left: 0;
           display: flex;
+          font-weight: 400;
           flex-direction: column;
-          justify-content: space-between;
-          gap: 20px;
+          gap: 10px;
         }
 
         a {
@@ -674,9 +684,10 @@ header {
     }
 
     .Footer-slice__content__info {
+      margin-top: -10px;
+
       .Footer-slice__content__info__name {
-        padding-top: 151px;
-        max-width: 390px;
+        max-width: 578px;
         color: #FFF;
         font-family: Gotham;
         font-size: 48px;
@@ -686,8 +697,46 @@ header {
       }
 
       .Footer-slice__content__info__button {
-        .Footer-slice__content__info__button-style {}
+        padding-top: 24px;
+
+        .Footer-slice__content__info__button-style {
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          width: 235px;
+          line-height: normal;
+          letter-spacing: 0.48px;
+          text-transform: uppercase;
+          display: inline-flex;
+          padding: 9px 19px;
+          border-radius: 10px;
+          border: 3px solid rgba(0, 0, 0, 0.20);
+          box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25), -6px -6px 8px 0px rgba(0, 0, 0, 0.50);
+          background-color: #1a1a1a;
+          background-image: url(../public/img/arrow-right.png);
+          background-repeat: no-repeat;
+          background-position: 180px;
+          outline: none;
+        }
       }
+    }
+  }
+
+  .Footer-slice__copyright {
+    padding-top: 60px;
+    padding-bottom: 16px;
+
+    .Footer-slice__copyright__text {
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
     }
   }
 }
