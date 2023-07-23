@@ -23,11 +23,11 @@ function App() {
             </div>
             <div className="Promo-slice__headerLinks">
               <ul>
-                <li><a href="">О нас</a></li>
-                <li><a href="">Деятельность</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="">Галерея</a></li>
-                <li><a href="">Другое</a></li>
+                <li><a href="">о нас</a></li>
+                <li><a href="">деятельность</a></li>
+                <li><a href="">новости</a></li>
+                <li><a href="">галерея</a></li>
+                <li><a href="">другое</a></li>
               </ul>
             </div>
             <div className="Promo-slice__headerButton">
@@ -183,7 +183,6 @@ function App() {
               </div>
             </div>
           </div>
-          ...
         </div>
       </div>
       <div className="Footer-slice">
@@ -192,11 +191,11 @@ function App() {
             <div className="Footer-slice__content__links">навигация
               <div className="Footer-slice__content__links__nav">
                 <ul>
-                  <li><a href="">О нас</a></li>
-                  <li><a href="">Деятельность</a></li>
-                  <li><a href="">Новости</a></li>
-                  <li><a href="">Галерея</a></li>
-                  <li><a href="">Другое</a></li>
+                  <li><a href="">о нас</a></li>
+                  <li><a href="">деятельность</a></li>
+                  <li><a href="">новости</a></li>
+                  <li><a href="">галерея</a></li>
+                  <li><a href="">другое</a></li>
                   <li><a href="">Q/A</a></li>
                 </ul>
               </div>
@@ -220,7 +219,11 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="Footer-slice__copyright"></div>
+          <div className="Footer-slice__copyright">
+            <div className="Footer-slice__copyright__text">
+              © 2023. Все права защищены. Создано с ❤️ от Севро
+            </div>
+          </div>
         </div>
       </div>
     </div >
