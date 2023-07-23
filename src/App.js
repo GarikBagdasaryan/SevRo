@@ -16,7 +16,7 @@ function App() {
     <div className="HomePage">
       <div className="Promo-slice">
         <div className="container">
-          <header>
+          <header className="Header-slice">
             <div className="Header-slice__headerLogo">
               <img width={50} height={50} src="img/logo-rso.png"></img>
               <img width={50} height={50} src="img/logo-sevro.png"></img>
@@ -244,8 +244,8 @@ function App() {
               </div>
               <div className="Footer-slice__content__info__button">
                 <button className="Footer-slice__content__info__button-style">
-                Вступить
-                <img src="./img/arrow-right.png"></img>
+                  Вступить
+                  <img src="./img/arrow-right.png"></img>
                 </button>
               </div>
             </div>
