@@ -283,7 +283,7 @@ button:hover {
       margin-bottom: 8px;
     }
 
-    .Rso-slice__info__name {
+    .Rso-slice__info__title {
       margin-bottom: 33px;
       width: 580px;
       @include font-title;
@@ -438,7 +438,7 @@ button:hover {
       margin-bottom: 8px;
     }
 
-    .Directions-slice__info__name {
+    .Directions-slice__info__title {
       margin-bottom: 33px;
       width: 580px;
       @include font-title;
@@ -567,7 +567,7 @@ button:hover {
         justify-content: space-between;
         gap: 16px;
 
-        .News-slice__slider__header-name {
+        .News-slice__slider__header-title {
           padding-top: 8px;
           width: auto;
           @include font-title;
@@ -682,7 +682,7 @@ button:hover {
           box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
         }
 
-        .News-slice__slider__card__name {
+        .News-slice__slider__card__title {
           margin-top: 8px;
           padding-left: 12px;
           font-size: 24px;
