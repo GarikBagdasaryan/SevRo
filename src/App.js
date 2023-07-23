@@ -81,7 +81,10 @@ function App() {
             <div className="Rso-slice__info__name"> Российские Студенческие Отряды</div>
             <div className="Rso-slice__info__description">Молодежная общероссийская общественная организация «Российские Студенческие Отряды» (РСО) – крупнейшая молодежная организация страны, которая обеспечивает временной трудовой занятостью более 150 тысяч молодых людей из 81 субъекта РФ, а также занимается гражданским и патриотическим воспитанием, развивает творческий и спортивный потенциал молодежи.</div>
             <div className="Rso-slice__info__button">
-              <button className="Rso-slice__info__button__stylebtn"><span>Подробнее</span></button>
+              <button className="Rso-slice__info__button__stylebtn">
+                Подробнее
+                <img src="./img/arrow-right.png"></img>
+              </button>
             </div>
           </div>
         </div>
