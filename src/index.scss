@@ -532,10 +532,16 @@ a:hover {
           flex-direction: row;
           gap: 16px;
 
+          .News-slice__slider__header-icons__tg,
+          .News-slice__slider__header-icons__vk {
+            cursor: pointer;
+          }
+
           .News-slice__slider__header-icons__tg:hover,
           .News-slice__slider__header-icons__vk:hover {
             path {
               fill: $color-secondary;
+
             }
           }
 
@@ -565,6 +571,7 @@ a:hover {
           border: 1px solid rgba(0, 0, 0, 0.20);
           background: $color-dark;
           box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
+          cursor: pointer;
         }
 
         .News-slice__slider__header-arrows_right {
@@ -577,6 +584,7 @@ a:hover {
           border: 1px solid rgba(0, 0, 0, 0.20);
           background: $color-dark;
           box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
+          cursor: pointer;
         }
 
         .News-slice__slider__header-arrows_left:hover,
@@ -610,17 +618,25 @@ a:hover {
         height: 410px;
         border-radius: 15px;
         border: 1px solid rgba(0, 0, 0, 0.20);
-        background: $color-dark;
         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
         cursor: pointer;
+        overflow: hidden;
+
 
         .News-slice__slider__card__photo {
+
           width: 280px;
           height: 150px;
           border-radius: 15px 15px 0px 0px;
-          background: url(../public/img/new__photo.png);
           transition: 0.4s;
+          margin-bottom: 8px;
           box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
+          z-index: 1;
+
+          img {
+            position: relative;
+            z-index: -2;
+          }
         }
 
         .News-slice__slider__card__text {
