@@ -55,6 +55,32 @@
     url("./fonts/Gotham/gotham_bold.otf") format("truetype");
 }
 
+
+// Fonts
+@mixin font-title {
+  font-family: Gotham;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 46.8px */
+  text-transform: capitalize;
+}
+@mixin font-title-italic {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+
+// Colors
+$color-dark: #1a1a1a;
+$color-white: #ffffff;
+$color-primary: #0078B7;
+$color-secondary: #0096C8;
+$color-rarly: #033E8A; 
+
+
 body {
   margin: 0;
   font-family: Montserrat;
