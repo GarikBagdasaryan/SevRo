@@ -65,7 +65,7 @@ function App() {
       </div>
       <div className="Rso-slice">
         <div className="container Rso-slice-container">
-          <div className="Rso-slice__button">
+          <div className="Rso-slice__buttons">
             <div className="Rso-slice__button__love">
               <button className="Rso-slice__button__love__stylebtn"><span>любовь</span></button>
             </div>
