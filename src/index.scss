@@ -337,9 +337,11 @@ button:hover {
       justify-content: center;
       width: 344px;
       align-items: flex-end;
-      
 
-      .Rso-slice__button__love, .Rso-slice__button__work, .Rso-slice__button__friend {
+
+      .Rso-slice__button__love,
+      .Rso-slice__button__work,
+      .Rso-slice__button__friend {
         padding: 8px 32px 8px 16px;
         text-align: right;
         border-radius: 10px;
@@ -544,6 +546,7 @@ button:hover {
       .News-slice__slider__header-arrows {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         flex-direction: row;
         gap: 16px;
 
@@ -557,7 +560,8 @@ button:hover {
           border: 1px solid rgba(0, 0, 0, 0.20);
           background: $color-dark;
           box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
-          img{
+
+          img {
             transform: rotate(180deg);
           }
         }
