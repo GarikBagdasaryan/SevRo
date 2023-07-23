@@ -289,21 +289,21 @@ button:hover {
 
     .Rso-slice__info__header {
       @include font-title-italic;
+      margin-bottom: 8px;
     }
 
     .Rso-slice__info__name {
-      padding-top: 8px;
+      margin-bottom: 33px;
       width: 580px;
       @include font-title;
     }
 
     .Rso-slice__info__description {
-      padding-top: 33px;
       width: 576px;
+      margin-bottom: 24px;
     }
 
     .Rso-slice__info__button {
-      padding-top: 24px;
 
       .Rso-slice__info__button__stylebtn {
         font-weight: 500;
@@ -444,21 +444,22 @@ button:hover {
 
     .Directions-slice__info__header {
       @include font-title-italic;
+      margin-bottom: 8px;
     }
 
     .Directions-slice__info__name {
-      padding-top: 8px;
+      margin-bottom: 33px;
       width: 580px;
       @include font-title;
     }
 
     .Directions-slice__info__description {
-      padding-top: 33px;
-      width: 576px;
+      margin-bottom: 24px;
+      width: 580px;
     }
 
     .Directions-slice__info__button {
-      padding-top: 24px;
+
 
       .Directions-slice__info__button__stylebtn {
         color: $color-white;
