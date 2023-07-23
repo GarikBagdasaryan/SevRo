@@ -69,15 +69,15 @@ function App() {
       <div className="Rso-slice">
         <div className="container Rso-slice-container">
           <div className="Rso-slice__buttons">
-            <div className="Rso-slice__button__love">
+            <div className="Rso-slice__button__style">
               <img src="./img/ico-love.png"></img>
               любовь
             </div>
-            <div className="Rso-slice__button__friend">
+            <div className="Rso-slice__button__style">
               <img src="./img/ico-friend.png"></img>
               друзья
             </div>
-            <div className="Rso-slice__button__work">
+            <div className="Rso-slice__button__style">
               <img src="./img/ico-job.png"></img>
               работа
             </div>
@@ -221,7 +221,7 @@ function App() {
               </div>
               <div className="News-slice__slider__card">
                 <div className="News-slice__slider__card__photo">
-                  <img  src="./img/new__photo.png"></img>
+                  <img src="./img/new__photo.png"></img>
                 </div>
                 <div className="News-slice__slider__card__text">
                   <div className="News-slice__slider__card__text__title"> 8 лет СевРо</div>
@@ -230,7 +230,7 @@ function App() {
               </div>
               <div className="News-slice__slider__card">
                 <div className="News-slice__slider__card__photo">
-                  <img  src="./img/new__photo.png"></img>
+                  <img src="./img/new__photo.png"></img>
                 </div>
                 <div className="News-slice__slider__card__text">
                   <div className="News-slice__slider__card__text__title"> 8 лет СевРо</div>
