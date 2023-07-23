@@ -99,8 +99,7 @@ button {
   color: $color-white;
 }
 
-a:hover,
-button:hover {
+a:hover {
   color: $color-primary;
 }
 
@@ -533,12 +532,15 @@ button:hover {
           flex-direction: row;
           gap: 16px;
 
-          .News-slice__slider__header-icons__tg {
-            fill: $color-primary;
+          .News-slice__slider__header-icons__tg:hover, .News-slice__slider__header-icons__vk:hover{
+            path{
+              fill: $color-secondary;
+            }
           }
-
-          .News-slice__slider__header-icons__vk {
-            fill: $color-primary;
+          .News-slice__slider__header-icons__tg:active, .News-slice__slider__header-icons__vk:active{
+            path{
+              fill: $color-primary;
+            }
           }
         }
       }
@@ -560,10 +562,6 @@ button:hover {
           border: 1px solid rgba(0, 0, 0, 0.20);
           background: $color-dark;
           box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
-
-          img {
-            transform: rotate(180deg);
-          }
         }
 
         .News-slice__slider__header-arrows_right {
@@ -577,6 +575,19 @@ button:hover {
           background: $color-dark;
           box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
         }
+
+        .News-slice__slider__header-arrows_left:hover, .News-slice__slider__header-arrows_right:hover{
+          svg path{
+            fill: $color-secondary;
+          }
+        }
+        .News-slice__slider__header-arrows_left:active, .News-slice__slider__header-arrows_right:active{
+          svg path{
+            fill: $color-rarly;
+          }
+        }
+
+        
       }
     }
 
