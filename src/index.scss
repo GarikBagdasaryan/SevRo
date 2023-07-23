@@ -92,7 +92,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: $color-dark;
   color: $color-white;
-
 }
 
 .container {
@@ -172,13 +171,13 @@ header {
   display: flex;
   justify-content: space-between;
 
-  .Promo-slice__headerLogo {
+  .Header-slice__headerLogo {
     display: flex;
     gap: 16px;
     align-items: center;
   }
 
-  .Promo-slice__headerLinks {
+  .Header-slice__headerLinks {
 
     ul {
       list-style: none;
@@ -193,13 +192,17 @@ header {
       user-select: none;
       color: white;
     }
+
+    a:hover {
+      color: $color-secondary;
+    }
   }
 
-  .Promo-slice__headerButton {
+  .Header-slice__headerButton {
     display: flex;
     align-items: center;
 
-    .Promo-slice__headerButton__button {
+    .Header-slice__headerButton__button {
       display: flex;
       padding: 6px 16px;
       width: 129px;
@@ -222,13 +225,13 @@ header {
       }
     }
 
-    .Promo-slice__headerButton__button:hover {
+    .Header-slice__headerButton__button:hover {
       border-radius: 10px;
       background: $color-secondary;
       border-color: $color-secondary;
     }
 
-    .Promo-slice__headerButton__button:active {
+    .Header-slice__headerButton__button:active {
       background: $color-rarly;
       box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
     }
@@ -589,6 +592,14 @@ header {
           justify-content: space-between;
           flex-direction: row;
           gap: 16px;
+
+          .News-slice__slider__header-icons__tg {
+            fill: $color-primary;
+          }
+
+          .News-slice__slider__header-icons__vk {
+            fill: $color-primary;
+          }
         }
       }
 
@@ -742,6 +753,10 @@ header {
           text-decoration: none;
           user-select: none;
           color: white;
+        }
+
+        a:hover {
+          color: $color-secondary;
         }
       }
     }
