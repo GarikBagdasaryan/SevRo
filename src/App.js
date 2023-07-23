@@ -31,7 +31,7 @@ function App() {
               </ul>
             </div>
             <div className="Header-slice__headerButton">
-              <button className="Promo-slice__headerButton__button"><span>Вступить</span></button>
+              <button className="Header-slice__headerButton__button"><span>Вступить</span></button>
             </div>
           </header>
           <div className="Promo-slice__info">
