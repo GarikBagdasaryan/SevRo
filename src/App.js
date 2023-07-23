@@ -67,13 +67,16 @@ function App() {
         <div className="container Rso-slice-container">
           <div className="Rso-slice__button">
             <div className="Rso-slice__button__love">
-              <button className="Rso-slice__button__love__stylebtn"><span>любовь</span></button>
+            <img src="./img/ico-love.png"></img>
+              любовь
             </div>
             <div className="Rso-slice__button__friend">
-              <button className="Rso-slice__button__friend__stylebtn"><span>друзья</span></button>
+            <img src="./img/ico-friend.png"></img>
+              друзья
             </div>
             <div className="Rso-slice__button__work">
-              <button className="Rso-slice__button__work__stylebtn"><span>работа</span></button>
+            <img src="./img/ico-job.png"></img>
+               работа
             </div>
           </div>
           <div className="Rso-slice__info">
@@ -183,9 +186,12 @@ function App() {
                 </div>
               </div>
               <div className="News-slice__slider__header-arrows">
-                <div className="swiper-button-prev News-slice__slider__header-arrows_left">
-                </div>
-                <div className="swiper-button-next News-slice__slider__header-arrows_right"></div>
+                <button className="swiper-button-prev News-slice__slider__header-arrows_left">
+                <img src="./img/arrow-right.png"></img>
+                </button>
+                <button className="swiper-button-next News-slice__slider__header-arrows_right">
+                <img src="./img/arrow-right.png"></img>
+                </button>
               </div>
             </div>
             <div className="swiper-wrapper News-slice__slider__content">
