@@ -70,16 +70,16 @@ function App() {
         <div className="container Rso-slice-container">
           <div className="Rso-slice__buttons">
             <div className="Rso-slice__button__love">
-            <img src="./img/ico-love.png"></img>
+              <img src="./img/ico-love.png"></img>
               любовь
             </div>
             <div className="Rso-slice__button__friend">
-            <img src="./img/ico-friend.png"></img>
+              <img src="./img/ico-friend.png"></img>
               друзья
             </div>
             <div className="Rso-slice__button__work">
-            <img src="./img/ico-job.png"></img>
-               работа
+              <img src="./img/ico-job.png"></img>
+              работа
             </div>
           </div>
           <div className="Rso-slice__info">
@@ -190,33 +190,41 @@ function App() {
               </div>
               <div className="News-slice__slider__header-arrows">
                 <button className="News-slice__slider__header-arrows_left">
-                <img src="./img/arrow-right.png"></img>
+                  <img src="./img/arrow-right.png"></img>
                 </button>
                 <button className="News-slice__slider__header-arrows_right">
-                <img src="./img/arrow-right.png"></img>
+                  <img src="./img/arrow-right.png"></img>
                 </button>
               </div>
             </div>
             <div className="News-slice__slider__content">
               <div className="News-slice__slider__card">
                 <div className="News-slice__slider__card__photo"></div>
-                <div className="News-slice__slider__card__title"> 8 лет СевРо</div>
-                <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+                <div className="News-slice__slider__card__text">
+                  <div className="News-slice__slider__card__text__title"> 8 лет СевРо</div>
+                  <div className="News-slice__slider__card__text__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+                </div>
               </div>
               <div className="News-slice__slider__card">
                 <div className="News-slice__slider__card__photo"></div>
-                <div className="News-slice__slider__card__title"> 8 лет СевРо</div>
-                <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+                <div className="News-slice__slider__card__text">
+                  <div className="News-slice__slider__card__text__title"> 8 лет СевРо</div>
+                  <div className="News-slice__slider__card__text__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+                </div>
               </div>
               <div className="News-slice__slider__card">
                 <div className="News-slice__slider__card__photo"></div>
-                <div className="News-slice__slider__card__title"> 8 лет СевРо</div>
-                <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+                <div className="News-slice__slider__card__text">
+                  <div className="News-slice__slider__card__text__title"> 8 лет СевРо</div>
+                  <div className="News-slice__slider__card__text__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+                </div>
               </div>
               <div className="News-slice__slider__card">
                 <div className="News-slice__slider__card__photo"></div>
-                <div className="News-slice__slider__card__title"> 8 лет СевРо</div>
-                <div className="News-slice__slider__card__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+                <div className="News-slice__slider__card__text">
+                  <div className="News-slice__slider__card__text__title"> 8 лет СевРо</div>
+                  <div className="News-slice__slider__card__text__description">Студенческие педагогические отряды (СПО) – ежегодно организовывают каникулярный отдых детей организовывают каникулярный отдых детей...</div>
+                </div>
               </div>
             </div>
           </div>
