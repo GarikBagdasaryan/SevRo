@@ -18,8 +18,8 @@ function App() {
         <div className="container">
           <header>
             <div className="Promo-slice__headerLogo">
-              <img width={40} height={40} src="img/logo-rso.png"></img>
-              <img width={40} height={40} src="img/logo-sevro.png"></img>
+              <img width={50} height={50} src="img/logo-rso.png"></img>
+              <img width={50} height={50} src="img/logo-sevro.png"></img>
             </div>
             <div className="Promo-slice__headerLinks">
               <ul>

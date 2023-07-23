@@ -61,9 +61,10 @@
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 46.8px */
+  line-height: 130%;
   text-transform: capitalize;
 }
+
 @mixin font-title-italic {
   font-family: Montserrat;
   font-size: 20px;
@@ -77,7 +78,7 @@ $color-dark: #1a1a1a;
 $color-white: #ffffff;
 $color-primary: #0078B7;
 $color-secondary: #0096C8;
-$color-rarly: #033E8A; 
+$color-rarly: #033E8A;
 
 
 body {
@@ -113,7 +114,7 @@ body {
   .Promo-slice__info {
     padding-top: 151px;
     max-width: 390px;
-    color: #FFF;
+    color: $color-white;
     font-family: Gotham;
     font-size: 48px;
     font-style: normal;
@@ -125,25 +126,46 @@ body {
     padding-top: 40px;
 
     .Promo-slice__button__stylebtn {
-      color: #FFF;
+      color: $color-white;
       font-family: Montserrat;
       font-size: 24px;
       font-style: normal;
       font-weight: 600;
-      width: 240px;
+      width: 235px;
+      height: 47px;
       text-align: left;
       line-height: normal;
       letter-spacing: 0.48px;
       text-transform: uppercase;
       padding: 9px 19px;
       border-radius: 10px;
-      border: 3px solid #0078B7;
+      border: 3px solid $color-primary;
       background: transparent;
       background-image: url(../public/img/arrow-right.png);
       background-repeat: no-repeat;
       background-position: 180px;
       outline: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.3s;
     }
+
+
+  }
+
+
+  .Promo-slice__button__stylebtn:hover {
+    background-color: $color-secondary;
+  }
+
+  .Promo-slice__button__stylebtn:active {
+    background: #033E8A;
+    box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+    background-image: url(../public/img/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: 180px;
+
   }
 
 }
@@ -185,18 +207,36 @@ header {
     .Promo-slice__headerButton__button {
       display: flex;
       padding: 6px 16px;
-      justify-content: center;
-      align-items: center;
+      width: 129px;
+      height: 36px;
       border-radius: 10px;
-      border-color: #0078B7;
-      border-bottom: #0078B7;
-      border-right: #0078B7;
+      border-color: $color-primary;
+      border-bottom: $color-primary;
+      border-right: $color-primary;
       color: white;
-      background: #0078B7;
+      background: $color-primary;
+      cursor: pointer;
 
       span {
-        font-weight: 500;
+        margin-top: -2px;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
       }
+    }
+
+    .Promo-slice__headerButton__button:hover {
+      border-radius: 10px;
+      background: $color-secondary;
+      border-color: $color-secondary;
+    }
+
+    .Promo-slice__headerButton__button:active {
+      background: #033E8A;
+      box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
     }
   }
 
@@ -211,8 +251,9 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    .Statistics-slice__title{
-      color: #FFF;
+
+    .Statistics-slice__title {
+      color: $color-white;
       font-family: Montserrat;
       font-size: 64px;
       font-style: normal;
@@ -222,7 +263,10 @@ header {
     }
   }
 
-  .Statistics-slice__directions, .Statistics-slice__detachment, .Statistics-slice__fighters, .Statistics-slice__years{
+  .Statistics-slice__directions,
+  .Statistics-slice__detachment,
+  .Statistics-slice__fighters,
+  .Statistics-slice__years {
     display: flex;
     flex-direction: column;
   }
@@ -265,13 +309,38 @@ header {
         width: 210px;
         border-radius: 10px;
         border: 2px solid rgba(0, 0, 0, 0.20);
-        background: #0078B7;
+        background: $color-primary;
         box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25), -6px -6px 8px 0px rgba(0, 0, 0, 0.50);
         background-image: url(../public/img/arrow-right.png);
         background-repeat: no-repeat;
         background-position: 165px;
         outline: none;
+        color: $color-white;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        transition: 0.3s;
       }
+    }
+
+    .Rso-slice__info__button__stylebtn:hover {
+      background: $color-secondary;
+      background-image: url(../public/img/arrow-right.png);
+      background-repeat: no-repeat;
+      background-position: 165px;
+    }
+
+    .Rso-slice__info__button__stylebtn:active {
+
+      background: #033E8A;
+      box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+      background-image: url(../public/img/arrow-right.png);
+      background-repeat: no-repeat;
+      background-position: 165px;
+
     }
 
     .Rso-slice__button {
@@ -295,9 +364,9 @@ header {
         gap: 16px;
         border-radius: 10px;
         border: 1px solid rgba(0, 0, 0, 0.20);
-        background: #0078B7;
+        background: $color-primary;
         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
-        color: #FFF;
+        color: $color-white;
         font-family: Montserrat;
         font-size: 32px;
         font-style: normal;
@@ -317,9 +386,9 @@ header {
         gap: 16px;
         border-radius: 10px;
         border: 1px solid rgba(0, 0, 0, 0.20);
-        background: #0078B7;
+        background: $color-primary;
         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
-        color: #FFF;
+        color: $color-white;
         font-family: Montserrat;
         font-size: 32px;
         font-style: normal;
@@ -339,9 +408,9 @@ header {
         gap: 16px;
         border-radius: 10px;
         border: 1px solid rgba(0, 0, 0, 0.20);
-        background: #0078B7;
+        background: $color-primary;
         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
-        color: #FFF;
+        color: $color-white;
         font-family: Montserrat;
         font-size: 32px;
         font-style: normal;
@@ -397,7 +466,7 @@ header {
       padding-top: 24px;
 
       .Directions-slice__info__button__stylebtn {
-        color: #FFF;
+        color: $color-white;
         font-family: Montserrat;
         font-size: 20px;
         font-style: normal;
@@ -407,18 +476,34 @@ header {
         padding: 8px 16px;
         text-align: left;
         gap: 32px;
-        width: 210px;
+        width: 181px;
         border-radius: 10px;
         border: 2px solid rgba(0, 0, 0, 0.20);
-        background: #0078B7;
+        background: $color-primary;
         box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25), -6px -6px 8px 0px rgba(0, 0, 0, 0.50);
         background-image: url(../public/img/arrow-right.png);
         background-repeat: no-repeat;
-        background-position: 165px;
+        background-position: 135px;
         outline: none;
+        transition: 0.2s;
+        cursor: pointer;
       }
     }
 
+    .Directions-slice__info__button__stylebtn:hover {
+      background: $color-secondary;
+      background-image: url(../public/img/arrow-right.png);
+      background-repeat: no-repeat;
+      background-position: 135px;
+    }
+
+    .Directions-slice__info__button__stylebtn:active {
+      background: #033E8A;
+      box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+      background-image: url(../public/img/arrow-right.png);
+      background-repeat: no-repeat;
+      background-position: 135px;
+    }
 
     .Directions-slice__icons {
       display: flex;
@@ -447,6 +532,7 @@ header {
         z-index: 11;
         position: relative;
         transition: 0.3s;
+        cursor: pointer;
 
 
         .Directions-slice__icons__card__style {
@@ -535,13 +621,26 @@ header {
           align-items: center;
           border-radius: 10px;
           border: 1px solid rgba(0, 0, 0, 0.20);
-          background: var(--block-dark, #1A1A1A);
+          background: $color-dark;
           background-image: url(../public/img/arrow-right.png);
           background-size: 50%;
           background-repeat: no-repeat;
           background-position: center center;
           box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
-          /*Отражение по горизонту*/
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          filter: FlipH;
+          -ms-filter: "FlipH";
+
+        }
+
+        .News-slice__slider__header-arrows_left:hover {
+          background-image: url(../public/img/arrow-right_light.png);
+          background-size: 50%;
+          background-repeat: no-repeat;
+          background-position: center center;
           -moz-transform: scaleX(-1);
           -o-transform: scaleX(-1);
           -webkit-transform: scaleX(-1);
@@ -554,14 +653,21 @@ header {
           display: flex;
           width: 50px;
           height: 50px;
-
           justify-content: center;
           align-items: center;
           border-radius: 10px;
           border: 1px solid rgba(0, 0, 0, 0.20);
-          background: #1A1A1A;
+          background: $color-dark;
           box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
           background-image: url(../public/img/arrow-right.png);
+          background-size: 50%;
+          background-repeat: no-repeat;
+          background-position: center center;
+
+        }
+
+        .News-slice__slider__header-arrows_right:hover {
+          background-image: url(../public/img/arrow-right_light.png);
           background-size: 50%;
           background-repeat: no-repeat;
           background-position: center center;
@@ -580,11 +686,13 @@ header {
 
       .News-slice__slider__card {
         width: 280px;
-        height: 400px;
+        height: 410px;
         border-radius: 15px;
         border: 1px solid rgba(0, 0, 0, 0.20);
-        background: #1A1A1A;
+        background: $color-dark;
         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
+
+        cursor: pointer;
 
         .News-slice__slider__card__photo {
 
@@ -592,6 +700,9 @@ header {
           height: 150px;
           border-radius: 15px 15px 0px 0px;
           background: url(../public/img/new__photo.png);
+          transition: 0.4s;
+          box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
+
         }
 
         .News-slice__slider__card__name {
@@ -604,7 +715,18 @@ header {
         .News-slice__slider__card__description {
           margin-top: 12px;
           padding-left: 12px;
+          padding-bottom: 23px;
         }
+      }
+
+      .News-slice__slider__card:hover {
+        box-shadow: 0px 0px 8px 0px rgba(0, 120, 183, 0.25);
+
+      }
+
+      .News-slice__slider__card:active {
+        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
+
       }
     }
 
@@ -621,10 +743,13 @@ header {
     justify-content: space-between;
     padding-top: 16px;
 
-    .Footer-slice__content__links, .Footer-slice__content__contact {
+    .Footer-slice__content__links,
+    .Footer-slice__content__contact {
       font-size: 22px;
       font-weight: 600;
-      .Footer-slice__content__links__nav, .Footer-slice__content__contact_nav {
+
+      .Footer-slice__content__links__nav,
+      .Footer-slice__content__contact_nav {
 
         font-weight: 500;
 
@@ -663,7 +788,8 @@ header {
 
         .Footer-slice__content__info__button-style {
           font-size: 24px;
-          font-weight: 600;
+          font-weight: 500;
+          font-family: Montserrat;
           width: 235px;
           line-height: normal;
           letter-spacing: 0.48px;
@@ -673,12 +799,32 @@ header {
           border-radius: 10px;
           border: 3px solid rgba(0, 0, 0, 0.20);
           box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25), -6px -6px 8px 0px rgba(0, 0, 0, 0.50);
-          background-color: #1a1a1a;
+          background-color: $color-dark;
           background-image: url(../public/img/arrow-right.png);
           background-repeat: no-repeat;
           background-position: 180px;
           outline: none;
-          color: #fff;
+          color: $color-white;
+          transition: 0.3s;
+        }
+
+        .Footer-slice__content__info__button-style:hover {
+          border-radius: 10px;
+          border: 3px solid rgba(0, 0, 0, 0.20);
+          background: #0096C8;
+          box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25), -6px -6px 8px 0px rgba(0, 0, 0, 0.50);
+          background-position: 180px;
+          background-image: url(../public/img/arrow-right.png);
+          background-repeat: no-repeat;
+        }
+
+        .Footer-slice__content__info__button-style:active {
+          border: 3px solid rgba(0, 0, 0, 0.20);
+          background: #033E8A;
+          box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+          background-position: 180px;
+          background-image: url(../public/img/arrow-right.png);
+          background-repeat: no-repeat;
         }
       }
     }
@@ -704,4 +850,6 @@ header {
     opacity: 0 !important;
 
   }
+
+
 }
