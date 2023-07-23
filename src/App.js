@@ -215,7 +215,10 @@ function App() {
                 Найди работу в студенческих отрядах
               </div>
               <div className="Footer-slice__content__info__button">
-                <button className="Footer-slice__content__info__button-style"><span>Вступить</span></button>
+                <button className="Footer-slice__content__info__button-style">
+                Вступить
+                <img src="./img/arrow-right.png"></img>
+                </button>
               </div>
             </div>
           </div>
