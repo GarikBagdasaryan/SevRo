@@ -221,7 +221,7 @@ function App() {
           </div>
           <div className="Footer-slice__copyright">
             <div className="Footer-slice__copyright__text">
-              © 2023. Все права защищены. Создано с ❤️ от Севро
+              © 2023. Все права защищены. Создано с ❤️ от Севроо
             </div>
           </div>
         </div>
