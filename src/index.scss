@@ -89,8 +89,8 @@ body {
   line-height: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: $color-dark;
+  color: $color-white;
 
 }
 
@@ -621,28 +621,21 @@ header {
     justify-content: space-between;
     padding-top: 16px;
 
-    .Footer-slice__content__links {
-      color: #FFF;
-      font-family: Montserrat;
+    .Footer-slice__content__links, .Footer-slice__content__contact {
       font-size: 22px;
-      font-style: normal;
       font-weight: 600;
-
-
-
-      .Footer-slice__content__links__nav {
+      .Footer-slice__content__links__nav, .Footer-slice__content__contact_nav {
 
         font-weight: 500;
 
         ul {
           padding-top: 16px;
-          font-size: 20px;
           list-style: none;
           padding-left: 0;
           display: flex;
-          font-weight: 400;
           flex-direction: column;
           gap: 10px;
+          font-weight: 400;
         }
 
         a {
@@ -653,45 +646,14 @@ header {
       }
     }
 
-    .Footer-slice__content__contact {
-
-      color: #FFF;
-      font-family: Montserrat;
-      font-size: 22px;
-      font-style: normal;
-      font-weight: 600;
-
-      .Footer-slice__content__contact_nav {
-        font-weight: 500;
-
-        ul {
-          padding-top: 16px;
-          font-size: 20px;
-          list-style: none;
-          padding-left: 0;
-          display: flex;
-          font-weight: 400;
-          flex-direction: column;
-          gap: 10px;
-        }
-
-        a {
-          text-decoration: none;
-          user-select: none;
-          color: white;
-        }
-      }
-    }
 
     .Footer-slice__content__info {
       margin-top: -10px;
 
       .Footer-slice__content__info__name {
         max-width: 578px;
-        color: #FFF;
         font-family: Gotham;
         font-size: 48px;
-        font-style: normal;
         font-weight: 700;
         line-height: 130%;
       }
@@ -700,10 +662,7 @@ header {
         padding-top: 24px;
 
         .Footer-slice__content__info__button-style {
-          color: #FFF;
-          font-family: Montserrat;
           font-size: 24px;
-          font-style: normal;
           font-weight: 600;
           width: 235px;
           line-height: normal;
@@ -719,6 +678,7 @@ header {
           background-repeat: no-repeat;
           background-position: 180px;
           outline: none;
+          color: #fff;
         }
       }
     }
@@ -729,12 +689,8 @@ header {
     padding-bottom: 16px;
 
     .Footer-slice__copyright__text {
-      color: #FFF;
-      font-family: Montserrat;
       font-size: 16px;
-      font-style: normal;
       font-weight: 300;
-      line-height: normal;
       letter-spacing: 0.32px;
       text-transform: uppercase;
     }
