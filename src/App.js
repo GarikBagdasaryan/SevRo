@@ -1,3 +1,5 @@
+import PromoSlice from './components/Promo-Slice/PromoSlice';
+
 function App() {
 
   const LoadImg = event => {
@@ -14,38 +16,7 @@ function App() {
 
   return (
     <div className="HomePage">
-      <div className="Promo-slice">
-        <div className="container">
-          <header className="Header-slice">
-            <div className="Header-slice__headerLogo">
-              <img width={50} height={50} src="img/logo-rso.png"></img>
-              <img width={50} height={50} src="img/logo-sevro.png"></img>
-            </div>
-            <div className="Header-slice__headerLinks">
-              <ul>
-                <li><a href="">о нас</a></li>
-                <li><a href="">деятельность</a></li>
-                <li><a href="">новости</a></li>
-                <li><a href="">галерея</a></li>
-                <li><a href="">другое</a></li>
-              </ul>
-            </div>
-            <div className="Header-slice__headerButton">
-              <button className="Header-slice__headerButton__button">Вступить</button>
-            </div>
-          </header>
-          <div className="Promo-slice__info">
-            Найди работу в студенческих отрядах
-          </div>
-          <div className="Promo-slice__button">
-            <button className="Promo-slice__button__stylebtn">
-              Вступить
-              <img src="./img/arrow-right.png"></img>
-            </button>
-          </div>
-        </div>
-      </div>
-
+      <PromoSlice />
       <div className="Statistics-slice">
         <div className="container Statistics-slice-container">
           <div className="Statistics-slice__directions">
