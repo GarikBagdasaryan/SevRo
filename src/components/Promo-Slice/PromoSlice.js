@@ -7,7 +7,6 @@ function PromoSlice() {
         < div className="Promo-slice" >
             <div className="container">
                 <Header />
-
                 <div className="Promo-slice__info">
                     Найди работу в студенческих отрядах
                 </div>
