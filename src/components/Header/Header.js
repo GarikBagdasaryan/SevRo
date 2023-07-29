@@ -9,10 +9,12 @@ function Header() {
             <div className="Header-slice__headerLinks">
                 <ul>
                     <li><a href="">о нас</a></li>
-                    <li><a href="">деятельность</a></li>
                     <li><a href="">новости</a></li>
                     <li><a href="">галерея</a></li>
-                    <li><a href="">другое</a></li>
+                    <li><a href="">бойцам</a></li>
+                    <li><a href="">контакты</a></li>
+                    <li><a href="">сотрудничество</a></li>
+                    <li><a href="">Q&A</a></li>
                 </ul>
             </div>
             <div className="Header-slice__headerButton">

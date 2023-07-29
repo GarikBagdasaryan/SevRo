@@ -76,6 +76,7 @@
 // Colors
 $color-dark: #1a1a1a;
 $color-white: #ffffff;
+$color-background: #F7F7F7;
 $color-primary: #0078B7;
 $color-secondary: #0096C8;
 $color-rarly: #033E8A;
@@ -84,14 +85,14 @@ $color-rarly: #033E8A;
 body {
   margin: 0;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $color-dark;
-  color: $color-white;
+  background-color: $color-background;
+  color: $color-dark;
 }
 
 a,
@@ -189,6 +190,8 @@ a:hover {
       display: flex;
       justify-content: space-between;
       gap: 24px;
+      font-size: 20px;
+ 
     }
 
     a {
@@ -208,13 +211,10 @@ a:hover {
     .Header-slice__headerButton__button {
       display: flex;
       align-items: center;
-
+      border: 2px solid rgba(0, 0, 0, 0.20);
       padding: 6px 16px;
       width: 129px;
       border-radius: 10px;
-      border-color: $color-primary;
-      border-bottom: $color-primary;
-      border-right: $color-primary;
       background: $color-primary;
       cursor: pointer;
       font-family: Montserrat;
@@ -249,7 +249,7 @@ a:hover {
     flex-direction: row;
 
     .Statistics-slice__title {
-      color: $color-white;
+      color: $color-primary;
       font-family: Montserrat;
       font-size: 64px;
       font-style: normal;
@@ -284,6 +284,7 @@ a:hover {
     }
 
     .Rso-slice__info__title {
+      color: $color-primary;
       margin-bottom: 33px;
       width: 580px;
       @include font-title;
@@ -644,7 +645,10 @@ a:hover {
         }
 
         .News-slice__slider__card__text {
-          padding: 8px 12px 23px 12px;
+          padding-top: 8px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-bottom: 10px;
 
           .News-slice__slider__card__text__title {
             margin-bottom: 12px;
@@ -658,7 +662,7 @@ a:hover {
           .News-slice__slider__card__text__description {
 
             display: -webkit-box;
-            -webkit-line-clamp: 8;
+            -webkit-line-clamp: 10;
             -webkit-box-orient: vertical;
             overflow: hidden;
           }
