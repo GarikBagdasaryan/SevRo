@@ -54,7 +54,7 @@ function Footer() {
 						<div className="Footer-slice__content__info__button">
 							<button className="Footer-slice__content__info__button-style">
 								Вступить
-								<img src="./img/arrow-right.png"></img>
+								<img src="./img/arrow-right-dark.png"></img>
 							</button>
 						</div>
 					</div>
