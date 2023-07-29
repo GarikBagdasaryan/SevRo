@@ -14,10 +14,7 @@ function StatisticsSlice() {
                     <div className="Statistics-slice__fighters_text">бойцов</div>
                     <div className="Statistics-slice__fighters_cout Statistics-slice__title">1000+</div>
                 </div>
-                <div className="Statistics-slice__years">
-                    <div className="Statistics-slice__years_text">лет</div>
-                    <div className="Statistics-slice__years_cout Statistics-slice__title">8</div>
-                </div>
+            
             </div>
         </div>
     );
