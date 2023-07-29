@@ -190,11 +190,13 @@ a:hover {
       display: flex;
       justify-content: space-between;
       gap: 24px;
-      font-size: 20px;
 
+      font-size: 20px;
+      font-weight: 500;
     }
 
     a {
+      color: $color-background;
       text-decoration: none;
       user-select: none;
     }
@@ -266,6 +268,13 @@ a:hover {
     display: flex;
     flex-direction: column;
   }
+
+  .Statistics-slice__directions_text,
+  .Statistics-slice__detachment_text,
+  .Statistics-slice__fighters_text,
+  .Statistics-slice__years_text {
+    font-size: 20px;
+  }
 }
 
 .Rso-slice {
@@ -297,8 +306,9 @@ a:hover {
       }
 
       .Rso-slice__info__description {
-
+        font-size: 20px;
         margin-bottom: 24px;
+        line-height: 130%;
       }
 
       .Rso-slice__info__button {
@@ -315,7 +325,6 @@ a:hover {
           border-radius: 10px;
           border: 2px solid rgba(0, 0, 0, 0.20);
           background: $color-primary;
-          box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25), -6px -6px 8px 0px rgba(0, 0, 0, 0.50);
           outline: none;
           color: $color-white;
           font-family: Montserrat;
@@ -353,7 +362,6 @@ a:hover {
         border-radius: 10px;
         border: 1px solid rgba(0, 0, 0, 0.20);
         background: $color-primary;
-        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
         color: $color-white;
         font-family: Montserrat;
         font-size: 32px;
@@ -537,6 +545,7 @@ a:hover {
           width: auto;
           @include font-title;
           text-transform: none;
+          color: $color-primary;
         }
 
         .News-slice__slider__header-icons {
@@ -548,6 +557,7 @@ a:hover {
           .News-slice__slider__header-icons__tg,
           .News-slice__slider__header-icons__vk {
             cursor: pointer;
+            fill: $color-dark;
           }
 
           .News-slice__slider__header-icons__tg:hover,
@@ -581,10 +591,11 @@ a:hover {
           justify-content: center;
           align-items: center;
           border-radius: 10px;
-          border: 1px solid rgba(0, 0, 0, 0.20);
-          background: $color-dark;
-          box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
+
+
           cursor: pointer;
+          border: 1px solid rgba(0, 0, 0, 0.20);
+          background: $color-white;
         }
 
         .News-slice__slider__header-arrows_right {
@@ -594,10 +605,9 @@ a:hover {
           justify-content: center;
           align-items: center;
           border-radius: 10px;
-          border: 1px solid rgba(0, 0, 0, 0.20);
-          background: $color-dark;
-          box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.50);
           cursor: pointer;
+          border: 1px solid rgba(0, 0, 0, 0.20);
+          background: $color-white;
         }
 
         .News-slice__slider__header-arrows_left:hover,
@@ -628,10 +638,11 @@ a:hover {
 
       .News-slice__slider__card {
         width: 280px;
-        height: 410px;
+        height: 400px;
+
         border-radius: 15px;
         border: 1px solid rgba(0, 0, 0, 0.20);
-        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
+        background: $color-white;
         cursor: pointer;
         overflow: hidden;
 
@@ -641,14 +652,12 @@ a:hover {
           height: 150px;
           border-radius: 15px 15px 0px 0px;
           transition: 0.4s;
-          margin-bottom: 8px;
-          box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset, -4px -4px 8px 0px rgba(0, 0, 0, 0.50) inset;
           z-index: 1;
 
           img {
-            position: relative;
             z-index: -2;
           }
+
         }
 
         .News-slice__slider__card__text {
@@ -657,19 +666,25 @@ a:hover {
           padding-right: 12px;
           padding-bottom: 10px;
 
+
           .News-slice__slider__card__text__title {
             margin-bottom: 12px;
-            font-size: 22px;
-            font-weight: 500;
+            font-size: 20px;
+            font-weight: 600;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
           }
 
           .News-slice__slider__card__text__description {
-
+            color: var(--txt-dark, #1A1A1A);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 110%;
             display: -webkit-box;
-            -webkit-line-clamp: 10;
+            -webkit-line-clamp: 11;
             -webkit-box-orient: vertical;
             overflow: hidden;
           }
@@ -678,6 +693,7 @@ a:hover {
 
       .News-slice__slider__card:hover {
         box-shadow: 0px 0px 8px 0px rgba(0, 120, 183, 0.25);
+
       }
 
       .News-slice__slider__card:active {
@@ -731,6 +747,7 @@ a:hover {
 
       .Footer-slice__content__info__name {
         max-width: 578px;
+        color: $color-primary;
         font-family: Gotham;
         font-size: 48px;
         font-weight: 700;

@@ -13,7 +13,7 @@ function App() {
 			<StatisticsSlice />
 			<RsoSlice />
 			<VideoSlice />
-			<DirectionsSlice />
+
 			<NewsSlice />
 			<Footer />
 		</div>

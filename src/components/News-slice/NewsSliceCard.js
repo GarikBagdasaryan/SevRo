@@ -6,7 +6,6 @@ function NewsSliceCard() {
 			</div>
 			<div className="News-slice__slider__card__text">
 				<div className="News-slice__slider__card__text__title">
-					{" "}
 					8 лет СевРо
 				</div>
 				<div className="News-slice__slider__card__text__description">
