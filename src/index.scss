@@ -572,6 +572,9 @@ a:hover {
           -moz-border-radius: 50%;
           -webkit-border-radius: 50%;
           -khtml-border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
 
@@ -588,11 +591,20 @@ a:hover {
       border-radius: 10px;
       border: 1px solid rgba(0, 0, 0, 0.20);
 
+      .Quastion-slice__block__title {
+        .Quastion-slice__block__title__circle {
+          img {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
       p {
         padding-left: 24px;
         padding-right: 24px;
         background: $color-background;
       }
+
     }
 
   }
