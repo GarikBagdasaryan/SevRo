@@ -143,16 +143,15 @@ a:hover {
       font-style: normal;
       font-weight: 600;
       width: 235px;
-      height: 47px;
-      text-align: left;
-      line-height: normal;
+      height: 45px;
+
       letter-spacing: 0.48px;
       text-transform: uppercase;
       padding: 9px 19px;
       border-radius: 10px;
       border: 3px solid $color-primary;
       background: transparent;
-      outline: none;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -750,7 +749,7 @@ a:hover {
     }
 
     .Footer-slice__content__info {
-      margin-top: -10px;
+      margin-top: -5px;
 
       .Footer-slice__content__info__name {
         max-width: 578px;
@@ -759,16 +758,18 @@ a:hover {
         font-size: 48px;
         font-weight: 700;
         line-height: 130%;
+        margin-bottom: 24px;
       }
 
       .Footer-slice__content__info__button {
-        padding-top: 24px;
+
 
         .Footer-slice__content__info__button-style {
           font-size: 24px;
           font-weight: 600;
           font-family: Montserrat;
           width: 235px;
+          height: 48px;
           line-height: normal;
           letter-spacing: 0.48px;
           text-transform: uppercase;
@@ -777,11 +778,13 @@ a:hover {
           align-items: center;
           padding: 9px 19px;
           background-color: transparent;
-          outline: none;
+
           transition: 0.3s;
           cursor: pointer;
           border-radius: 10px;
           border: 3px solid rgba(0, 0, 0, 0.20);
+
+
         }
 
         .Footer-slice__content__info__button-style:hover {
@@ -805,6 +808,11 @@ a:hover {
       font-weight: 300;
       letter-spacing: 0.32px;
       text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        opacity: .8;
+      }
     }
   }
 }
