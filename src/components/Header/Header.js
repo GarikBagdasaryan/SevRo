@@ -1,3 +1,4 @@
+import '../Header/header.scss';
 function Header() {
     return (
 

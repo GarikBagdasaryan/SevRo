@@ -1,3 +1,5 @@
+import '../Rso-slice/rso.scss';
+
 function RsoSlice() {
     return (
 

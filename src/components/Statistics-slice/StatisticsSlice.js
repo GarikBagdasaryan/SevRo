@@ -1,3 +1,5 @@
+import '../Statistics-slice/statistics.scss';
+
 function StatisticsSlice() {
     return (
         <div className="Statistics-slice">
@@ -14,7 +16,7 @@ function StatisticsSlice() {
                     <div className="Statistics-slice__fighters_text">бойцов</div>
                     <div className="Statistics-slice__fighters_cout Statistics-slice__title">1000+</div>
                 </div>
-            
+
             </div>
         </div>
     );

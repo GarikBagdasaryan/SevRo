@@ -1,3 +1,4 @@
+import '../Footer/footer.scss';
 function Footer() {
 	return (
 		<div className="Footer-slice">

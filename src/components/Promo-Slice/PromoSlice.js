@@ -1,6 +1,6 @@
 
 import Header from "../Header/Header";
-
+import '../Promo-Slice/promo.scss';
 
 function PromoSlice() {
     return (

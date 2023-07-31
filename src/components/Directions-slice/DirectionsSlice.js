@@ -1,3 +1,4 @@
+import '../Directions-slice/direction.scss';
 function DirectionsSlice() {
     const LoadImg = event => {
         event.currentTarget.classList.add('active');

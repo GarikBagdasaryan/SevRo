@@ -1,0 +1,73 @@
+@import "../../index";
+
+.Header-slice {
+
+    padding-top: 40px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    .Header-slice__headerLogo {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .Header-slice__headerLinks {
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        a {
+            color: $color-background;
+            text-decoration: none;
+            user-select: none;
+        }
+
+        a:hover {
+            color: $color-secondary;
+        }
+    }
+
+    .Header-slice__headerButton {
+        display: flex;
+        align-items: center;
+
+        .Header-slice__headerButton__button {
+            display: flex;
+            align-items: center;
+            border: 2px solid rgba(0, 0, 0, 0.20);
+            padding: 6px 16px;
+            width: 129px;
+            border-radius: 10px;
+            color: $color-background;
+            background: $color-primary;
+            cursor: pointer;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            align-items: center;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .Header-slice__headerButton__button:hover {
+            border-radius: 10px;
+            background: $color-secondary;
+            border-color: $color-secondary;
+        }
+
+        .Header-slice__headerButton__button:active {
+            background: $color-rarly;
+            box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+        }
+    }
+}

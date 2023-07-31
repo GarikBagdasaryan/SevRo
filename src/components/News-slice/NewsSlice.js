@@ -1,4 +1,5 @@
 import NewsSliceCard from "./NewsSliceCard";
+import '../News-slice/news.scss';
 
 function NewsSlice() {
 	return (

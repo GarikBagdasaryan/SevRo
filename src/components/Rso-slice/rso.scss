@@ -1,0 +1,108 @@
+@import "../../index";
+
+.Rso-slice {
+    margin-bottom: 80px;
+
+    .Rso-slice-container {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .Rso-slice__info {
+
+            width: 560px;
+
+            .Rso-slice__info__header {
+                @include font-title-italic;
+                margin-bottom: 8px;
+
+            }
+
+            .Rso-slice__info__title {
+                color: $color-primary;
+                margin-bottom: 33px;
+
+                @include font-title;
+                width: 576px;
+            }
+
+            .Rso-slice__info__description {
+                font-size: 20px;
+                margin-bottom: 24px;
+                line-height: 130%;
+            }
+
+            .Rso-slice__info__button {
+
+                .Rso-slice__info__button__stylebtn {
+                    font-weight: 500;
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 8px 16px;
+                    text-align: left;
+                    gap: 32px;
+                    width: 210px;
+                    border-radius: 10px;
+                    border: 2px solid rgba(0, 0, 0, 0.20);
+                    background: $color-primary;
+                    outline: none;
+                    color: $color-white;
+                    font-family: Montserrat;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    cursor: pointer;
+                    transition: 0.3s;
+                }
+            }
+
+            .Rso-slice__info__button__stylebtn:hover {
+                background: $color-secondary;
+            }
+
+            .Rso-slice__info__button__stylebtn:active {
+                background: $color-rarly;
+                box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+            }
+        }
+
+        .Rso-slice__buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            justify-content: center;
+            width: 344px;
+            align-items: flex-end;
+
+
+            .Rso-slice__button__style {
+                padding: 8px 32px 8px 16px;
+                text-align: right;
+                border-radius: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.20);
+                background: $color-primary;
+                color: $color-white;
+                font-family: Montserrat;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 130%;
+                text-transform: lowercase;
+                outline: none;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                max-width: 244px;
+                justify-self: right;
+            }
+
+            .Rso-slice__button__style:nth-child(even) {
+                align-self: flex-start;
+            }
+        }
+    }
+}
