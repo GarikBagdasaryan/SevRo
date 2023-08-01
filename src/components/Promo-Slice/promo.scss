@@ -1,65 +1,64 @@
 @import "../../index";
 
-@media (max-width: $breakpoint_s) {
-    .Promo-slice {
-        .Promo-slice__info {
-
-            font-size: 36px !important;
-
-        }
-    }
-}
-
 .Promo-slice {
-    min-height: 740px;
-    background-image: url(../../../public/img/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: $marginslice;
+	min-height: 740px;
+	background-image: url(../../../public/img/background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	@include marginslice(80px);
 
-    .Promo-slice__info {
-        padding-top: 151px;
-        max-width: 390px;
-        color: $color-white;
-        font-family: Gotham;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 130%;
-    }
+	.Promo-slice__info {
+		padding-top: 151px;
+		max-width: 390px;
+		color: $color-white;
+		font-family: Gotham;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 130%;
+	}
 
-    .Promo-slice__button {
-        padding-top: 40px;
+	.Promo-slice__button {
+		padding-top: 40px;
 
-        .Promo-slice__button__stylebtn {
-            color: $color-white;
-            font-family: Montserrat;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            width: 235px;
-            height: 45px;
-            letter-spacing: 0.48px;
-            text-transform: uppercase;
-            padding: 9px 19px;
-            border-radius: 10px;
-            border: 3px solid $color-primary;
-            background: transparent;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-    }
+		.Promo-slice__button__stylebtn {
+			color: $color-white;
+			font-family: Montserrat;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 600;
+			width: 235px;
+			height: 45px;
+			letter-spacing: 0.48px;
+			text-transform: uppercase;
+			padding: 9px 19px;
+			border-radius: 10px;
+			border: 3px solid $color-primary;
+			background: transparent;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+	}
 
-    .Promo-slice__button__stylebtn:hover {
-        background-color: $color-secondary;
-    }
+	.Promo-slice__button__stylebtn:hover {
+		background-color: $color-secondary;
+	}
 
-    .Promo-slice__button__stylebtn:active {
-        background: $color-rarly;
-        box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
-    }
+	.Promo-slice__button__stylebtn:active {
+		background: $color-rarly;
+		box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset,
+			4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+	}
+}
+@media (max-width: $breakpoint_s) {
+	.Promo-slice {
+		@include marginslice(40px);
+		.Promo-slice__info {
+			font-size: 36px !important;
+		}
+	}
 }
