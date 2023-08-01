@@ -1,4 +1,6 @@
 import '../Quastion-Slice/quastion.scss';
+
+
 function QuastionSlice() {
     return (
         <div className="Quastion-slice">

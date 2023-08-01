@@ -1,7 +1,105 @@
 @import "../../index";
 
+@media (max-width: $breakpoint_m) {
+    .Quastion-slice {
+
+
+        .Quastion-slice__header {}
+
+        .Quastion-slice__blocks {
+
+
+            .Quastion-slice__block {
+                width: 100% !important;
+
+                .Quastion-slice__block__title {
+                    font-size: 16px !important;
+
+
+                    .Quastion-slice__block__title__circle {
+                        width: 7% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_s) {
+    .Quastion-slice {
+
+
+        .Quastion-slice__header {}
+
+        .Quastion-slice__blocks {
+
+
+            .Quastion-slice__block {
+
+
+                .Quastion-slice__block__title {
+
+
+                    .Quastion-slice__block__title__circle {
+                        width: 9% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_sm) {
+    .Quastion-slice {
+
+
+        .Quastion-slice__header {}
+
+        .Quastion-slice__blocks {
+
+
+            .Quastion-slice__block {
+
+
+                .Quastion-slice__block__title {
+                    justify-content: space-around !important;
+                    column-gap: 15px !important;
+
+                    .Quastion-slice__block__title__circle {
+                        width: 13% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .Quastion-slice {
+
+
+        .Quastion-slice__header {}
+
+        .Quastion-slice__blocks {
+
+
+            .Quastion-slice__block {
+
+
+                .Quastion-slice__block__title {
+
+
+                    .Quastion-slice__block__title__circle {
+                        width: 20% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .Quastion-slice {
-    margin-bottom: 80px;
+    margin-bottom: $marginslice;
 
     .Quastion-slice__header {
         color: $color-dark;

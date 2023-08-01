@@ -1,5 +1,19 @@
 @import "../../index";
 
+@media (max-width: $breakpoint_xxl) {
+    .Header-slice {
+        .Header-slice__headerLinks {
+            display: none;
+        }
+    }
+
+    .Header-slice__headerButton {
+
+        display: none !important;
+
+    }
+}
+
 .Header-slice {
 
     padding-top: 40px;

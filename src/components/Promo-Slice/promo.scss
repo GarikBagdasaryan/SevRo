@@ -1,12 +1,22 @@
 @import "../../index";
 
+@media (max-width: $breakpoint_s) {
+    .Promo-slice {
+        .Promo-slice__info {
+
+            font-size: 36px !important;
+
+        }
+    }
+}
+
 .Promo-slice {
     min-height: 740px;
     background-image: url(../../../public/img/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 80px;
+    margin-bottom: $marginslice;
 
     .Promo-slice__info {
         padding-top: 151px;

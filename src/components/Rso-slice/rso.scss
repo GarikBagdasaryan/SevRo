@@ -1,7 +1,125 @@
 @import "../../index";
 
+@media (max-width: $breakpoint_xxl) {
+
+
+    .Rso-slice {
+
+
+        .Rso-slice-container {
+
+
+            .Rso-slice__info {
+
+
+
+                .Rso-slice__info__header {
+                    width: 100%;
+                }
+
+                .Rso-slice__info__title {
+                    width: 100% !important;
+                }
+
+                .Rso-slice__info__description {
+                    width: 100% !important;
+                }
+
+                .Rso-slice__info__button {
+                    width: 100%;
+
+                    .Rso-slice__info__button__stylebtn {}
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_l) {
+
+
+    .Rso-slice {
+
+
+        .Rso-slice-container {
+            flex-direction: column !important;
+            row-gap: 68px !important;
+
+            .Rso-slice__info {
+                order: 1;
+            }
+
+            .Rso-slice__buttons {
+                order: 2;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_s) {
+
+
+    .Rso-slice {
+
+
+        .Rso-slice-container {
+
+
+            .Rso-slice__info {
+
+                .Rso-slice__info__title {
+                    font-size: 24px !important;
+                }
+
+                .Rso-slice__info__description {
+                    font-size: 16px !important;
+                }
+            }
+
+            .Rso-slice__buttons {}
+        }
+    }
+}
+
+@media (max-width: $breakpoint_sm) {
+
+
+    .Rso-slice {
+
+
+        .Rso-slice-container {
+
+
+            .Rso-slice__info {
+
+                .Rso-slice__info__title {
+                    font-size: 24px !important;
+                }
+
+                .Rso-slice__info__description {
+                    font-size: 16px !important;
+                }
+            }
+
+            .Rso-slice__buttons {
+                min-width: 100% !important;
+
+                .Rso-slice__button__style {
+                    width: 40% !important;
+                    font-size: 20px !important;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .Rso-slice {
-    margin-bottom: 80px;
+    margin-bottom: $marginslice;
 
     .Rso-slice-container {
         padding-top: 16px;
@@ -9,10 +127,11 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        column-gap: 58px;
 
         .Rso-slice__info {
 
-            width: 560px;
+
 
             .Rso-slice__info__header {
                 @include font-title-italic;
@@ -23,15 +142,15 @@
             .Rso-slice__info__title {
                 color: $color-primary;
                 margin-bottom: 33px;
-
                 @include font-title;
-                width: 576px;
+                width: 560px;
             }
 
             .Rso-slice__info__description {
                 font-size: 20px;
                 margin-bottom: 24px;
                 line-height: 130%;
+                width: 560px;
             }
 
             .Rso-slice__info__button {
@@ -75,7 +194,7 @@
             flex-direction: column;
             gap: 40px;
             justify-content: center;
-            width: 344px;
+            min-width: 344px;
             align-items: flex-end;
 
 

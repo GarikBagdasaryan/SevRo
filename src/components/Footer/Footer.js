@@ -4,48 +4,53 @@ function Footer() {
 		<div className="Footer-slice">
 			<div className="container">
 				<div className="Footer-slice__content">
-					<div className="Footer-slice__content__links">
-						навигация
-						<div className="Footer-slice__content__links__nav">
-							<ul>
-								<li>
-									<a href="">о нас</a>
-								</li>
-								<li>
-									<a href="">деятельность</a>
-								</li>
-								<li>
-									<a href="">новости</a>
-								</li>
-								<li>
-									<a href="">галерея</a>
-								</li>
-								<li>
-									<a href="">другое</a>
-								</li>
-								<li>
-									<a href="">Q/A</a>
-								</li>
-							</ul>
+					<div className="Footer-slice__content_nav">
+						<div className="Footer-slice__content__links">
+							навигация
+							<div className="Footer-slice__content__links__nav">
+								<ul>
+									<li>
+										<a href="">о нас</a>
+									</li>
+									<li>
+										<a href="">новости</a>
+									</li>
+									<li>
+										<a href="">галерея</a>
+									</li>
+									<li>
+										<a href="">бойцам</a>
+									</li>
+									<li>
+										<a href="">контакты</a>
+									</li>
+									<li>
+										<a href="">сотрудничество</a>
+									</li>
+									<li>
+										<a href="">Q/A</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div className="Footer-slice__content__contact">
-						контакты
-						<div className="Footer-slice__content__contact_nav">
-							<ul>
-								<li>
-									<a href="">вконтакте</a>
-								</li>
-								<li>
-									<a href="">телеграм</a>
-								</li>
-								<li>
-									<a href="">+79780002255</a>
-								</li>
-								<li>
-									<a href="">sevro@mai.ru</a>
-								</li>
-							</ul>
+						<div className="Footer-slice__content__contact">
+							контакты
+							<div className="Footer-slice__content__contact_nav">
+								<ul>
+									<li>
+										<a href="">вконтакте</a>
+									</li>
+									<li>
+										<a href="">телеграм</a>
+									</li>
+									<li>
+										<a href="">+79780002255</a>
+									</li>
+									<li>
+										<a href="">sevro@mai.ru</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div className="Footer-slice__content__info">
