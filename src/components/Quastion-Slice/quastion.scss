@@ -44,6 +44,10 @@
                         width: 9% !important;
                     }
                 }
+
+                .Quastion-slice__block__text {
+                    font-size: 16px !important;
+                }
             }
         }
     }
@@ -157,20 +161,16 @@
                 }
             }
 
-            .Quastion-slice__block__text {
-                transition: 0.8s;
-            }
+
         }
 
         details[open] {
             border-radius: 10px;
             border: 1px solid rgba(0, 0, 0, 0.20);
 
-            .Quastion-slice__block__text {
-                transition: 0.8s;
-            }
 
             p {
+                transition: 0.8s !important;
                 padding-left: 24px;
                 padding-right: 24px;
                 background: $color-background;
@@ -179,6 +179,7 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+
             }
 
             .Quastion-slice__block__title {
