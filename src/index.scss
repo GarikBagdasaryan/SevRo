@@ -1,87 +1,88 @@
 @font-face {
-  font-family: "Montserrat";
-  font-weight: normal;
-  src: local("Montserrat"),
-    url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+	font-family: "Montserrat";
+	font-weight: normal;
+	src: local("Montserrat"),
+		url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Montserrat";
-  font-weight: 300;
-  src: local("Montserrat"),
-    url("./fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+	font-family: "Montserrat";
+	font-weight: 300;
+	src: local("Montserrat"),
+		url("./fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Montserrat";
-  font-weight: 500;
-  src: local("Montserrat"),
-    url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+	font-family: "Montserrat";
+	font-weight: 500;
+	src: local("Montserrat"),
+		url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Montserrat";
-  font-weight: 500;
-  src: local("Montserrat"),
-    url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+	font-family: "Montserrat";
+	font-weight: 500;
+	src: local("Montserrat"),
+		url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Montserrat";
-  font-weight: 600;
-  src: local("Montserrat"),
-    url("./fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+	font-family: "Montserrat";
+	font-weight: 600;
+	src: local("Montserrat"),
+		url("./fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Montserrat";
-  font-weight: 700;
-  src: local("Montserrat"),
-    url("./fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+	font-family: "Montserrat";
+	font-weight: 700;
+	src: local("Montserrat"),
+		url("./fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Montserrat";
-  font-weight: 800;
-  src: local("Montserrat"),
-    url("./fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+	font-family: "Montserrat";
+	font-weight: 800;
+	src: local("Montserrat"),
+		url("./fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gotham";
-  font-weight: 700;
-  src: local("Gotham"),
-    url("./fonts/Gotham/gotham_bold.otf") format("truetype");
+	font-family: "Gotham";
+	font-weight: 700;
+	src: local("Gotham"),
+		url("./fonts/Gotham/gotham_bold.otf") format("truetype");
 }
-
 
 // Fonts
 @mixin font-title {
-  font-family: Gotham;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-  text-transform: capitalize;
+	font-family: Gotham;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 130%;
+	text-transform: capitalize;
 }
 
 @mixin font-title-italic {
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 500;
-  line-height: normal;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 500;
+	line-height: normal;
 }
 
 // Colors
 $color-dark: #1a1a1a;
 $color-white: #ffffff;
-$color-background: #F7F7F7;
-$color-primary: #0078B7;
-$color-secondary: #0096C8;
-$color-rarly: #033E8A;
+$color-background: #f7f7f7;
+$color-primary: #0078b7;
+$color-secondary: #0096c8;
+$color-rarly: #033e8a;
 
-$marginslice: 80px;
+@mixin marginslice($px) {
+	margin-bottom: $px;
+}
 
 $breakpoint_xxl: 1328px;
 $breakpoint_xl: 1054px;
@@ -90,52 +91,39 @@ $breakpoint_m: 750px;
 $breakpoint_s: 642px;
 $breakpoint_sm: 500px;
 
-
-
 body {
-  margin: 0;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: $color-background;
-  color: $color-dark;
-
+	margin: 0;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $color-background;
+	color: $color-dark;
 }
 
 a,
 button {
-  color: $color-dark;
+	color: $color-dark;
 }
 
 a:hover {
-  color: $color-primary;
+	color: $color-primary;
 }
 
 .container {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding-top: 16px;
-  padding-left: 72px;
-  padding-right: 72px;
-
+	max-width: 1180px;
+	margin: 0 auto;
+	padding-top: 16px;
+	padding-left: 72px;
+	padding-right: 72px;
 }
 
 @media (max-width: $breakpoint_m) {
-
-  .container {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-
-  }
-
-
-}
-
-@media (max-width: $breakpoint_s) {
-
-  $marginslice: 40px;
+	.container {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
 }

@@ -2,10 +2,14 @@
 
 
 .Video-slice {
-    margin-bottom: $marginslice;
+	@include marginslice(80px);
+	.Video-slice__style {
+		width: 100%;
+	}
+}
 
-    .Video-slice__style {
-        width: 100%;
-
-    }
+@media (max-width: $breakpoint_s) {
+	.Video-slice {
+		@include marginslice(40px);
+	}
 }
