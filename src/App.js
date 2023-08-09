@@ -5,7 +5,7 @@ import StatisticsSlice from "./components/Statistics-slice/StatisticsSlice";
 import RsoSlice from "./components/Rso-slice/RsoSlice";
 import VideoSlice from "./components/Video-slice/VideoSlice";
 import QuastionSlice from "./components/Quastion-Slice/QuastionSlice";
-import DirectionsSlice from "./components/Directions-slice/DirectionsSlice";
+import FormSlice from "./components/Form-slice/FormSlice";
 
 function App() {
 	return (
@@ -16,6 +16,7 @@ function App() {
 			<VideoSlice />
 			<QuastionSlice />
 			<NewsSlice />
+			<FormSlice />
 			<Footer />
 		</div>
 	);
