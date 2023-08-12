@@ -10,8 +10,8 @@ function FormSlice() {
                     <div className="Form-slice__form__title"> Если вам нужны молодые специалисты</div>
                     <div className="Form-slice__form__description">Вы можете присылать заявки по форме</div>
                     <form action='#'>
-                        <input type="text" placeholder="Ваше имя" name="email" required></input>
-                        <input type="password" placeholder="Ваша почта" name="psw" required></input>
+                        <input type="text" placeholder="Ваше имя" name="name" required></input>
+                        <input type="email" placeholder="Ваша почта" name="email" required></input>
                         <textarea type="message" placeholder="Ваше сообщение" name="msg" required></textarea>
                         <div className="Form-slice__form__button">
                             <button className="Form-slice__form__button__stylebtn" type="submit">

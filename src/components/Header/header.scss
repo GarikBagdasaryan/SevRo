@@ -104,10 +104,123 @@
 
             .Header-slice__burger-modal {
                 display: none;
+                background: var(--secondary, #0096C8);
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                top: 0;
+                left: 0;
+                right: 0;
+
+                .Header-slice__burger-modal-items {
+                    padding-top: 40px;
+                    width: 360px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    .Header-slice__burger-modal__headerLogo {
+                        display: flex;
+                        gap: 16px;
+                        align-items: center;
+
+                    }
+
+                    .Header-slice__burger-modal__headerLinks {
+
+
+                        ul {
+                            list-style: none;
+                            padding-left: 0;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                            font-size: 20px;
+                            font-weight: 500;
+
+                        }
+
+                        a {
+                            color: $color-background;
+                            text-decoration: none;
+                            user-select: none;
+                        }
+
+                        a:hover {
+                            color: $color-secondary;
+                        }
+                    }
+
+                    .Header-slice__burger-modal__headerButton {
+                        display: flex;
+                        align-items: center;
+
+                        .Header-slice__burger-modal__headerButton__button {
+                            display: flex;
+                            align-items: center;
+                            padding: 6px 16px;
+                            width: 129px;
+                            border-radius: 10px;
+                            color: $color-background;
+                            background: transparent;
+                            cursor: pointer;
+                            font-family: Montserrat;
+                            font-size: 20px;
+                            font-style: normal;
+                            align-items: center;
+                            line-height: normal;
+                            font-weight: 500;
+                            border: 2px solid $color-background;
+                        }
+
+                        .Header-slice__burger-modal__headerButton__button:hover {
+                            border-radius: 10px;
+                            background: $color-secondary;
+                            border-color: $color-secondary;
+                        }
+
+                        .Header-slice__burger-modal__headerButton__button:active {
+                            background: $color-rarly;
+                            box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+                        }
+                    }
+
+                    .Header-slice__burger-modal__header-icons {
+                        display: flex;
+                        justify-content: start;
+                        flex-direction: row;
+                        gap: 16px;
+                        align-items: center;
+
+                        .Header-slice__burger-modal__header-icons__tg,
+                        .Header-slice__burger-modal__header-icons__vk {
+                            cursor: pointer;
+                            fill: $color-white;
+                        }
+
+                        .Header-slice__burger-modal__header-icons__tg:hover,
+                        .Header-slice__burger-modal__header-icons__vk:hover {
+                            path {
+                                fill: $color-secondary;
+                            }
+                        }
+
+                        .Header-slice__burger-modal__header-icons__tg:active,
+                        .Header-slice__burger-modal__header-icons__vk:active {
+                            path {
+                                fill: $color-primary;
+                            }
+                        }
+                    }
+                }
             }
 
             .Header-slice__burger__button {
                 cursor: pointer;
+                border: none;
+                background: transparent;
+                z-index: 100;
 
                 #bar1,
                 #bar2,
@@ -116,6 +229,7 @@
                     position: absolute;
 
                 }
+
             }
 
 
