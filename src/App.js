@@ -1,5 +1,5 @@
 import Footer from "./components/Footer/Footer";
-import Newspage from "./Newspage";
+import Newspage from "./pages/News-page/Newspage";
 import Homepage from "./pages/Home-page/Homepage";
 import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
 

@@ -1,7 +1,7 @@
-import NewsCard from "../../../components/News-slice/NewsSliceCard";
+import NewsCard from "../../../components/News-slice/NewsCard";
 import "../../../components/News-slice/newscard.scss";
 import "../News-slice/news.scss";
-// Commit
+
 function NewsSlice() {
 	return (
 		<div className="News-slice">
