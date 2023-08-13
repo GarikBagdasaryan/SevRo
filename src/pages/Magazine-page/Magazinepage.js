@@ -1,5 +1,5 @@
 import Header from "../../components/Header/Header";
-import NewsSlice from "../News-page/News-slice/NewsSlice";
+import NewsSlice from "../Magazine-page/MagazineCard-slice/MagazineCard";
 
 function Newspage() {
 	return (

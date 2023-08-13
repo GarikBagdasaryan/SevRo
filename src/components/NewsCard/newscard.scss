@@ -5,10 +5,11 @@
 	height: 400px;
 
 	border-radius: 15px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
+
 	background: $color-white;
 	cursor: pointer;
 	overflow: hidden;
+	outline: 1px solid rgba(0, 0, 0, 0.2);
 
 	.News-card__photo {
 		width: 280px;
