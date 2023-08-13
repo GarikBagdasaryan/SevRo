@@ -1,5 +1,6 @@
 import NewsSliceCard from "../../../components/News-slice/NewsSliceCard";
-import "../News-slice/news.scss";
+import "../../../components/News-slice/newscard.scss";
+import "../News-slice/news.scss"
 // Commit
 function NewsSlice() {
 	return (
