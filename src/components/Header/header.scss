@@ -1,255 +1,246 @@
 @import "../../index";
 
 @media (max-width: $breakpoint_xxl) {
-    .Header-slice {
-        .Header-slice__headerLinks {
-            display: none;
-        }
-    }
+	.Header-slice {
+		.Header-slice__headerLinks {
+			display: none;
+		}
+	}
 
-    .Header-slice__headerButton {
+	.Header-slice__headerButton {
+		display: none !important;
+	}
 
-        display: none !important;
-
-    }
-
-    .Header-slice__burger {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-    }
+	.Header-slice__burger {
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .Header-slice {
-    padding-top: 40px;
-    padding-bottom: 16px;
-    margin-bottom: 64px;
+	padding-top: 40px;
+	padding-bottom: 16px;
+	margin-bottom: 64px;
 
+	.Header-slice__sticky {
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
 
-    .Header-slice__sticky {
+		.Header-slice__headerLogo {
+			display: flex;
+			gap: 16px;
+			align-items: center;
+		}
 
-        display: flex;
-        justify-content: space-between;
+		.Header-slice__headerLinks {
+			ul {
+				list-style: none;
+				padding-left: 0;
+				display: flex;
+				justify-content: space-between;
+				gap: 24px;
 
+				font-size: 20px;
+				font-weight: 500;
+			}
 
-        .Header-slice__headerLogo {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-        }
+			a {
+				color: $color-background;
+				text-decoration: none;
+				user-select: none;
+			}
 
-        .Header-slice__headerLinks {
+			a:hover {
+				color: $color-secondary;
+			}
+		}
 
-            ul {
-                list-style: none;
-                padding-left: 0;
-                display: flex;
-                justify-content: space-between;
-                gap: 24px;
+		.Header-slice__headerButton {
+			display: flex;
+			align-items: center;
 
-                font-size: 20px;
-                font-weight: 500;
-            }
+			.Header-slice__headerButton__button {
+				display: flex;
+				align-items: center;
+				border: 2px solid rgba(0, 0, 0, 0.2);
+				padding: 6px 16px;
+				width: 129px;
+				border-radius: 10px;
+				color: $color-background;
+				background: $color-primary;
+				cursor: pointer;
+				font-family: Montserrat;
+				font-size: 20px;
+				font-style: normal;
+				align-items: center;
+				font-weight: 400;
+				line-height: normal;
+			}
 
-            a {
-                color: $color-background;
-                text-decoration: none;
-                user-select: none;
-            }
+			.Header-slice__headerButton__button:hover {
+				border-radius: 10px;
+				background: $color-secondary;
+				border-color: $color-secondary;
+			}
 
-            a:hover {
-                color: $color-secondary;
-            }
-        }
+			.Header-slice__headerButton__button:active {
+				background: $color-rarly;
+				box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset,
+					4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+			}
+		}
 
-        .Header-slice__headerButton {
-            display: flex;
-            align-items: center;
+		.Header-slice__burger {
+			display: none;
 
-            .Header-slice__headerButton__button {
-                display: flex;
-                align-items: center;
-                border: 2px solid rgba(0, 0, 0, 0.20);
-                padding: 6px 16px;
-                width: 129px;
-                border-radius: 10px;
-                color: $color-background;
-                background: $color-primary;
-                cursor: pointer;
-                font-family: Montserrat;
-                font-size: 20px;
-                font-style: normal;
-                align-items: center;
-                font-weight: 400;
-                line-height: normal;
-            }
+			.Header-slice__burger-modal {
+				display: none;
+				background: var(--secondary, #0096c8);
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+				top: 0;
+				left: 0;
+				right: 0;
 
-            .Header-slice__headerButton__button:hover {
-                border-radius: 10px;
-                background: $color-secondary;
-                border-color: $color-secondary;
-            }
+				.Header-slice__burger-modal-items {
+					padding-top: 40px;
+					width: 360px;
+					display: flex;
+					flex-direction: column;
+					gap: 40px;
 
-            .Header-slice__headerButton__button:active {
-                background: $color-rarly;
-                box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
-            }
-        }
+					.Header-slice__burger-modal__headerLogo {
+						display: flex;
+						gap: 16px;
+						align-items: center;
+					}
 
-        .Header-slice__burger {
-            display: none;
+					.Header-slice__burger-modal__headerLinks {
+						ul {
+							list-style: none;
+							padding-left: 0;
+							display: flex;
+							flex-direction: column;
+							gap: 24px;
+							font-size: 20px;
+							font-weight: 500;
+						}
 
+						a {
+							color: $color-background;
+							text-decoration: none;
+							user-select: none;
+						}
 
+						a:hover {
+							color: $color-secondary;
+						}
+					}
 
-            .Header-slice__burger-modal {
-                display: none;
-                background: var(--secondary, #0096C8);
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                z-index: 10;
-                top: 0;
-                left: 0;
-                right: 0;
+					.Header-slice__burger-modal__headerButton {
+						display: flex;
+						align-items: center;
 
-                .Header-slice__burger-modal-items {
-                    padding-top: 40px;
-                    width: 360px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 40px;
+						.Header-slice__burger-modal__headerButton__button {
+							display: flex;
+							align-items: center;
+							padding: 6px 16px;
+							width: 129px;
+							border-radius: 10px;
+							color: $color-background;
+							background: transparent;
+							cursor: pointer;
+							font-family: Montserrat;
+							font-size: 20px;
+							font-style: normal;
+							align-items: center;
+							line-height: normal;
+							font-weight: 500;
+							border: 2px solid $color-background;
+						}
 
-                    .Header-slice__burger-modal__headerLogo {
-                        display: flex;
-                        gap: 16px;
-                        align-items: center;
+						.Header-slice__burger-modal__headerButton__button:hover {
+							border-radius: 10px;
+							background: $color-secondary;
+							border-color: $color-secondary;
+						}
 
-                    }
+						.Header-slice__burger-modal__headerButton__button:active {
+							background: $color-rarly;
+							box-shadow: -4px -4px 8px 0px rgba(
+										255,
+										255,
+										255,
+										0.25
+									) inset,
+								4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+						}
+					}
 
-                    .Header-slice__burger-modal__headerLinks {
+					.Header-slice__burger-modal__header-icons {
+						display: flex;
+						justify-content: start;
+						flex-direction: row;
+						gap: 16px;
+						align-items: center;
 
+						.Header-slice__burger-modal__header-icons__tg,
+						.Header-slice__burger-modal__header-icons__vk {
+							cursor: pointer;
+							fill: $color-white;
+						}
 
-                        ul {
-                            list-style: none;
-                            padding-left: 0;
-                            display: flex;
-                            flex-direction: column;
-                            gap: 24px;
-                            font-size: 20px;
-                            font-weight: 500;
+						.Header-slice__burger-modal__header-icons__tg:hover,
+						.Header-slice__burger-modal__header-icons__vk:hover {
+							path {
+								fill: $color-secondary;
+							}
+						}
 
-                        }
+						.Header-slice__burger-modal__header-icons__tg:active,
+						.Header-slice__burger-modal__header-icons__vk:active {
+							path {
+								fill: $color-primary;
+							}
+						}
+					}
+				}
+			}
 
-                        a {
-                            color: $color-background;
-                            text-decoration: none;
-                            user-select: none;
-                        }
+			.Header-slice__burger__button {
+				cursor: pointer;
+				border: none;
+				background: transparent;
+				z-index: 100;
 
-                        a:hover {
-                            color: $color-secondary;
-                        }
-                    }
+				#bar1,
+				#bar2,
+				#bar3 {
+					transition: 0.3s;
+					position: absolute;
+				}
+			}
+		}
 
-                    .Header-slice__burger-modal__headerButton {
-                        display: flex;
-                        align-items: center;
+		.active-menu {
+			#bar1 {
+				transform: translateX(3px) rotateZ(45deg);
+			}
 
-                        .Header-slice__burger-modal__headerButton__button {
-                            display: flex;
-                            align-items: center;
-                            padding: 6px 16px;
-                            width: 129px;
-                            border-radius: 10px;
-                            color: $color-background;
-                            background: transparent;
-                            cursor: pointer;
-                            font-family: Montserrat;
-                            font-size: 20px;
-                            font-style: normal;
-                            align-items: center;
-                            line-height: normal;
-                            font-weight: 500;
-                            border: 2px solid $color-background;
-                        }
+			#bar2 {
+				opacity: 0;
+			}
 
-                        .Header-slice__burger-modal__headerButton__button:hover {
-                            border-radius: 10px;
-                            background: $color-secondary;
-                            border-color: $color-secondary;
-                        }
-
-                        .Header-slice__burger-modal__headerButton__button:active {
-                            background: $color-rarly;
-                            box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
-                        }
-                    }
-
-                    .Header-slice__burger-modal__header-icons {
-                        display: flex;
-                        justify-content: start;
-                        flex-direction: row;
-                        gap: 16px;
-                        align-items: center;
-
-                        .Header-slice__burger-modal__header-icons__tg,
-                        .Header-slice__burger-modal__header-icons__vk {
-                            cursor: pointer;
-                            fill: $color-white;
-                        }
-
-                        .Header-slice__burger-modal__header-icons__tg:hover,
-                        .Header-slice__burger-modal__header-icons__vk:hover {
-                            path {
-                                fill: $color-secondary;
-                            }
-                        }
-
-                        .Header-slice__burger-modal__header-icons__tg:active,
-                        .Header-slice__burger-modal__header-icons__vk:active {
-                            path {
-                                fill: $color-primary;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .Header-slice__burger__button {
-                cursor: pointer;
-                border: none;
-                background: transparent;
-                z-index: 100;
-
-                #bar1,
-                #bar2,
-                #bar3 {
-                    transition: 0.3s;
-                    position: absolute;
-
-                }
-
-            }
-
-
-
-        }
-
-        .active-menu {
-            #bar1 {
-                transform: translateX(3px) rotateZ(45deg);
-
-            }
-
-            #bar2 {
-                opacity: 0;
-            }
-
-            #bar3 {
-                transform: translateX(-23px) translateY(12px) rotateZ(-45deg);
-
-            }
-
-        }
-    }
+			#bar3 {
+				transform: translateX(-23px) translateY(12px) rotateZ(-45deg);
+			}
+		}
+	}
 }
