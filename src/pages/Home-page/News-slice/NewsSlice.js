@@ -1,6 +1,6 @@
-import NewsSliceCard from "../../../components/News-slice/NewsSliceCard";
+import NewsCard from "../../../components/News-slice/NewsSliceCard";
 import "../../../components/News-slice/newscard.scss";
-import "../News-slice/news.scss"
+import "../News-slice/news.scss";
 // Commit
 function NewsSlice() {
 	return (
@@ -102,10 +102,10 @@ function NewsSlice() {
 						</div>
 					</div>
 					<div className="News-slice__slider__content">
-						<NewsSliceCard />
-						<NewsSliceCard />
-						<NewsSliceCard />
-						<NewsSliceCard />
+						<NewsCard />
+						<NewsCard />
+						<NewsCard />
+						<NewsCard />
 					</div>
 				</div>
 			</div>

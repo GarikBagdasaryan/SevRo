@@ -1,7 +1,6 @@
 @import "../../index";
 
-
-.News-slice__slider__card {
+.News-card {
 	width: 280px;
 	height: 400px;
 
@@ -11,7 +10,7 @@
 	cursor: pointer;
 	overflow: hidden;
 
-	.News-slice__slider__card__photo {
+	.News-card__photo {
 		width: 280px;
 		height: 150px;
 		border-radius: 15px 15px 0px 0px;
@@ -23,13 +22,13 @@
 		}
 	}
 
-	.News-slice__slider__card__text {
+	.News-card__text {
 		padding-top: 8px;
 		padding-left: 12px;
 		padding-right: 12px;
 		padding-bottom: 10px;
 
-		.News-slice__slider__card__text__title {
+		.News-card__title {
 			margin-bottom: 12px;
 			font-size: 20px;
 			font-weight: 600;
@@ -38,7 +37,7 @@
 			white-space: nowrap;
 		}
 
-		.News-slice__slider__card__text__description {
+		.News-card__description {
 			color: var(--txt-dark, #1a1a1a);
 			font-family: Montserrat;
 			font-size: 16px;
@@ -53,11 +52,11 @@
 	}
 }
 
-.News-slice__slider__card:hover {
+.News-card:hover {
 	box-shadow: 0px 0px 8px 0px rgba(0, 120, 183, 0.25);
 }
 
-.News-slice__slider__card:active {
+.News-card:active {
 	box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25),
 		-4px -4px 8px 0px rgba(0, 0, 0, 0.5);
 }

@@ -1,17 +1,16 @@
-function NewsSliceCard() {
+function NewsCard() {
 	return (
-		<div className="News-slice__slider__card">
-			<div className="News-slice__slider__card__photo">
+		<div className="News-card">
+			<div className="News-card__photo">
 				<img src="./img/new__photo.png"></img>
 			</div>
-			<div className="News-slice__slider__card__text">
-				<div className="News-slice__slider__card__text__title">
-					8 лет СевРо
-				</div>
-				<div className="News-slice__slider__card__text__description">
+			<div className="News-card__text">
+				<div className="News-card__title">8 лет СевРо</div>
+				<div className="News-card__description">
 					Студенческие педагогические отряды (СПО) – ежегодно
 					организовывают каникулярный отдых детей организовывают
-					каникулярный отдых детей каникулярный отдых детей Студенческие педагогические отряды (СПО) – ежегодно
+					каникулярный отдых детей каникулярный отдых детей
+					Студенческие педагогические отряды (СПО) – ежегодно
 					организовывают каникулярный отдых детей организовывают
 					каникулярный отдых детей каникулярный отдых детей
 				</div>
@@ -20,4 +19,4 @@ function NewsSliceCard() {
 	);
 }
 
-export default NewsSliceCard;
+export default NewsCard;
