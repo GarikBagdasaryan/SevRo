@@ -2,6 +2,7 @@ import NewsCard from "../../../components/NewsCard/NewsCard";
 import "../News-slice/news.scss";
 import "../../../components/NewsCard/newscard.scss";
 
+
 function NewsSlice() {
 	return (
 		<div className="News-slice">
