@@ -10,7 +10,7 @@ import Header from "../../components/Header/Header";
 function Homepage() {
 	return (
 		<div className="HomePage">
-			<Header NavColor="Header-slice_light" />
+			<Header />
 			<PromoSlice />
 			<StatisticsSlice />
 			<RsoSlice />

@@ -2,8 +2,11 @@
 
 
 .Document-Card {
+
+
     .Document-Card__content {
         display: flex;
+        cursor: pointer;
         justify-content: space-between;
         align-items: center;
         column-gap: 40px;

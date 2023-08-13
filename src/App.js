@@ -15,9 +15,10 @@ function App() {
 					<Route path="/fighters" element={<Fighterspage />} />
 					<Route path="/newsopen" element={< NewsOpenPage />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 
-			<Footer />
+
 		</div>
 	);
 }

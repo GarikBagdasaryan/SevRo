@@ -1,11 +1,23 @@
 import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
 import "../Header/header.scss";
 import { useState } from "react";
-function Header(props) {
+function Header() {
 	const ActionMenu = (event) => {
 		const logo = document.querySelectorAll(".Header-slice__burger__button");
 		event.currentTarget.classList.toggle("active-menu");
 	};
+
+	const handleLink = () => {
+		document.body.style.overflowY = "auto";
+		document.body.style.overflowX = "hidden";
+		Scroll();
+	};
+
+	const Scroll = () => {
+		window.scrollTo(0, 0);
+	};
+
+
 	const [isOpen, setIsOpen] = useState(false);
 	const [hideOrShow, setHideOrShow] = useState({});
 	const handleMenu = () => {
@@ -27,7 +39,7 @@ function Header(props) {
 		<header className="Header-slice ">
 			<div className="container Header-slice__container">
 				<div className="Header-slice__headerLogo">
-					<Link to="/">
+					<Link to="/" onClick={Scroll}>
 						{" "}
 						<img
 							width={50}
@@ -35,7 +47,7 @@ function Header(props) {
 							src="img/logo-rso.png"
 						></img>
 					</Link>
-					<Link to="/">
+					<Link to="/" onClick={Scroll}>
 						{" "}
 						<img
 							width={50}
@@ -45,28 +57,25 @@ function Header(props) {
 					</Link>
 				</div>
 
-				<div className={`Header-slice__headerLinks ${props.NavColor}`}>
+				<div className='Header-slice__headerLinks' >
 					<ul>
 						<li>
-							<Link to="/about">о нас</Link>
+							<Link to="/about" onClick={Scroll} >о нас</Link>
 						</li>
 						<li>
-							<Link to="/news">новости</Link>
+							<Link to="/news" onClick={Scroll}>новости</Link>
 						</li>
 						<li>
-							<Link to="/gallery">галерея</Link>
+							<Link to="/gallery" onClick={Scroll} >галерея</Link>
 						</li>
 						<li>
-							<Link to="/fighters">бойцам</Link>
+							<Link to="/fighters" onClick={Scroll}>бойцам</Link>
 						</li>
 						<li>
-							<Link to="/contact">контакты</Link>
+							<Link to="/cooperation" onClick={Scroll}>сотрудничество</Link>
 						</li>
 						<li>
-							<Link to="/cooperation">сотрудничество</Link>
-						</li>
-						<li>
-							<Link to="/question">Q&A</Link>
+							<Link to="/question" onClick={Scroll}>Q&A</Link>
 						</li>
 					</ul>
 				</div>
@@ -173,25 +182,22 @@ function Header(props) {
 							<div className="Header-slice__burger-modal__headerLinks">
 								<ul>
 									<li>
-										<a href="">о нас</a>
+										<Link to="/about" onClick={handleLink} >о нас</Link>
 									</li>
 									<li>
-										<a href="">новости</a>
+										<Link to="/news" onClick={handleLink}>новости</Link>
 									</li>
 									<li>
-										<a href="">галерея</a>
+										<Link to="/gallery" onClick={handleLink}>галерея</Link>
 									</li>
 									<li>
-										<a href="">бойцам</a>
+										<Link to="/fighters" onClick={handleLink}>бойцам</Link>
 									</li>
 									<li>
-										<a href="">контакты</a>
+										<Link to="/cooperation" onClick={handleLink}>сотрудничество</Link>
 									</li>
 									<li>
-										<a href="">сотрудничество</a>
-									</li>
-									<li>
-										<a href="">Q&A</a>
+										<Link to="/question" onClick={handleLink}>Q&A</Link>
 									</li>
 								</ul>
 							</div>

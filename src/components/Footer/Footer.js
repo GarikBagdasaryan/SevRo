@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import '../Footer/footer.scss';
+
 function Footer() {
 	return (
 		<div className="Footer-slice">
@@ -10,25 +12,23 @@ function Footer() {
 							<div className="Footer-slice__content__links__nav">
 								<ul>
 									<li>
-										<a href="">о нас</a>
+										<Link to="/about">о нас</Link>
 									</li>
 									<li>
-										<a href="">новости</a>
+										<Link to="/news">новости</Link>
 									</li>
 									<li>
-										<a href="">галерея</a>
+										<Link to="/gallery">галерея</Link>
 									</li>
 									<li>
-										<a href="">бойцам</a>
+										<Link to="/fighters">бойцам</Link>
+									</li>
+
+									<li>
+										<Link to="/cooperation">сотрудничество</Link>
 									</li>
 									<li>
-										<a href="">контакты</a>
-									</li>
-									<li>
-										<a href="">сотрудничество</a>
-									</li>
-									<li>
-										<a href="">Q/A</a>
+										<Link to="/question">Q&A</Link>
 									</li>
 								</ul>
 							</div>
