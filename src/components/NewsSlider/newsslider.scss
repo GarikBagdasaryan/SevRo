@@ -1,4 +1,4 @@
-@import "../../../index.scss";
+@import "../../index.scss";
 
 .News-slice {
 	@include marginslice(80px);
@@ -111,7 +111,6 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 			gap: 10px;
-
 		}
 	}
 }
