@@ -3,7 +3,7 @@ import '../Form-slice/form.scss';
 
 function FormSlice() {
     return (
-        < div className="Form-slice" >
+        < div className="Form-slice" id="form">
             <div className="container Form-slice-container">
                 <div className="Form-slice__form">
                     <div className="Form-slice__form__header">Сотрудничество</div>

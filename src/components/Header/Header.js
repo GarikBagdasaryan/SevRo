@@ -1,7 +1,28 @@
-import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
+import React, { useEffect } from 'react'
+import { HashLink as Link, } from 'react-router-hash-link';
+import { useLocation } from "react-router-dom";
 import "../Header/header.scss";
 import { useState } from "react";
 function Header() {
+
+	const { pathname, hash, key } = useLocation();
+
+	useEffect(() => {
+		// if not a hash link, scroll to top
+		if (hash === '') {
+			window.scrollTo(0, 0);
+		}
+		// else scroll to id
+		else {
+			setTimeout(() => {
+				const id = hash.replace('#', '');
+				const element = document.getElementById(id);
+				if (element) {
+					element.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+				}
+			}, 0);
+		}
+	}, [pathname, hash, key]);
 	const ActionMenu = (event) => {
 		const logo = document.querySelectorAll(".Header-slice__burger__button");
 		event.currentTarget.classList.toggle("active-menu");
@@ -72,10 +93,10 @@ function Header() {
 							<Link to="/fighters" onClick={Scroll}>бойцам</Link>
 						</li>
 						<li>
-							<Link to="/cooperation" onClick={Scroll}>сотрудничество</Link>
+							<Link to="/#form"  >сотрудничество</Link>
 						</li>
 						<li>
-							<Link to="/question" onClick={Scroll}>Q&A</Link>
+							<Link to="/#question" >Q&A</Link>
 						</li>
 					</ul>
 				</div>
