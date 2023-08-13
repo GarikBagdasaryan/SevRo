@@ -1,4 +1,4 @@
-import NewsCard from "../../../components/NewsCard/NewsSliceCard";
+import NewsCard from "../../../components/NewsCard/NewsCard";
 import "../../../components/NewsCard/newscard.scss";
 import "../News-slice/news.scss";
 

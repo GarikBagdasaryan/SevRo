@@ -1,6 +1,7 @@
-import NewsSliceCard from "../../../components/NewsCard/NewsSliceCard";
+import NewsCard from "../../../components/NewsCard/NewsCard";
 import "../News-slice/news.scss";
 import "../../../components/NewsCard/newscard.scss";
+
 
 function NewsSlice() {
 	return (
@@ -102,10 +103,10 @@ function NewsSlice() {
 						</div>
 					</div>
 					<div className="News-slice__slider__content">
-						<NewsSliceCard />
-						<NewsSliceCard />
-						<NewsSliceCard />
-						<NewsSliceCard />
+						<NewsCard />
+						<NewsCard />
+						<NewsCard />
+						<NewsCard />
 					</div>
 				</div>
 			</div>
