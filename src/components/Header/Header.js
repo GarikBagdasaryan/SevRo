@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
 import '../Header/header.scss';
 import { useState } from 'react';
 function Header() {
@@ -38,13 +38,13 @@ function Header() {
 
                 <div className="Header-slice__headerLinks">
                     <ul>
-                        <li><a href="/about">о нас</a></li>
-                        <li><a href="/news">новости</a></li>
-                        <li><a href="">галерея</a></li>
-                        <li><a href="">бойцам</a></li>
-                        <li><a href="">контакты</a></li>
-                        <li><a href="">сотрудничество</a></li>
-                        <li><a href="">Q&A</a></li>
+                        <li><Link to="/about">о нас</Link></li>
+                        <li><Link to="/news">новости</Link></li>
+                        <li><Link to="/gallery">галерея</Link></li>
+                        <li><Link to="/fighters">бойцам</Link></li>
+                        <li><Link to="/contact">контакты</Link></li>
+                        <li><Link to="/cooperation">сотрудничество</Link></li>
+                        <li><Link to="/question">Q&A</Link></li>
                     </ul>
                 </div>
                 <div className="Header-slice__headerButton">
