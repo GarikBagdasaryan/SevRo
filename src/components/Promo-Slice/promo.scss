@@ -7,6 +7,9 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	@include marginslice(80px);
+	.Header-slice {
+		padding-top: 40px;
+	}
 
 	.Promo-slice__info {
 		padding-top: 151px;
