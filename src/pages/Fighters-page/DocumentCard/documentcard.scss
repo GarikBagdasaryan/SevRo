@@ -1,0 +1,33 @@
+@import "../../../index.scss";
+
+
+.Document-Card {
+    .Document-Card__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 40px;
+        width: 580px;
+        height: 93px;
+        text-align: left;
+        padding: 16px;
+
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.20);
+        background: $color-background;
+
+        svg {
+            width: 20%;
+        }
+
+        p {
+            color: #000;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+}
