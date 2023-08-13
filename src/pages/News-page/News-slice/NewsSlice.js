@@ -1,6 +1,6 @@
-import NewsSliceCard from "../../../components/News-slice/NewsSliceCard";
-import '../News-slice/news.scss';
-import '../../../components/News-slice/newscard.scss';
+import NewsSliceCard from "../../../components/NewsCard/NewsSliceCard";
+import "../News-slice/news.scss";
+import "../../../components/NewsCard/newscard.scss";
 
 function NewsSlice() {
 	return (
@@ -28,7 +28,8 @@ function NewsSlice() {
 										/>
 										<path
 											d="M32 0.25C14.49 0.25 0.25 14.49 0.25 32C0.25 49.51 14.49 63.75 32 63.75C49.51 63.75 63.75 49.51 63.75 32C63.75 14.49 49.51 0.25 32 0.25ZM32 61.75C15.6 61.75 2.25 48.4 2.25 32C2.25 15.6 15.6 2.25 32 2.25C48.4 2.25 61.75 15.6 61.75 32C61.75 48.4 48.4 61.75 32 61.75Z"
-											fill="black" fill-opacity="0.2"
+											fill="black"
+											fill-opacity="0.2"
 										/>
 									</g>
 									<defs>
@@ -55,7 +56,8 @@ function NewsSlice() {
 										/>
 										<path
 											d="M31.75 0C14.24 0 0 14.24 0 31.75C0 49.26 14.24 63.5 31.75 63.5C49.26 63.5 63.5 49.26 63.5 31.75C63.5 14.24 49.26 0 31.75 0ZM31.75 61.5C15.35 61.5 2 48.15 2 31.75C2 15.35 15.35 2 31.75 2C48.15 2 61.5 15.35 61.5 31.75C61.5 48.15 48.15 61.5 31.75 61.5Z"
-											fill="back" fill-opacity="0.2"
+											fill="back"
+											fill-opacity="0.2"
 										/>
 									</g>
 									<defs>
@@ -77,7 +79,6 @@ function NewsSlice() {
 									width="12"
 									height="22"
 									viewBox="0 0 12 22"
-
 								>
 									<path
 										d="M11.28 0.800102C10.776 0.344102 10.752 0.368102 5.448 5.6721L0.119995 11.0001L5.448 16.3281C10.752 21.6321 10.776 21.6561 11.28 21.2001L11.784 20.7441L6.912 15.8721L2.04 11.0001L6.912 6.1281L11.784 1.2561L11.28 0.800102Z"
@@ -91,7 +92,6 @@ function NewsSlice() {
 									width="24"
 									height="24"
 									viewBox="0 0 24 24"
-
 								>
 									<path
 										d="M6.72 22.1999C7.224 22.6559 7.248 22.6319 12.552 17.3279L17.88 11.9999L12.552 6.6719C7.248 1.3679 7.224 1.3439 6.72 1.7999L6.216 2.2559L11.088 7.1279L15.96 11.9999L11.088 16.8719L6.216 21.7439L6.72 22.1999Z"
