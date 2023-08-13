@@ -5,14 +5,16 @@
 	background-image: url(../../../public/img/background.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center top;
 	@include marginslice(80px);
+	margin-top: -80px;
+
 	.Header-slice {
 		padding-top: 40px;
 	}
 
 	.Promo-slice__info {
-		padding-top: 151px;
+		padding-top: 237px;
 		max-width: 390px;
 		color: $color-white;
 		font-family: Gotham;

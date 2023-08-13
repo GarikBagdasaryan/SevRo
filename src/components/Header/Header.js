@@ -25,7 +25,7 @@ function Header(props) {
 	};
 	return (
 		<header className="Header-slice ">
-			<div className="Header-slice__sticky container">
+			<div className="container Header-slice__container">
 				<div className="Header-slice__headerLogo">
 					<Link to="/">
 						{" "}
@@ -261,6 +261,7 @@ function Header(props) {
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</header>
 	);

@@ -25,13 +25,20 @@
 }
 
 .Header-slice {
-	.Header-slice__sticky {
+	z-index: 1000;
+	margin-bottom: 80px;
+	position: sticky;
+	top: 0px;
+	background-color: $color-dark;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
+
+
+	.Header-slice__container {
 		display: flex;
 		justify-content: space-between;
-		position: fixed;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
+		padding-top: 8px;
+		padding-bottom: 8px;
+
 
 		.Header-slice__headerLogo {
 			display: flex;
@@ -176,12 +183,10 @@
 
 						.Header-slice__burger-modal__headerButton__button:active {
 							background: $color-rarly;
-							box-shadow: -4px -4px 8px 0px rgba(
-										255,
-										255,
-										255,
-										0.25
-									) inset,
+							box-shadow: -4px -4px 8px 0px rgba(255,
+									255,
+									255,
+									0.25) inset,
 								4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
 						}
 					}
