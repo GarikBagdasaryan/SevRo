@@ -1,5 +1,5 @@
 import Footer from "./components/Footer/Footer";
-import Newspage from "./pages/News-page/Newspage";
+import Newspage from "./pages/Magazine-page/Magazinepage";
 import Homepage from "./pages/Home-page/Homepage";
 import Fighterspage from "./pages/Fighters-page/FightersPage";
 import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
