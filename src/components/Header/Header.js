@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../Header/header.scss';
 import { useState } from 'react';
 function Header() {
@@ -28,8 +29,8 @@ function Header() {
 
     return (
 
-        <header className="Header-slice">
-            <div className="Header-slice__sticky">
+        <header className="Header-slice ">
+            <div className="Header-slice__sticky container">
                 <div className="Header-slice__headerLogo">
                     <img width={50} height={50} src="img/logo-rso.png"></img>
                     <img width={50} height={50} src="img/logo-sevro.png"></img>
@@ -37,8 +38,8 @@ function Header() {
 
                 <div className="Header-slice__headerLinks">
                     <ul>
-                        <li><a href="">о нас</a></li>
-                        <li><a href="">новости</a></li>
+                        <li><a href="/about">о нас</a></li>
+                        <li><a href="/news">новости</a></li>
                         <li><a href="">галерея</a></li>
                         <li><a href="">бойцам</a></li>
                         <li><a href="">контакты</a></li>

@@ -1,22 +1,19 @@
-import PromoSlice from "./components/Promo-Slice/PromoSlice";
 import Footer from "./components/Footer/Footer";
-import NewsSlice from "./components/News-slice/NewsSlice";
-import StatisticsSlice from "./components/Statistics-slice/StatisticsSlice";
-import RsoSlice from "./components/Rso-slice/RsoSlice";
-import VideoSlice from "./components/Video-slice/VideoSlice";
-import QuastionSlice from "./components/Quastion-Slice/QuastionSlice";
-import FormSlice from "./components/Form-slice/FormSlice";
+import Newspage from "./Newspage";
+import Homepage from "./Homepage";
+import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
+
 
 function App() {
 	return (
 		<div className="HomePage">
-			<PromoSlice />
-			<StatisticsSlice />
-			<RsoSlice />
-			<VideoSlice />
-			<QuastionSlice />
-			<NewsSlice />
-			<FormSlice />
+			<BrowserRouter>
+				<Routes>
+					<Route path="/news" element={<Newspage />} />
+					<Route path="/about" element={<Homepage />} />
+				</Routes>
+			</BrowserRouter>
+
 			<Footer />
 		</div>
 	);

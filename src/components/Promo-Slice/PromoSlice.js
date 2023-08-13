@@ -5,9 +5,10 @@ import '../Promo-Slice/promo.scss';
 function PromoSlice() {
     return (
         < div className="Promo-slice" >
-            <div className="container">
-                <Header />
-                <div className="Promo-slice__info">
+
+            <Header />
+            <div className="container ">
+                <div className="Promo-slice__info ">
                     Найди работу в студенческих отрядах
                 </div>
                 <div className="Promo-slice__button">

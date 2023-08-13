@@ -9,7 +9,7 @@
 	@include marginslice(80px);
 
 	.Promo-slice__info {
-		padding-top: 151px;
+		padding-top: 71px;
 		max-width: 390px;
 		color: $color-white;
 		font-family: Gotham;
@@ -54,9 +54,11 @@
 			4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
 	}
 }
+
 @media (max-width: $breakpoint_s) {
 	.Promo-slice {
 		@include marginslice(40px);
+
 		.Promo-slice__info {
 			font-size: 36px !important;
 		}
