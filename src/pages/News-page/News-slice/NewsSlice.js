@@ -1,5 +1,6 @@
-import NewsSliceCard from "./NewsSliceCard";
+import NewsSliceCard from "../../../components/News-slice/NewsSliceCard";
 import '../News-slice/news.scss';
+import '../../../components/News-slice/newscard.scss';
 
 function NewsSlice() {
 	return (
