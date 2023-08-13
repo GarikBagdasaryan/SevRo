@@ -4,7 +4,7 @@ import "../Promo-Slice/promo.scss";
 function PromoSlice() {
 	return (
 		<div className="Promo-slice">
-			<Header />
+			<Header NavColor="Header-slice_light" />
 			<div className="container ">
 				<div className="Promo-slice__info ">
 					Найди работу в студенческих отрядах

@@ -18,17 +18,13 @@
 	}
 }
 
-.test {
+.Header-slice_light {
 	a {
-		color: $color-dark !important;
+		color: $color-background !important;
 	}
 }
 
 .Header-slice {
-	padding-top: 40px;
-	padding-bottom: 16px;
-	margin-bottom: 64px;
-
 	.Header-slice__sticky {
 		display: flex;
 		justify-content: space-between;
@@ -56,7 +52,7 @@
 			}
 
 			a {
-				color: $color-background;
+				color: $color-dark;
 				text-decoration: none;
 				user-select: none;
 			}

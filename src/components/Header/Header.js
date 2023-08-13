@@ -45,7 +45,7 @@ function Header(props) {
 					</Link>
 				</div>
 
-				<div className={`Header-slice__headerLinks ${props.NavDark}`}>
+				<div className={`Header-slice__headerLinks ${props.NavColor}`}>
 					<ul>
 						<li>
 							<Link to="/about">о нас</Link>
