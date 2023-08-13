@@ -1,8 +1,7 @@
 import Footer from "./components/Footer/Footer";
 import Newspage from "./Newspage";
-import Homepage from "./Homepage";
+import Homepage from "./pages/Home-page/Homepage";
 import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
-
 
 function App() {
 	return (

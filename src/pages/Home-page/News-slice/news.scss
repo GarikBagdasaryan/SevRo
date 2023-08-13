@@ -1,4 +1,4 @@
-@import "../../index";
+@import "../../../index.scss";
 
 .News-slice {
 	@include marginslice(80px);
@@ -118,7 +118,8 @@
 @media (max-width: $breakpoint_xxl) {
 	.News-slice {
 		.News-slice__slider {
-			.News-slice__slider__content>.News-slice__slider__card:nth-child(1n + 4) {
+			.News-slice__slider__content
+				> .News-slice__slider__card:nth-child(1n + 4) {
 				display: none !important;
 			}
 
@@ -132,7 +133,8 @@
 @media (max-width: $breakpoint_xl) {
 	.News-slice {
 		.News-slice__slider {
-			.News-slice__slider__content>.News-slice__slider__card:nth-child(1n + 3) {
+			.News-slice__slider__content
+				> .News-slice__slider__card:nth-child(1n + 3) {
 				display: none !important;
 			}
 
@@ -157,7 +159,8 @@
 		@include marginslice(40px);
 
 		.News-slice__slider {
-			.News-slice__slider__content>.News-slice__slider__card:nth-child(1n + 2) {
+			.News-slice__slider__content
+				> .News-slice__slider__card:nth-child(1n + 2) {
 				display: none !important;
 			}
 
