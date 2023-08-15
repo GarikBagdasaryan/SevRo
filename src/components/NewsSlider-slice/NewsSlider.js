@@ -1,6 +1,6 @@
 import NewsCard from "../NewsCard/NewsCard";
 import "../NewsCard/newscard.scss";
-import "../NewsSlider/newsslider.scss";
+import "./newsslider.scss";
 
 function NewsSlice() {
 	return (

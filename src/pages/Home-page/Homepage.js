@@ -1,5 +1,5 @@
 import PromoSlice from "../../components/Promo-Slice/PromoSlice";
-import NewsSlice from "../../components/NewsSlider/NewsSlider";
+import NewsSliderSlice from "../../components/NewsSlider-slice/NewsSlider";
 import StatisticsSlice from "../../components/Statistics-slice/StatisticsSlice";
 import RsoSlice from "../../components/Rso-slice/RsoSlice";
 import VideoSlice from "../../components/Video-slice/VideoSlice";
@@ -15,7 +15,7 @@ function Homepage() {
 			<RsoSlice />
 			<VideoSlice />
 			<QuestionSlice />
-			<NewsSlice />
+			<NewsSliderSlice />
 			<FormSlice />
 		</div>
 	);

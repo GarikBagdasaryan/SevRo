@@ -1,5 +1,5 @@
 import DocumentSlice from "../../components/Document-slice/DocumentSlice";
-import NewsSlice from "../../components/NewsSlider/NewsSlider";
+import NewsSlice from "../../components/NewsSlider-slice/NewsSlider";
 
 function Fighterspage() {
     return (
