@@ -1,11 +1,44 @@
-import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
+import React, { useEffect } from 'react'
+import { HashLink as Link, } from 'react-router-hash-link';
+import { useLocation } from "react-router-dom";
 import "../Header/header.scss";
 import { useState } from "react";
-function Header(props) {
+function Header() {
+
+	const { pathname, hash, key } = useLocation();
+
+	useEffect(() => {
+
+		if (hash === '') {
+			window.scrollTo(0, 0);
+		}
+
+		else {
+			setTimeout(() => {
+				const id = hash.replace('#', '');
+				const element = document.getElementById(id);
+				if (element) {
+					element.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+				}
+			}, 0);
+		}
+	}, [pathname, hash, key]);
 	const ActionMenu = (event) => {
 		const logo = document.querySelectorAll(".Header-slice__burger__button");
 		event.currentTarget.classList.toggle("active-menu");
 	};
+
+	const handleLink = () => {
+		document.body.style.overflowY = "auto";
+		document.body.style.overflowX = "hidden";
+		Scroll();
+	};
+
+	const Scroll = () => {
+		window.scrollTo(0, 0);
+	};
+
+
 	const [isOpen, setIsOpen] = useState(false);
 	const [hideOrShow, setHideOrShow] = useState({});
 	const handleMenu = () => {
@@ -24,10 +57,10 @@ function Header(props) {
 		}
 	};
 	return (
-		<header className="Header-slice ">
-			<div className="Header-slice__sticky container">
+		<header className="Header">
+			<div className="container Header__container">
 				<div className="Header-slice__headerLogo">
-					<Link to="/">
+					<Link to="/" onClick={Scroll}>
 						{" "}
 						<img
 							width={50}
@@ -35,7 +68,7 @@ function Header(props) {
 							src="img/logo-rso.png"
 						></img>
 					</Link>
-					<Link to="/">
+					<Link to="/" onClick={Scroll}>
 						{" "}
 						<img
 							width={50}
@@ -45,48 +78,45 @@ function Header(props) {
 					</Link>
 				</div>
 
-				<div className={`Header-slice__headerLinks ${props.NavColor}`}>
+				<div className='Header__headerLinks' >
 					<ul>
 						<li>
-							<Link to="/about">о нас</Link>
+							<Link to="/about" onClick={Scroll} >о нас</Link>
 						</li>
 						<li>
-							<Link to="/news">новости</Link>
+							<Link to="/news" onClick={Scroll}>новости</Link>
 						</li>
 						<li>
-							<Link to="/gallery">галерея</Link>
+							<Link to="/gallery" onClick={Scroll} >галерея</Link>
 						</li>
 						<li>
-							<Link to="/fighters">бойцам</Link>
+							<Link to="/fighters" onClick={Scroll}>бойцам</Link>
 						</li>
 						<li>
-							<Link to="/contact">контакты</Link>
+							<Link to="/#form"  >сотрудничество</Link>
 						</li>
 						<li>
-							<Link to="/cooperation">сотрудничество</Link>
-						</li>
-						<li>
-							<Link to="/question">Q&A</Link>
+							<Link to="/#question" >Q&A</Link>
 						</li>
 					</ul>
 				</div>
-				<div className="Header-slice__headerButton">
-					<button className="Header-slice__headerButton__button">
+				<div className="Header__headerButton">
+					<button className="Header__headerButton__button">
 						Вступить
 					</button>
 				</div>
-				<div className="Header-slice__burger">
+				<div className="Header__burger">
 					{isOpen ? (
 						<button
 							onClick={handleMenu}
-							className="Header-slice__burger__button"
+							className="Header__burger__button"
 						>
 							<svg
 								width="50"
 								height="36"
 								viewBox="0 0 50 36"
 								fill="none"
-								className="Header-slice__burger__button"
+								className="Header__burger__button"
 								onClick={ActionMenu}
 							>
 								<rect
@@ -117,14 +147,14 @@ function Header(props) {
 					) : (
 						<button
 							onClick={handleMenu}
-							className="Header-slice__burger__button"
+							className="Header__burger__button"
 						>
 							<svg
 								width="50"
 								height="36"
 								viewBox="0 0 50 36"
 								fill="none"
-								className="Header-slice__burger__button"
+								className="Header__burger__button"
 								onClick={ActionMenu}
 							>
 								<rect
@@ -154,11 +184,11 @@ function Header(props) {
 						</button>
 					)}
 					<div
-						className="Header-slice__burger-modal container"
+						className="Header__burger-modal container"
 						style={hideOrShow}
 					>
-						<div className="Header-slice__burger-modal-items">
-							<div className="Header-slice__burger-modal__headerLogo">
+						<div className="Header__burger-modal-items">
+							<div className="Header__burger-modal__headerLogo">
 								<img
 									width={50}
 									height={50}
@@ -170,43 +200,40 @@ function Header(props) {
 									src="img/logo-sevro.png"
 								></img>
 							</div>
-							<div className="Header-slice__burger-modal__headerLinks">
+							<div className="Header__burger-modal__headerLinks">
 								<ul>
 									<li>
-										<a href="">о нас</a>
+										<Link to="/about" onClick={handleLink} >о нас</Link>
 									</li>
 									<li>
-										<a href="">новости</a>
+										<Link to="/news" onClick={handleLink}>новости</Link>
 									</li>
 									<li>
-										<a href="">галерея</a>
+										<Link to="/gallery" onClick={handleLink}>галерея</Link>
 									</li>
 									<li>
-										<a href="">бойцам</a>
+										<Link to="/fighters" onClick={handleLink}>бойцам</Link>
 									</li>
 									<li>
-										<a href="">контакты</a>
+										<Link to="/cooperation" onClick={handleLink}>сотрудничество</Link>
 									</li>
 									<li>
-										<a href="">сотрудничество</a>
-									</li>
-									<li>
-										<a href="">Q&A</a>
+										<Link to="/question" onClick={handleLink}>Q&A</Link>
 									</li>
 								</ul>
 							</div>
-							<div className="Header-slice__burger-modal__headerButton">
-								<button className="Header-slice__burger-modal__headerButton__button">
+							<div className="Header__burger-modal__headerButton">
+								<button className="Header__burger-modal__headerButton__button">
 									Вступить
 								</button>
 							</div>
-							<div className="Header-slice__burger-modal__header-icons">
+							<div className="Header__burger-modal__header-icons">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="64"
 									height="64"
 									viewBox="0 0 64 64"
-									className="Header-slice__burger-modal__header-icons__tg"
+									className="Header__burger-modal__header-icons__tg"
 								>
 									<g clip-path="url(img/ico13-tg.svg)">
 										<path
@@ -234,7 +261,7 @@ function Header(props) {
 									width="64"
 									height="64"
 									viewBox="0 0 64 64"
-									className="Header-slice__burger-modal__header-icons__vk"
+									className="Header__burger-modal__header-icons__vk"
 								>
 									<g clip-path="url(img/ico12-vk.svg)">
 										<path
@@ -261,6 +288,7 @@ function Header(props) {
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</header>
 	);

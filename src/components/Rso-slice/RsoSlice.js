@@ -1,23 +1,15 @@
 import '../Rso-slice/rso.scss';
+import RsoBlock from '../RsoBlock/RsoBlock';
 
 function RsoSlice() {
     return (
 
         <div className="Rso-slice">
             <div className="container Rso-slice-container">
-                <div className="Rso-slice__buttons">
-                    <div className="Rso-slice__button__style">
-                        <img src="./img/ico-love.png"></img>
-                        любовь
-                    </div>
-                    <div className="Rso-slice__button__style">
-                        <img src="./img/ico-friend.png"></img>
-                        друзья
-                    </div>
-                    <div className="Rso-slice__button__style">
-                        <img src="./img/ico-job.png"></img>
-                        работа
-                    </div>
+                <div className="Rso-slice__blocks">
+                    <RsoBlock />
+                    <RsoBlock />
+                    <RsoBlock />
                 </div>
                 <div className="Rso-slice__info">
                     <div className="Rso-slice__info__header">о нас</div>

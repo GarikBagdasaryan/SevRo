@@ -3,7 +3,7 @@ import '../Quastion-Slice/quastion.scss';
 
 function QuastionSlice() {
     return (
-        <div className="Quastion-slice">
+        <div className="Quastion-slice" id="question">
             <div className="container">
                 <div className="Quastion-slice__header">
                     Вопросы и ответы

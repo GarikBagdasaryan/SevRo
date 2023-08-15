@@ -1,0 +1,19 @@
+@import "../../index.scss";
+
+.Document-slice {
+    margin-bottom: 80px;
+
+    .Document-slice__header {
+        @include font-title-italic;
+        margin-bottom: 8px;
+    }
+
+    .Document-slice-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
