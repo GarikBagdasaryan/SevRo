@@ -1,30 +1,30 @@
 @import "../../index";
 
 @media (max-width: $breakpoint_xxl) {
-	.Header-slice {
-		.Header-slice__headerLinks {
+	.Header {
+		.Header__headerLinks {
 			display: none;
 		}
 	}
 
-	.Header-slice__headerButton {
+	.Header__headerButton {
 		display: none !important;
 	}
 
-	.Header-slice__burger {
+	.Header__burger {
 		display: flex !important;
 		justify-content: center;
 		align-items: center;
 	}
 }
 
-.Header-slice_light {
+.Header_light {
 	a {
 		color: $color-background !important;
 	}
 }
 
-.Header-slice {
+.Header {
 	z-index: 1000;
 	margin-bottom: 80px;
 	position: sticky;
@@ -33,20 +33,20 @@
 	box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
 
 
-	.Header-slice__container {
+	.Header__container {
 		display: flex;
 		justify-content: space-between;
 		padding-top: 12px;
 		padding-bottom: 12px;
 
 
-		.Header-slice__headerLogo {
+		.Header__headerLogo {
 			display: flex;
 			gap: 16px;
 			align-items: center;
 		}
 
-		.Header-slice__headerLinks {
+		.Header__headerLinks {
 			ul {
 				list-style: none;
 				padding-left: 0;
@@ -69,11 +69,11 @@
 			}
 		}
 
-		.Header-slice__headerButton {
+		.Header__headerButton {
 			display: flex;
 			align-items: center;
 
-			.Header-slice__headerButton__button {
+			.Header__headerButton__button {
 				display: flex;
 				align-items: center;
 				border: 2px solid rgba(0, 0, 0, 0.2);
@@ -91,23 +91,23 @@
 				line-height: normal;
 			}
 
-			.Header-slice__headerButton__button:hover {
+			.Header__headerButton__button:hover {
 				border-radius: 10px;
 				background: $color-secondary;
 				border-color: $color-secondary;
 			}
 
-			.Header-slice__headerButton__button:active {
+			.Header__headerButton__button:active {
 				background: $color-rarly;
 				box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset,
 					4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
 			}
 		}
 
-		.Header-slice__burger {
+		.Header__burger {
 			display: none;
 
-			.Header-slice__burger-modal {
+			.Header__burger-modal {
 				display: none;
 				background: #272727;
 				position: fixed;
@@ -118,20 +118,20 @@
 				left: 0;
 				right: 0;
 
-				.Header-slice__burger-modal-items {
+				.Header__burger-modal-items {
 					padding-top: 12px;
 					width: 360px;
 					display: flex;
 					flex-direction: column;
 					gap: 40px;
 
-					.Header-slice__burger-modal__headerLogo {
+					.Header__burger-modal__headerLogo {
 						display: flex;
 						gap: 16px;
 						align-items: center;
 					}
 
-					.Header-slice__burger-modal__headerLinks {
+					.Header__burger-modal__headerLinks {
 						ul {
 							list-style: none;
 							padding-left: 0;
@@ -153,11 +153,11 @@
 						}
 					}
 
-					.Header-slice__burger-modal__headerButton {
+					.Header__burger-modal__headerButton {
 						display: flex;
 						align-items: center;
 
-						.Header-slice__burger-modal__headerButton__button {
+						.Header__burger-modal__headerButton__button {
 							display: flex;
 							align-items: center;
 							padding: 6px 16px;
@@ -175,13 +175,13 @@
 							border: 2px solid $color-background;
 						}
 
-						.Header-slice__burger-modal__headerButton__button:hover {
+						.Header__burger-modal__headerButton__button:hover {
 							border-radius: 10px;
 							background: $color-secondary;
 							border-color: $color-secondary;
 						}
 
-						.Header-slice__burger-modal__headerButton__button:active {
+						.Header__burger-modal__headerButton__button:active {
 							background: $color-rarly;
 							box-shadow: -4px -4px 8px 0px rgba(255,
 									255,
@@ -191,28 +191,28 @@
 						}
 					}
 
-					.Header-slice__burger-modal__header-icons {
+					.Header__burger-modal__header-icons {
 						display: flex;
 						justify-content: start;
 						flex-direction: row;
 						gap: 16px;
 						align-items: center;
 
-						.Header-slice__burger-modal__header-icons__tg,
-						.Header-slice__burger-modal__header-icons__vk {
+						.Header__burger-modal__header-icons__tg,
+						.Header__burger-modal__header-icons__vk {
 							cursor: pointer;
 							fill: $color-white;
 						}
 
-						.Header-slice__burger-modal__header-icons__tg:hover,
-						.Header-slice__burger-modal__header-icons__vk:hover {
+						.Header__burger-modal__header-icons__tg:hover,
+						.Header__burger-modal__header-icons__vk:hover {
 							path {
 								fill: $color-secondary;
 							}
 						}
 
-						.Header-slice__burger-modal__header-icons__tg:active,
-						.Header-slice__burger-modal__header-icons__vk:active {
+						.Header__burger-modal__header-icons__tg:active,
+						.Header__burger-modal__header-icons__vk:active {
 							path {
 								fill: $color-primary;
 							}
@@ -221,7 +221,7 @@
 				}
 			}
 
-			.Header-slice__burger__button {
+			.Header__burger__button {
 				cursor: pointer;
 				border: none;
 				background: transparent;

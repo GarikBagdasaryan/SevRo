@@ -1,5 +1,5 @@
-import NewsCard from "../../../components/NewsCard/NewsCard";
-import "../../../components/NewsCard/newscard.scss";
+import NewsCard from "../NewsCard/NewsCard";
+import "../NewsCard/newscard.scss";
 import "./magazinecard.scss";
 
 

@@ -2,6 +2,7 @@
 
 .Rso-slice {
 	@include marginslice(80px);
+
 	.Rso-slice-container {
 		padding-top: 16px;
 		padding-bottom: 16px;
@@ -66,38 +67,13 @@
 			}
 		}
 
-		.Rso-slice__buttons {
+		.Rso-slice__blocks {
 			display: flex;
 			flex-direction: column;
 			gap: 40px;
 			justify-content: center;
 			min-width: 344px;
 			align-items: flex-end;
-
-			.Rso-slice__button__style {
-				padding: 8px 32px 8px 16px;
-				text-align: right;
-				border-radius: 10px;
-				border: 1px solid rgba(0, 0, 0, 0.2);
-				background: $color-primary;
-				color: $color-white;
-				font-family: Montserrat;
-				font-size: 32px;
-				font-style: normal;
-				font-weight: 700;
-				line-height: 130%;
-				text-transform: lowercase;
-				outline: none;
-				display: flex;
-				align-items: center;
-				gap: 16px;
-				max-width: 244px;
-				justify-self: right;
-			}
-
-			.Rso-slice__button__style:nth-child(even) {
-				align-self: flex-start;
-			}
 		}
 	}
 }
@@ -121,8 +97,6 @@
 				.Rso-slice__info__button {
 					width: 100%;
 
-					.Rso-slice__info__button__stylebtn {
-					}
 				}
 			}
 		}
@@ -139,7 +113,7 @@
 				order: 1;
 			}
 
-			.Rso-slice__buttons {
+			.Rso-slice__blocks {
 				order: 2;
 			}
 		}
@@ -149,6 +123,7 @@
 @media (max-width: $breakpoint_s) {
 	.Rso-slice {
 		@include marginslice(40px);
+
 		.Rso-slice-container {
 			.Rso-slice__info {
 				.Rso-slice__info__title {
@@ -158,9 +133,6 @@
 				.Rso-slice__info__description {
 					font-size: 16px !important;
 				}
-			}
-
-			.Rso-slice__buttons {
 			}
 		}
 	}
@@ -179,18 +151,8 @@
 				}
 			}
 
-			.Rso-slice__buttons {
+			.Rso-slice__blocks {
 				min-width: 100% !important;
-
-				.Rso-slice__button__style {
-					width: 40% !important;
-					font-size: 20px !important;
-
-					img {
-						width: 30px;
-						height: 30px;
-					}
-				}
 			}
 		}
 	}

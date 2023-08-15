@@ -57,8 +57,8 @@ function Header() {
 		}
 	};
 	return (
-		<header className="Header-slice ">
-			<div className="container Header-slice__container">
+		<header className="Header">
+			<div className="container Header__container">
 				<div className="Header-slice__headerLogo">
 					<Link to="/" onClick={Scroll}>
 						{" "}
@@ -78,7 +78,7 @@ function Header() {
 					</Link>
 				</div>
 
-				<div className='Header-slice__headerLinks' >
+				<div className='Header__headerLinks' >
 					<ul>
 						<li>
 							<Link to="/about" onClick={Scroll} >о нас</Link>
@@ -100,23 +100,23 @@ function Header() {
 						</li>
 					</ul>
 				</div>
-				<div className="Header-slice__headerButton">
-					<button className="Header-slice__headerButton__button">
+				<div className="Header__headerButton">
+					<button className="Header__headerButton__button">
 						Вступить
 					</button>
 				</div>
-				<div className="Header-slice__burger">
+				<div className="Header__burger">
 					{isOpen ? (
 						<button
 							onClick={handleMenu}
-							className="Header-slice__burger__button"
+							className="Header__burger__button"
 						>
 							<svg
 								width="50"
 								height="36"
 								viewBox="0 0 50 36"
 								fill="none"
-								className="Header-slice__burger__button"
+								className="Header__burger__button"
 								onClick={ActionMenu}
 							>
 								<rect
@@ -147,14 +147,14 @@ function Header() {
 					) : (
 						<button
 							onClick={handleMenu}
-							className="Header-slice__burger__button"
+							className="Header__burger__button"
 						>
 							<svg
 								width="50"
 								height="36"
 								viewBox="0 0 50 36"
 								fill="none"
-								className="Header-slice__burger__button"
+								className="Header__burger__button"
 								onClick={ActionMenu}
 							>
 								<rect
@@ -184,11 +184,11 @@ function Header() {
 						</button>
 					)}
 					<div
-						className="Header-slice__burger-modal container"
+						className="Header__burger-modal container"
 						style={hideOrShow}
 					>
-						<div className="Header-slice__burger-modal-items">
-							<div className="Header-slice__burger-modal__headerLogo">
+						<div className="Header__burger-modal-items">
+							<div className="Header__burger-modal__headerLogo">
 								<img
 									width={50}
 									height={50}
@@ -200,7 +200,7 @@ function Header() {
 									src="img/logo-sevro.png"
 								></img>
 							</div>
-							<div className="Header-slice__burger-modal__headerLinks">
+							<div className="Header__burger-modal__headerLinks">
 								<ul>
 									<li>
 										<Link to="/about" onClick={handleLink} >о нас</Link>
@@ -222,18 +222,18 @@ function Header() {
 									</li>
 								</ul>
 							</div>
-							<div className="Header-slice__burger-modal__headerButton">
-								<button className="Header-slice__burger-modal__headerButton__button">
+							<div className="Header__burger-modal__headerButton">
+								<button className="Header__burger-modal__headerButton__button">
 									Вступить
 								</button>
 							</div>
-							<div className="Header-slice__burger-modal__header-icons">
+							<div className="Header__burger-modal__header-icons">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="64"
 									height="64"
 									viewBox="0 0 64 64"
-									className="Header-slice__burger-modal__header-icons__tg"
+									className="Header__burger-modal__header-icons__tg"
 								>
 									<g clip-path="url(img/ico13-tg.svg)">
 										<path
@@ -261,7 +261,7 @@ function Header() {
 									width="64"
 									height="64"
 									viewBox="0 0 64 64"
-									className="Header-slice__burger-modal__header-icons__vk"
+									className="Header__burger-modal__header-icons__vk"
 								>
 									<g clip-path="url(img/ico12-vk.svg)">
 										<path

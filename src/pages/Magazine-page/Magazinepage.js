@@ -1,10 +1,10 @@
 import Header from "../../components/Header/Header";
-import NewsSlice from "../Magazine-page/MagazineCard-slice/MagazineCard";
+import NewsSlice from "../../components/MagazineCard-slice/MagazineCard";
 
 function Newspage() {
 	return (
 		<div className="Newspage">
-			<Header NavDark="test" />
+			<Header />
 			<NewsSlice />
 		</div>
 	);
