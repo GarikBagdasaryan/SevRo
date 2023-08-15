@@ -59,7 +59,7 @@ function Header() {
 	return (
 		<header className="Header">
 			<div className="container Header__container">
-				<div className="Header-slice__headerLogo">
+				<div className="Header__headerLogo">
 					<Link to="/" onClick={Scroll}>
 						{" "}
 						<img

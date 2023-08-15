@@ -3,7 +3,7 @@ import NewsSlice from "../../components/NewsSlider/NewsSlider";
 import StatisticsSlice from "../../components/Statistics-slice/StatisticsSlice";
 import RsoSlice from "../../components/Rso-slice/RsoSlice";
 import VideoSlice from "../../components/Video-slice/VideoSlice";
-import QuastionSlice from "../../components/Quastion-Slice/QuastionSlice";
+import QuestionSlice from "../../components/Question-Slice/QuestionSlice";
 import FormSlice from "../../components/Form-slice/FormSlice";
 import Header from "../../components/Header/Header";
 
@@ -15,7 +15,7 @@ function Homepage() {
 			<StatisticsSlice />
 			<RsoSlice />
 			<VideoSlice />
-			<QuastionSlice />
+			<QuestionSlice />
 			<NewsSlice />
 			<FormSlice />
 		</div>
