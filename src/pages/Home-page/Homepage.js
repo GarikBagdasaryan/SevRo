@@ -5,12 +5,11 @@ import RsoSlice from "../../components/Rso-slice/RsoSlice";
 import VideoSlice from "../../components/Video-slice/VideoSlice";
 import QuestionSlice from "../../components/Question-Slice/QuestionSlice";
 import FormSlice from "../../components/Form-slice/FormSlice";
-import Header from "../../components/Header/Header";
+
 
 function Homepage() {
 	return (
 		<div className="HomePage">
-			<Header />
 			<PromoSlice />
 			<StatisticsSlice />
 			<RsoSlice />
