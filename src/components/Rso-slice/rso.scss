@@ -12,27 +12,27 @@
 		column-gap: 58px;
 
 		.Rso-slice__info {
-			.Rso-slice__info__header {
+			&__header {
 				@include font-title-italic;
 				margin-bottom: 8px;
 			}
 
-			.Rso-slice__info__title {
+			&__title {
 				color: $color-primary;
 				margin-bottom: 33px;
 				@include font-title;
 				width: 560px;
 			}
 
-			.Rso-slice__info__description {
+			&__description {
 				font-size: 20px;
 				margin-bottom: 24px;
 				line-height: 130%;
 				width: 560px;
 			}
 
-			.Rso-slice__info__button {
-				.Rso-slice__info__button__stylebtn {
+			&__button {
+				&__stylebtn {
 					font-weight: 500;
 					display: inline-flex;
 					justify-content: space-between;
@@ -56,11 +56,11 @@
 				}
 			}
 
-			.Rso-slice__info__button__stylebtn:hover {
+			&__button__stylebtn:hover {
 				background: $color-secondary;
 			}
 
-			.Rso-slice__info__button__stylebtn:active {
+			&__button__stylebtn:active {
 				background: $color-rarly;
 				box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset,
 					4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
@@ -82,19 +82,19 @@
 	.Rso-slice {
 		.Rso-slice-container {
 			.Rso-slice__info {
-				.Rso-slice__info__header {
+				&__header {
 					width: 100%;
 				}
 
-				.Rso-slice__info__title {
+				&__title {
 					width: 100% !important;
 				}
 
-				.Rso-slice__info__description {
+				&__description {
 					width: 100% !important;
 				}
 
-				.Rso-slice__info__button {
+				&__button {
 					width: 100%;
 
 				}
@@ -126,11 +126,11 @@
 
 		.Rso-slice-container {
 			.Rso-slice__info {
-				.Rso-slice__info__title {
+				&__title {
 					font-size: 24px !important;
 				}
 
-				.Rso-slice__info__description {
+				&__description {
 					font-size: 16px !important;
 				}
 			}
@@ -142,11 +142,11 @@
 	.Rso-slice {
 		.Rso-slice-container {
 			.Rso-slice__info {
-				.Rso-slice__info__title {
+				&__title {
 					font-size: 24px !important;
 				}
 
-				.Rso-slice__info__description {
+				&__description {
 					font-size: 16px !important;
 				}
 			}
