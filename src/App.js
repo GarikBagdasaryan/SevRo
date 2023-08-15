@@ -1,5 +1,5 @@
 import Footer from "./components/Footer/Footer";
-import Newspage from "./pages/Magazine-page/Magazinepage";
+import Newspage from "./pages/News-page/Newspage";
 import Homepage from "./pages/Home-page/Homepage";
 import NewsOpenPage from "./pages/NewsOpen-page/NewsOpenPage"
 import Fighterspage from "./pages/Fighters-page/FightersPage";
@@ -19,8 +19,6 @@ function App() {
 				</Routes>
 				<Footer />
 			</BrowserRouter>
-
-
 		</div>
 	);
 }

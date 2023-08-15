@@ -1,11 +1,10 @@
-import Header from "../../components/Header/Header";
 import DirectionsSlice from "../../components/Directions-slice/DirectionsSlice";
-import NewsSlice from "../../components/MagazineCard-slice/MagazineCard";
+import NewsSlice from "../../components/NewsCard-slice/MagazineCard";
+import "./newspage.scss";
 
 function Newspage() {
 	return (
 		<div className="Newspage">
-
 			<DirectionsSlice />
 			<NewsSlice />
 		</div>
