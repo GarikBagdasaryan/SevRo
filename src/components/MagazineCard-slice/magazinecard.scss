@@ -9,8 +9,7 @@
 	}
 
 	.News-slice__slider {
-
-		.News-slice__slider__content {
+		&__content {
 			display: flex;
 			justify-content: center;
 			flex-direction: row;
@@ -22,12 +21,12 @@
 
 @media (max-width: $breakpoint_xxl) {
 	.News-slice {
-		.News-slice__slider {
-			.News-slice__slider__content>.News-slice__slider__card:nth-child(1n + 4) {
+		&__slider {
+			&__content > .News-slice__slider__card:nth-child(1n + 4) {
 				display: none !important;
 			}
 
-			.News-slice__slider__content {
+			&__content {
 				justify-content: center !important;
 			}
 		}
@@ -36,20 +35,20 @@
 
 @media (max-width: $breakpoint_xl) {
 	.News-slice {
-		.News-slice__slider {
-			.News-slice__slider__content>.News-slice__slider__card:nth-child(1n + 3) {
+		&__slider {
+			&__content > .News-slice__slider__card:nth-child(1n + 3) {
 				display: none !important;
 			}
 
-			.News-slice__slider__content {
+			&__content {
 				justify-content: center !important;
 			}
 
-			.News-slice__slider__header {
+			&__header {
 				flex-direction: column !important;
 				row-gap: 8px !important;
 
-				.News-slice__slider__header-arrows {
+				&-arrows {
 					justify-content: center !important;
 				}
 			}
@@ -62,30 +61,28 @@
 		@include marginslice(40px);
 
 		.News-slice__slider {
-			.News-slice__slider__content>.News-slice__slider__card:nth-child(1n + 2) {
+			&__content > .News-slice__slider__card:nth-child(1n + 2) {
 				display: none !important;
 			}
 
-			.News-slice__slider__content {
+			&__content {
 				margin-top: 16px !important;
 			}
 
-			.News-slice__slider__header {
-				.News-slice__slider__header__info {
-					.News-slice__slider__header-title {
-						font-size: 24px !important;
+			&__header {
+				&-title {
+					font-size: 24px !important;
+				}
+
+				&-icons {
+					&__tg {
+						width: 40px;
+						height: 40px;
 					}
 
-					.News-slice__slider__header-icons {
-						.News-slice__slider__header-icons__tg {
-							width: 40px;
-							height: 40px;
-						}
-
-						.News-slice__slider__header-icons__vk {
-							width: 40px;
-							height: 40px;
-						}
+					&__vk {
+						width: 40px;
+						height: 40px;
 					}
 				}
 			}
