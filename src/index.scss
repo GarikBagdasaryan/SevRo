@@ -128,3 +128,14 @@ a:hover {
 		padding-right: 20px !important;
 	}
 }
+
+svg:hover {
+	path {
+		fill: $color-secondary;
+	}
+}
+svg:active {
+	path {
+		fill: $color-rarly;
+	}
+}

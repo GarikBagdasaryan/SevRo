@@ -1,11 +1,10 @@
 @import "../../index";
 
-
 .Video-slice {
 	@include marginslice(80px);
 	z-index: 1;
 
-	.Video-slice__style {
+	&__style {
 		width: 100%;
 	}
 }

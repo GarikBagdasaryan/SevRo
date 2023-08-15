@@ -8,62 +8,47 @@
 	}
 
 	.News-slice__slider {
-		.News-slice__slider__header {
+		&__header {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 
-			.News-slice__slider__header__info {
+			&__info {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 				gap: 16px;
+			}
+			&-title {
+				padding-top: 8px;
+				width: auto;
+				@include font-title;
+				text-transform: none;
+				color: $color-primary;
+			}
 
-				.News-slice__slider__header-title {
-					padding-top: 8px;
-					width: auto;
-					@include font-title;
-					text-transform: none;
-					color: $color-primary;
-				}
+			&-icons {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+				gap: 16px;
+				align-items: center;
 
-				.News-slice__slider__header-icons {
-					display: flex;
-					justify-content: space-between;
-					flex-direction: row;
-					gap: 16px;
-					align-items: center;
-
-					.News-slice__slider__header-icons__tg,
-					.News-slice__slider__header-icons__vk {
-						cursor: pointer;
-						fill: $color-dark;
-					}
-
-					.News-slice__slider__header-icons__tg:hover,
-					.News-slice__slider__header-icons__vk:hover {
-						path {
-							fill: $color-secondary;
-						}
-					}
-
-					.News-slice__slider__header-icons__tg:active,
-					.News-slice__slider__header-icons__vk:active {
-						path {
-							fill: $color-primary;
-						}
-					}
+				&__tg,
+				&__vk {
+					cursor: pointer;
+					fill: $color-dark;
 				}
 			}
 
-			.News-slice__slider__header-arrows {
+			&-arrows {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 				flex-direction: row;
 				gap: 16px;
 
-				.News-slice__slider__header-arrows_left {
+				&_left {
 					display: flex;
 					width: 50px;
 					height: 50px;
@@ -76,7 +61,7 @@
 					background: $color-white;
 				}
 
-				.News-slice__slider__header-arrows_right {
+				&_right {
 					display: flex;
 					width: 50px;
 					height: 50px;
@@ -87,16 +72,15 @@
 					border: 1px solid rgba(0, 0, 0, 0.2);
 					background: $color-white;
 				}
-
-				.News-slice__slider__header-arrows_left:hover,
-				.News-slice__slider__header-arrows_right:hover {
+				&_left:hover,
+				&_right:hover {
 					svg path {
 						fill: $color-secondary;
 					}
 				}
 
-				.News-slice__slider__header-arrows_left:active,
-				.News-slice__slider__header-arrows_right:active {
+				&_left:active,
+				&_right:active {
 					svg path {
 						fill: $color-rarly;
 					}
@@ -104,7 +88,7 @@
 			}
 		}
 
-		.News-slice__slider__content {
+		&__content {
 			margin-top: 24px;
 			display: flex;
 			justify-content: space-between;
@@ -119,12 +103,11 @@
 	.News-slice {
 		.News-slice-container {
 			.News-slice__slider {
-
-				.News-slice__slider__content>.News-card:nth-child(1n + 4) {
+				&__content > .News-card:nth-child(1n + 4) {
 					display: none !important;
 				}
 
-				.News-slice__slider__content {
+				&__content {
 					justify-content: center !important;
 				}
 			}
@@ -134,20 +117,20 @@
 
 @media (max-width: $breakpoint_xl) {
 	.News-slice {
-		.News-slice__slider {
-			.News-slice__slider__content>.News-card:nth-child(1n + 3) {
+		&__slider {
+			&__content > .News-card:nth-child(1n + 3) {
 				display: none !important;
 			}
 
-			.News-slice__slider__content {
+			&__content {
 				justify-content: center !important;
 			}
 
-			.News-slice__slider__header {
+			&__header {
 				flex-direction: column !important;
 				row-gap: 8px !important;
 
-				.News-slice__slider__header-arrows {
+				&-arrows {
 					justify-content: center !important;
 				}
 			}
@@ -160,30 +143,28 @@
 		@include marginslice(40px);
 
 		.News-slice__slider {
-			.News-slice__slider__content>.News-card:nth-child(1n + 2) {
+			&__content > .News-card:nth-child(1n + 2) {
 				display: none !important;
 			}
 
-			.News-slice__slider__content {
+			&__content {
 				margin-top: 16px !important;
 			}
 
-			.News-slice__slider__header {
-				.News-slice__slider__header__info {
-					.News-slice__slider__header-title {
-						font-size: 24px !important;
+			&__header {
+				&-title {
+					font-size: 24px !important;
+				}
+
+				&-icons {
+					&__tg {
+						width: 40px;
+						height: 40px;
 					}
 
-					.News-slice__slider__header-icons {
-						.News-slice__slider__header-icons__tg {
-							width: 40px;
-							height: 40px;
-						}
-
-						.News-slice__slider__header-icons__vk {
-							width: 40px;
-							height: 40px;
-						}
+					&__vk {
+						width: 40px;
+						height: 40px;
 					}
 				}
 			}
