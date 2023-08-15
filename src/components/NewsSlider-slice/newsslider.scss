@@ -1,13 +1,13 @@
 @import "../../index.scss";
 
-.News-slice {
+.NewsSlider {
 	@include marginslice(80px);
 
-	.News-slice__header-slice {
+	.NewsSlider__header-slice {
 		@include font-title-italic;
 	}
 
-	.News-slice__slider {
+	.NewsSlider__slider {
 		&__header {
 			display: flex;
 			flex-direction: row;
@@ -19,6 +19,7 @@
 				justify-content: space-between;
 				gap: 16px;
 			}
+
 			&-title {
 				padding-top: 8px;
 				width: auto;
@@ -72,6 +73,7 @@
 					border: 1px solid rgba(0, 0, 0, 0.2);
 					background: $color-white;
 				}
+
 				&_left:hover,
 				&_right:hover {
 					svg path {
@@ -100,10 +102,10 @@
 }
 
 @media (max-width: $breakpoint_xxl) {
-	.News-slice {
-		.News-slice-container {
-			.News-slice__slider {
-				&__content > .News-card:nth-child(1n + 4) {
+	.NewsSlider {
+		.NewsSlider-container {
+			.NewsSlider__slider {
+				&__content>.News-card:nth-child(1n + 4) {
 					display: none !important;
 				}
 
@@ -116,9 +118,9 @@
 }
 
 @media (max-width: $breakpoint_xl) {
-	.News-slice {
+	.NewsSlider {
 		&__slider {
-			&__content > .News-card:nth-child(1n + 3) {
+			&__content>.News-card:nth-child(1n + 3) {
 				display: none !important;
 			}
 
@@ -139,11 +141,11 @@
 }
 
 @media (max-width: $breakpoint_s) {
-	.News-slice {
+	.NewsSlider {
 		@include marginslice(40px);
 
-		.News-slice__slider {
-			&__content > .News-card:nth-child(1n + 2) {
+		.NewsSlider__slider {
+			&__content>.News-card:nth-child(1n + 2) {
 				display: none !important;
 			}
 

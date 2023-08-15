@@ -5,7 +5,7 @@ import "./newsslice.scss";
 
 function NewsSlice() {
 	return (
-		<div className="News-news-slice">
+		<div className="News-slice">
 			<div className="container">
 				<div className="News-slice__header-slice">новости</div>
 				<div className="News-slice__slider">
@@ -20,7 +20,6 @@ function NewsSlice() {
 						<NewsCard />
 						<NewsCard />
 						<NewsCard />
-
 					</div>
 				</div>
 			</div>

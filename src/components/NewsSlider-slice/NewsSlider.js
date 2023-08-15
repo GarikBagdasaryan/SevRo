@@ -2,24 +2,24 @@ import NewsCard from "../NewsCard/NewsCard";
 import "../NewsCard/newscard.scss";
 import "./newsslider.scss";
 
-function NewsSlice() {
+function NewsSlider() {
 	return (
-		<div className="News-slice">
-			<div className="container News-slice-container">
-				<div className="News-slice__header-slice">новости</div>
-				<div className="News-slice__slider">
-					<div className="News-slice__slider__header">
-						<div className="News-slice__slider__header__info">
-							<div className="News-slice__slider__header-title">
+		<div className="NewsSlider">
+			<div className="container NewsSlider-container">
+				<div className="NNewsSlider__header-slice">новости</div>
+				<div className="NewsSlider__slider">
+					<div className="NewsSlider__slider__header">
+						<div className="NewsSlider__slider__header__info">
+							<div className="NewsSlider__slider__header-title">
 								Следите за новостями в:
 							</div>
-							<div className="News-slice__slider__header-icons">
+							<div className="NewsSlider__slider__header-icons">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="64"
 									height="64"
 									viewBox="0 0 64 64"
-									className="News-slice__slider__header-icons__tg"
+									className="NewsSlider__slider__header-icons__tg"
 								>
 									<g clip-path="url(img/ico13-tg.svg)">
 										<path
@@ -47,7 +47,7 @@ function NewsSlice() {
 									width="64"
 									height="64"
 									viewBox="0 0 64 64"
-									className="News-slice__slider__header-icons__vk"
+									className="NewsSlider__slider__header-icons__vk"
 								>
 									<g clip-path="url(img/ico12-vk.svg)">
 										<path
@@ -72,8 +72,8 @@ function NewsSlice() {
 								</svg>
 							</div>
 						</div>
-						<div className="News-slice__slider__header-arrows">
-							<button className="News-slice__slider__header-arrows_left">
+						<div className="NewsSlider__slider__header-arrows">
+							<button className="NewsSlider__slider__header-arrows_left">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="12"
@@ -86,7 +86,7 @@ function NewsSlice() {
 									/>
 								</svg>
 							</button>
-							<button className="News-slice__slider__header-arrows_right">
+							<button className="NewsSlider__slider__header-arrows_right">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="24"
@@ -101,7 +101,7 @@ function NewsSlice() {
 							</button>
 						</div>
 					</div>
-					<div className="News-slice__slider__content">
+					<div className="NewsSlider__slider__content">
 						<NewsCard />
 						<NewsCard />
 						<NewsCard />
@@ -113,4 +113,4 @@ function NewsSlice() {
 	);
 }
 
-export default NewsSlice;
+export default NewsSlider;
