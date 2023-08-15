@@ -5,7 +5,7 @@ import NewsSlice from "../../components/NewsSlider/NewsSlider";
 function Fighterspage() {
     return (
         <div className="Fighterspage">
-            <Header />
+
             <DocumentSlice />
             <NewsSlice />
         </div>
