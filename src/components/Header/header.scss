@@ -37,6 +37,7 @@
 		justify-content: space-between;
 		padding-top: 12px;
 		padding-bottom: 12px;
+
 		.active-menu {
 			#bar1 {
 				transform: translateX(3px) rotateZ(45deg);
@@ -51,10 +52,17 @@
 			}
 		}
 	}
+
 	&__headerLogo {
 		display: flex;
 		gap: 16px;
 		align-items: center;
+
+
+		a {
+			height: 50px;
+		}
+
 	}
 
 	&__headerLinks {
@@ -141,6 +149,10 @@
 				display: flex;
 				gap: 16px;
 				align-items: center;
+
+				a {
+					height: 50px;
+				}
 			}
 
 			&__headerLinks {
@@ -230,10 +242,7 @@
 		}
 
 		&__button {
-			cursor: pointer;
-			border: none;
-			background: transparent;
-			z-index: 100;
+
 
 			#bar1,
 			#bar2,
@@ -241,6 +250,15 @@
 				transition: 0.3s;
 				position: absolute;
 			}
+		}
+
+		&__menu {
+			cursor: pointer;
+			border: none;
+			background: transparent;
+			z-index: 100;
+
+
 		}
 	}
 }

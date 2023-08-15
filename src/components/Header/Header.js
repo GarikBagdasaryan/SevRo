@@ -31,7 +31,12 @@ function Header() {
 	const handleLink = () => {
 		document.body.style.overflowY = "auto";
 		document.body.style.overflowX = "hidden";
-		Scroll();
+		//const modal = document.querySelector(".Header__burger-modal");
+		//modal.style.display = "";
+		isOpen = false;
+		//const active = document.querySelector(".Header__burger__button");
+		document.getElementById("menu-button").classList.toggle("active-menu");
+		//active.classList.remove("active-menu");
 	};
 
 	const Scroll = () => {
@@ -109,13 +114,14 @@ function Header() {
 					{isOpen ? (
 						<button
 							onClick={handleMenu}
-							className="Header__burger__button"
+							className="Header__burger__menu"
 						>
 							<svg
 								width="50"
 								height="36"
 								viewBox="0 0 50 36"
 								fill="none"
+								id="menu-button"
 								className="Header__burger__button"
 								onClick={ActionMenu}
 							>
@@ -147,13 +153,14 @@ function Header() {
 					) : (
 						<button
 							onClick={handleMenu}
-							className="Header__burger__button"
+							className="Header__burger__menu"
 						>
 							<svg
 								width="50"
 								height="36"
 								viewBox="0 0 50 36"
 								fill="none"
+								id="menu-button"
 								className="Header__burger__button"
 								onClick={ActionMenu}
 							>
@@ -189,16 +196,20 @@ function Header() {
 					>
 						<div className="Header__burger-modal-items">
 							<div className="Header__burger-modal__headerLogo">
-								<img
-									width={50}
-									height={50}
-									src="img/logo-rso.png"
-								></img>
-								<img
-									width={50}
-									height={50}
-									src="img/logo-sevro.png"
-								></img>
+								<Link to="/" onClick={handleLink}>
+									<img
+										width={50}
+										height={50}
+										src="img/logo-rso.png"
+									></img>
+								</Link>
+								<Link to="/" onClick={handleLink}>
+									<img
+										width={50}
+										height={50}
+										src="img/logo-sevro.png"
+									></img>
+								</Link>
 							</div>
 							<div className="Header__burger-modal__headerLinks">
 								<ul>
@@ -215,10 +226,10 @@ function Header() {
 										<Link to="/fighters" onClick={handleLink}>бойцам</Link>
 									</li>
 									<li>
-										<Link to="/cooperation" onClick={handleLink}>сотрудничество</Link>
+										<Link to="/#form" onClick={handleLink}>сотрудничество</Link>
 									</li>
 									<li>
-										<Link to="/question" onClick={handleLink}>Q&A</Link>
+										<Link to="/#question" onClick={handleLink}>Q&A</Link>
 									</li>
 								</ul>
 							</div>
