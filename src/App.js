@@ -8,6 +8,7 @@ import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header/Header";
 import SquadPage from "./pages/Squad-page/SquadPage";
 import AlbumsPage from "./pages/Albums-page/AlbumsPage";
+import PhotoPage from "./pages/Photos-page/PhotoPage";
 
 function App() {
 	return (
@@ -22,7 +23,7 @@ function App() {
 					<Route path="/news/open" element={<NewsOpenPage />} />
 					<Route path="/about" element={<AboutPage />} />
 					<Route path="/gallery" element={<AlbumsPage />} />
-
+					<Route path="/photopage" element={<PhotoPage />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>
