@@ -1,6 +1,6 @@
 import "./squadslice.scss";
 import SquadCard from "../SquadCard/SquadCard";
-import { Link } from "react-router-dom";
+
 
 function SquadSlice() {
 	const LoadImg = (event) => {
@@ -20,14 +20,14 @@ function SquadSlice() {
 		<div className="Squad-slice">
 			<div className="container">
 				<div className="Squad-slice__content">
-					<SquadCard onClick={ActionImg} />
-					<SquadCard onClick={ActionImg} />
-					<SquadCard onClick={ActionImg} />
-					<SquadCard onClick={ActionImg} />
-					<SquadCard onClick={ActionImg} />
-					<SquadCard onClick={ActionImg} />
-					<SquadCard onClick={ActionImg} />
-					<SquadCard onLoad={LoadImg} onClick={ActionImg} />
+					<SquadCard />
+					<SquadCard />
+					<SquadCard />
+					<SquadCard />
+					<SquadCard />
+					<SquadCard />
+					<SquadCard />
+					<SquadCard />
 				</div>
 			</div>
 		</div>
