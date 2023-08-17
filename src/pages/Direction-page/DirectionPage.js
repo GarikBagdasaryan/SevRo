@@ -5,6 +5,13 @@ function DirectionPage() {
 	return (
 		<div className="DirectionPage">
 			<SquadCard />
+			<SquadCard />
+			<SquadCard />
+			<SquadCard />
+			<SquadCard />
+			<SquadCard />
+			<SquadCard />
+			<SquadCard />
 		</div>
 	);
 }
