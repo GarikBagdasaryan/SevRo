@@ -53,10 +53,11 @@
 }
 
 .News-card:hover {
-	box-shadow: 0px 0px 8px 0px rgba(0, 120, 183, 0.25);
+	outline: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
 .News-card:active {
-	box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25),
-		-4px -4px 8px 0px rgba(0, 0, 0, 0.5);
+	outline: 1px solid rgba(0, 120, 183, 0.2);
+	box-shadow: 0px 0px 16px 0px $color-primary;
 }

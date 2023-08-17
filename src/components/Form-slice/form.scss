@@ -84,7 +84,7 @@
 					width: 210px;
 					border-radius: 10px;
 					border: 1px solid rgba(0, 0, 0, 0.2);
-					background: var(--secondary, #0096c8);
+					background: $color-primary;
 
 					color: $color-white;
 					font-family: Montserrat;
@@ -93,15 +93,14 @@
 					font-weight: 500;
 					line-height: normal;
 					cursor: pointer;
-					transition: 0.3s;
+					transition: 0.1s;
 				}
 				&__stylebtn:hover {
 					background: $color-secondary;
 				}
 				&__stylebtn:active {
 					background: $color-rarly;
-					box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset,
-						4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+					box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
 				}
 			}
 		}

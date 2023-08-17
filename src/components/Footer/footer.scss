@@ -134,6 +134,9 @@
 				a:hover {
 					color: $color-secondary;
 				}
+				a:active {
+					color: $color-rarly;
+				}
 			}
 		}
 
@@ -166,20 +169,18 @@
 					padding: 9px 19px;
 					background-color: transparent;
 
-					transition: 0.3s;
+					transition: 0.1s;
 					cursor: pointer;
 					border-radius: 10px;
 					border: 3px solid rgba(0, 0, 0, 0.2);
 				}
 
 				&-style:hover {
-					background: #0096c8;
+					background: $color-secondary;
 				}
 
 				&-style:active {
-					background: #033e8a;
-					box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset,
-						4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+					background: $color-rarly;
 				}
 			}
 		}
