@@ -15,12 +15,50 @@
 	}
 
 	&__albums {
-		display: flex;
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		grid-template-areas: "b b a c" "b b d e";
 		justify-content: center;
 		gap: 20px;
-		flex-wrap: wrap;
 	}
 
 
+}
+
+.AlbumCard__photo {
+	object-fit: cover;
+	border-radius: 15px;
+
+}
+
+
+.Gallery-slice__albums>.AlbumCard:nth-child(5n+1) {
+	grid-area: b;
+	grid-column-start: 1;
+	grid-row-start: 5;
+	grid-row-end: 3;
+}
+
+
+
+
+.active-b {
+	grid-area: b;
+}
+
+.active-a {
+	grid-area: a;
+}
+
+.active-c {
+	grid-area: c;
+}
+
+.active-d {
+	grid-area: d;
+}
+
+.active-e {
+	grid-area: e;
 }
