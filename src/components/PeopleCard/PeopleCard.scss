@@ -1,0 +1,48 @@
+@import "../../index";
+
+
+.PeopleCard {
+	width: 280px;
+
+
+	.PeopleCard__photo {
+		margin-bottom: 8px;
+
+
+		img {
+			width: 280px;
+			height: 340px;
+			object-fit: cover;
+			border-radius: 15px;
+		}
+	}
+
+	.PeopleCard__name {
+		color: $color-dark;
+		font-family: Montserrat;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 130%;
+		margin-bottom: 8px;
+	}
+
+	.PeopleCard__position {
+		color: $color-dark;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 130%;
+		margin-bottom: 8px;
+	}
+
+	.PeopleCard__contact {
+		color: $color-primary;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 130%;
+	}
+}

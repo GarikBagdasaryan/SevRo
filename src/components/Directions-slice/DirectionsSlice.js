@@ -1,18 +1,9 @@
-import '../Directions-slice/direction.scss';
+import '../Directions-slice/directions.scss';
 import DirectionCard from '../DirectionCard/DirectionCard';
+import '../DirectionCard/DirectionCard.scss';
 
 function DirectionsSlice() {
-    const LoadImg = event => {
-        event.currentTarget.classList.add('active');
 
-    };
-    const ActionImg = event => {
-        const cards = document.querySelectorAll('.Directions-slice__icons__card')
-        for (let i in cards) {
-            if (cards[i].classList.contains('active')) { cards[i].classList.remove('active'); break; }
-        }
-        event.currentTarget.classList.add('active');
-    };
     return (
 
         <div className="Directions-slice">
@@ -24,18 +15,18 @@ function DirectionsSlice() {
                     <div className="Directions-slice__info__button">
                         <button className="Directions-slice__info__button__stylebtn">
                             Перейти
-                            <img src="./img/arrow-right.png"></img>
+                            <img src="./img/arrow-right.png" />
                         </button>
                     </div>
                 </div>
                 <div className="Directions-slice__icons">
-            <DirectionCard onLoad={LoadImg} onClick={ActionImg}/>
-            <DirectionCard onClick={ActionImg} />
-            <DirectionCard onClick={ActionImg}/>
-            <DirectionCard onClick={ActionImg}/>
-            <DirectionCard onClick={ActionImg}/>
-            <DirectionCard onClick={ActionImg}/>
-            <DirectionCard onClick={ActionImg}/>
+                    <DirectionCard />
+                    <DirectionCard />
+                    <DirectionCard />
+                    <DirectionCard />
+                    <DirectionCard />
+                    <DirectionCard />
+                    <DirectionCard />
                 </div>
             </div>
         </div>

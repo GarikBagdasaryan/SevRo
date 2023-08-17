@@ -85,6 +85,7 @@ $color-rarly: #033e8a;
 }
 
 $breakpoint_xxl: 1328px;
+$breakpoint_xll: 1290px;
 $breakpoint_xl: 1054px;
 $breakpoint_l: 905px;
 $breakpoint_m: 750px;
@@ -136,6 +137,7 @@ svg:hover {
 		fill: $color-secondary;
 	}
 }
+
 svg:active {
 	path {
 		fill: $color-rarly;
