@@ -21,12 +21,8 @@
 			grid-template-areas: "b b a c" "b b d e";
 			gap: 20px;
 		}
-	}
-	&__albums:nth-child(2) {
-		&_row {
-			display: grid;
-			grid-template-areas: "b b a c" "b b d e";
-			gap: 20px;
+		&_row:nth-child(even) {
+			grid-template-areas: "a c b b" "d e b b";
 		}
 	}
 }
@@ -38,12 +34,4 @@
 
 .Gallery-slice__albums_row > .AlbumCard:nth-child(5n + 1) {
 	grid-area: b;
-}
-
-.Gallery-slice__albums {
-	.Gallery-slice__albums_row:nth-child(odd) {
-		display: grid;
-		grid-template-areas: "a c b b" "d e b b";
-		gap: 20px;
-	}
 }
