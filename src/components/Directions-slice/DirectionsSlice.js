@@ -1,4 +1,6 @@
 import '../Directions-slice/direction.scss';
+import DirectionCard from '../DirectionCard/DirectionCard';
+
 function DirectionsSlice() {
     const LoadImg = event => {
         event.currentTarget.classList.add('active');
@@ -27,43 +29,13 @@ function DirectionsSlice() {
                     </div>
                 </div>
                 <div className="Directions-slice__icons">
-                    <div className="Directions-slice__icons__card" onLoad={LoadImg} onClick={ActionImg}>
-                        <img className="Directions-slice__icons__card__style" src="img/directions2.jpg"></img>
-                        <div className="Directions-slice__icons__card__overlay">
-                            <img className="Directions-slice__icons__card__overlay__style" src="img/ico11-spo.svg"></img>
-                        </div>
-                    </div>
-                    <div className="Directions-slice__icons__card" onClick={ActionImg}>
-                        <img className="Directions-slice__icons__card__style" src="img/directions1.jpg" ></img>
-                        <div className="Directions-slice__icons__card__overlay">
-                            <img className="Directions-slice__icons__card__overlay__style" src="img/ico08-sso.svg"></img>
-                        </div>
-                    </div>
-                    <div className="Directions-slice__icons__card" onClick={ActionImg}>
-                        <img className="Directions-slice__icons__card__style" src="img/directions3.jpg"></img>
-                        <div className="Directions-slice__icons__card__overlay">
-                            <img className="Directions-slice__icons__card__overlay__style" src="img/ico11-spo.svg"></img>
-                        </div>
-                    </div>
-                    <div className="Directions-slice__icons__card" onClick={ActionImg}>
-                        <img className="Directions-slice__icons__card__style" src="img/directions4.jpg" ></img>
-                        <div className="Directions-slice__icons__card__overlay">
-                            <img className="Directions-slice__icons__card__overlay__style" src="img/ico09-sop.svg"></img>
-                        </div>
-                    </div>
-                    <div className="Directions-slice__icons__card" onClick={ActionImg}>
-                        <img className="Directions-slice__icons__card__style" src="img/directions5.jpg" ></img>
-                        <div className="Directions-slice__icons__card__overlay">
-                            <img className="Directions-slice__icons__card__overlay__style" src="img/ico11-spo.svg"></img>
-                        </div>
-                    </div>
-                    <div className="Directions-slice__icons__card" onClick={ActionImg}>
-                        <img className="Directions-slice__icons__card__style" src="img/directions6.jpg" ></img>
-                        <div className="Directions-slice__icons__card__overlay">
-                            <img className="Directions-slice__icons__card__overlay__style" src="img/ico10-sservo.svg"></img>
-                        </div>
-                    </div>
-
+            <DirectionCard onLoad={LoadImg} onClick={ActionImg}/>
+            <DirectionCard onClick={ActionImg} />
+            <DirectionCard onClick={ActionImg}/>
+            <DirectionCard onClick={ActionImg}/>
+            <DirectionCard onClick={ActionImg}/>
+            <DirectionCard onClick={ActionImg}/>
+            <DirectionCard onClick={ActionImg}/>
                 </div>
             </div>
         </div>
