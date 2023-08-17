@@ -61,11 +61,7 @@ function Header() {
 			<div className="container Header__container">
 				<div className="Header__headerLogo">
 					<Link to="/" onClick={Scroll}>
-						{" "}
 						<img width={50} height={50} src="img/logo-rso.png" />
-					</Link>
-					<Link to="/" onClick={Scroll}>
-						{" "}
 						<img width={50} height={50} src="img/logo-sevro.png" />
 					</Link>
 				</div>
@@ -123,14 +119,12 @@ function Header() {
 					)}
 					<div className="Header__burger-modal container" style={hideOrShow}>
 						<div className="Header__burger-modal-items">
-							<div className="Header__burger-modal__headerLogo">
-								<Link to="/" onClick={handleLink}>
+							<Link to="/" onClick={handleLink}>
+								<div className="Header__burger-modal__headerLogo">
 									<img width={50} height={50} src="img/logo-rso.png"></img>
-								</Link>
-								<Link to="/" onClick={handleLink}>
 									<img width={50} height={50} src="img/logo-sevro.png"></img>
-								</Link>
-							</div>
+								</div>
+							</Link>
 							<div className="Header__burger-modal__headerLinks">
 								<ul>
 									<li>
