@@ -1,21 +1,12 @@
-import '../AlbumCard/AlbumCard.scss';
+import "../AlbumCard/AlbumCard.scss";
+import { Link } from "react-router-dom";
 
 function AlbumCard() {
-
-    var styles = {
-        Grid: {
-
-        }
-    };
-
     return (
-        <div className="AlbumCard" style={styles.Grid}>
+        <Link to="/photopage" className="AlbumCard">
             <img src="./img/people__card.png" className="AlbumCard__photo"></img>
-            <div className="AlbumCard__title">
-                Закрытие ТТС 2023
-            </div>
-        </div>
-
+            <div className="AlbumCard__title">Закрытие ТТС 2023</div>
+        </Link>
     );
 }
 
