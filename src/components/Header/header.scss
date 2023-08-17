@@ -58,11 +58,13 @@
 		gap: 16px;
 		align-items: center;
 
+		img:nth-child(1) {
+			margin-right: 16px;
+		}
 
 		a {
 			height: 50px;
 		}
-
 	}
 
 	&__headerLinks {
@@ -85,6 +87,9 @@
 
 		a:hover {
 			color: $color-secondary;
+		}
+		a:active {
+			color: $color-rarly;
 		}
 	}
 
@@ -118,8 +123,7 @@
 
 		&__button:active {
 			background: $color-rarly;
-			box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset,
-				4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+			box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
 		}
 	}
 
@@ -175,6 +179,9 @@
 				a:hover {
 					color: $color-secondary;
 				}
+				a:active {
+					color: $color-rarly;
+				}
 			}
 
 			&__headerButton {
@@ -207,8 +214,7 @@
 
 				&__button:active {
 					background: $color-rarly;
-					box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset,
-						4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+					box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
 				}
 			}
 
@@ -235,15 +241,13 @@
 				&__tg:active,
 				&__vk:active {
 					path {
-						fill: $color-primary;
+						fill: $color-rarly;
 					}
 				}
 			}
 		}
 
 		&__button {
-
-
 			#bar1,
 			#bar2,
 			#bar3 {
@@ -257,8 +261,6 @@
 			border: none;
 			background: transparent;
 			z-index: 100;
-
-
 		}
 	}
 }

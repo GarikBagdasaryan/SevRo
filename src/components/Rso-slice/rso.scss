@@ -52,7 +52,7 @@
 					font-weight: 500;
 					line-height: normal;
 					cursor: pointer;
-					transition: 0.3s;
+					transition: 0.1s;
 				}
 			}
 
@@ -62,8 +62,7 @@
 
 			&__button__stylebtn:active {
 				background: $color-rarly;
-				box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset,
-					4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+				box-shadow: -4px -4px 8px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 8px 0px rgba(0, 0, 0, 0.25) inset;
 			}
 		}
 
@@ -96,7 +95,6 @@
 
 				&__button {
 					width: 100%;
-
 				}
 			}
 		}

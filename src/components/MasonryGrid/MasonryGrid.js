@@ -1,14 +1,14 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import "../../index.scss";
-import SquadCard from "../SquadCard/SquadCard";
+import "./masonry.scss";
 
 function MasonryGrid() {
-	const items = Array.from({ length: 12 }).map((_, index) => <img key={index} src={`https://picsum.photos/200/${Math.floor(Math.random() * (300 - 200 + 1) + 200)}`} style={{ width: "100%", borderRadius: "8px" }} />);
+	const items = Array.from({ length: 100 }).map((_, index) => <img key={index} src={`https://picsum.photos/280/${Math.floor(Math.random() * (300 - 200 + 1) + 200)}`} style={{ width: "100%", borderRadius: "15px" }} />);
 
 	return (
 		<div className="MasonryItem">
-			<ResponsiveMasonry columnsCountBreakPoints={{ 400: 2, 800: 3, 1000: 4 }}>
-				<Masonry gutter="20px">{items}</Masonry>
+			<ResponsiveMasonry columnsCountBreakPoints={{ 425: 2, 600: 3, 1024: 4 }}>
+				<Masonry className="Masonry-grid">{items}</Masonry>
 			</ResponsiveMasonry>
 		</div>
 	);
