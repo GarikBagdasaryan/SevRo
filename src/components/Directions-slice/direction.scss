@@ -17,14 +17,21 @@
 		}
 
 		&__title {
-			margin-bottom: 33px;
-			width: 580px;
+			margin-bottom: 32px;
+			width: auto;
 			@include font-title;
+
+				text-transform: none;
+				color: $color-primary;
 		}
 
 		&__description {
 			margin-bottom: 24px;
-			width: 580px;
+			width: 480px;
+
+			font-size: 20px;
+				margin-bottom: 24px;
+				line-height: 130%;
 		}
 
 		&__button {
@@ -68,19 +75,19 @@
 		justify-content: right;
 		gap: 20px;
 
-		.Directions-slice__icons__card:hover
+		&__card:hover
 			.Directions-slice__icons__card__overlay__style {
 			position: relative;
 			transform: rotate(-30deg);
 			z-index: 12;
 		}
 
-		.Directions-slice__icons__card:hover
+		&__card:hover
 			.Directions-slice__icons__card__overlay {
 			background: rgba(0, 0, 0, 0.6);
 		}
 
-		.Directions-slice__icons__card {
+		&__card {
 			width: 180px;
 			height: 180px;
 			border-radius: 10px;
@@ -91,13 +98,13 @@
 			transition: 0.3s;
 			cursor: pointer;
 
-			.Directions-slice__icons__card__style {
+			&__style {
 				border-radius: 10px;
 				width: 100%;
 				height: 100%;
 			}
 
-			.Directions-slice__icons__card__overlay {
+			&__overlay {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -116,7 +123,7 @@
 			}
 		}
 
-		.Directions-slice__icons__card__overlay__style {
+		&__overlay__style {
 			position: relative;
 			z-index: 99;
 			transition: all 0.3s;

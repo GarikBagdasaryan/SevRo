@@ -104,10 +104,7 @@ function Header() {
 				</div>
 				<div className="Header__burger">
 					{isOpen ? (
-						<button
-							onClick={handleMenu}
-							className="Header__burger__menu"
-						>
+						<button onClick={handleMenu} className="Header__burger__menu" >
 							<svg width="50" height="36" viewBox="0 0 50 36" fill="none" id="menu-button" className="Header__burger__button" onClick={ActionMenu} >
 								<rect id="bar1" width="50" height="4" rx="2" fill="#F7F7F7" />
 								<rect id="bar2" y="16" width="50" height="4" rx="2" fill="#F7F7F7" />
