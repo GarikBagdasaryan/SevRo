@@ -6,7 +6,7 @@ function NewsSlider() {
 	return (
 		<div className="NewsSlider">
 			<div className="container NewsSlider-container">
-				<div className="NNewsSlider__header-slice">новости</div>
+				<div className="NewsSlider__header-slice">новости</div>
 				<div className="NewsSlider__slider">
 					<div className="NewsSlider__slider__header">
 						<div className="NewsSlider__slider__header__info">
