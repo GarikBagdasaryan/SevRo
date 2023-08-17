@@ -28,35 +28,33 @@
 		&__description {
 			margin-bottom: 24px;
 			width: 480px;
-
 			font-size: 20px;
-				margin-bottom: 24px;
-				line-height: 130%;
+			margin-bottom: 24px;
+			line-height: 130%;
 		}
 
 		&__button {
 			&__stylebtn {
-				color: $color-white;
-				font-family: Montserrat;
-				font-size: 20px;
-				font-style: normal;
 				font-weight: 500;
-				line-height: normal;
-				display: inline-flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 8px 16px;
-				text-align: left;
-				gap: 32px;
-				width: 181px;
-				border-radius: 10px;
-				border: 2px solid rgba(0, 0, 0, 0.2);
-				background: $color-primary;
-				box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.25),
-					-6px -6px 8px 0px rgba(0, 0, 0, 0.5);
-				outline: none;
-				transition: 0.2s;
-				cursor: pointer;
+					display: inline-flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 8px 16px;
+					text-align: left;
+					gap: 32px;
+					width: 181px;
+					border-radius: 10px;
+					border: 2px solid rgba(0, 0, 0, 0.2);
+					background: $color-primary;
+					outline: none;
+					color: $color-white;
+					font-family: Montserrat;
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: normal;
+					cursor: pointer;
+					transition: 0.3s;
 			}
 			&__stylebtn:hover {
 				background: $color-secondary;
@@ -71,9 +69,13 @@
 	&__icons {
 		display: flex;
 		flex-wrap: wrap;
+	
+		align-content: start;
 		align-items: center;
 		justify-content: right;
-		gap: 20px;
+		column-gap: 20px;
+		row-gap: 20px;
+	
 
 		&__card:hover
 			.Directions-slice__icons__card__overlay__style {
