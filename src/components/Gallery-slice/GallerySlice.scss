@@ -13,17 +13,10 @@
 		margin-bottom: 8px;
 	}
 	&__albums {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		//counter-reset: div;
 		gap: 20px;
-		&_row {
-			display: grid;
-			grid-template-areas: "b b a c" "b b d e";
-			gap: 20px;
-		}
-		&_row:nth-child(even) {
-			grid-template-areas: "a c b b" "d e b b";
-		}
 	}
 }
 
@@ -32,6 +25,33 @@
 	border-radius: 15px;
 }
 
-.Gallery-slice__albums_row > .AlbumCard:nth-child(5n + 1) {
-	grid-area: b;
+.AlbumCard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.AlbumCard:before {
+	//counter-increment: div;
+	//content: counter(div);
+}
+
+.AlbumCard:nth-child(10n + 1) {
+	grid-row: auto / span 2;
+	grid-column: auto / span 2;
+
+	.AlbumCard__photo {
+		width: 580px;
+		height: 580px;
+	}
+}
+
+.AlbumCard:nth-child(10n + 8) {
+	grid-row: auto / span 2;
+	grid-column: auto / span 2;
+
+	.AlbumCard__photo {
+		width: 580px;
+		height: 580px;
+	}
 }
