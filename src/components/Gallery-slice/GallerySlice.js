@@ -21,75 +21,7 @@ function GallerySlice() {
 					<AlbumCard />
 					<AlbumCard />
 					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
-					<AlbumCard />
+
 				</div>
 
 			</div>
