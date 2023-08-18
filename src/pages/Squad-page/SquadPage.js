@@ -4,8 +4,8 @@ import "../../components/MasonryGrid/masonry.scss";
 import { useState } from "react";
 
 function SquadPage(props) {
-	const items = [];
-	const [activeCard, setActiveCard] = useState(items[2]);
+	const items = [0, 1, 2, 3, 4, 5, 6];
+	const [activeCard, setActiveCard] = useState();
 
 	return (
 		<div className="SquadPage">
