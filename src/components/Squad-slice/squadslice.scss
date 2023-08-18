@@ -3,11 +3,8 @@
 .Squad-slice {
 	margin-bottom: 80px;
 	padding: 16px 0px;
-}
-.Squad-slice__content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
+	&__title {
+		@include font-title-italic;
+		margin-bottom: 8px;
+	}
 }

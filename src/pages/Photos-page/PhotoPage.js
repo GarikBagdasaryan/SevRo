@@ -2,7 +2,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import "../../components/MasonryGrid/masonry.scss";
 
 function PhotoPage() {
-	const items = Array.from({ length: 100 }).map((_, index) => <img key={index} src={`https://picsum.photos/200/${Math.floor(Math.random() * (300 - 200 + 1) + 200)}`} style={{ width: "100%", borderRadius: "8px" }} />);
+	const items = Array.from({ length: 100 }).map((_, index) => <img key={index} src={`https://picsum.photos/280/${Math.floor(Math.random() * (300 - 200 + 1) + 200)}`} style={{ width: "100%", borderRadius: "8px" }} />);
 	return (
 		<div className="PhotoPage">
 			<div className="container">

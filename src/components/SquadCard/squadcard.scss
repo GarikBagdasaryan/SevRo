@@ -9,8 +9,9 @@
 	padding: 20px 20px 40px 20px;
 	flex-direction: column;
 	gap: 20px;
-	width: 280px;
+	width: 100%;
 	cursor: pointer;
+	transition: all 0.3s;
 
 	&__img {
 		width: 120px;
@@ -51,6 +52,17 @@
 		max-width: 100px;
 		border: none;
 		cursor: pointer;
+		transition: 0.2s;
+	}
+	&__button:hover {
+		background-color: $color-background;
+		color: $color-dark;
+		outline: 3px solid $color-rarly;
+	}
+	&__button:active {
+		background-color: $color-primary;
+		color: $color-background;
+		outline: 3px solid $color-background;
 	}
 }
 
