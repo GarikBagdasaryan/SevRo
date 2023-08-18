@@ -10,6 +10,7 @@
 	flex-direction: column;
 	gap: 20px;
 	width: 280px;
+	cursor: pointer;
 
 	&__img {
 		width: 120px;
@@ -19,7 +20,20 @@
 	}
 	&__name {
 		color: $color-background;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
 		font-weight: 600;
+		line-height: normal;
+	}
+	&__description {
+		display: none;
+		color: $color-background;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
 	}
 	&__button {
 		display: none;
@@ -28,14 +42,25 @@
 		color: $color-background;
 		padding: 8px 16px;
 		border-radius: 10px;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
 		outline: 2px solid $color-background;
 		max-width: 100px;
+		border: none;
+		cursor: pointer;
 	}
 }
 
 .squad-card_active {
 	background: $color-primary;
+	cursor: default;
 	.squad-card__button {
 		display: block;
+	}
+	.squad-card__description {
+		display: inline;
 	}
 }
