@@ -16,10 +16,8 @@
 
 	&__albums {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-
-		grid-template-areas: "b b a c" "b b d e";
-		justify-content: center;
+		grid-template-columns: repeat(4, 1fr);
+		//counter-reset: div;
 		gap: 20px;
 	}
 
@@ -32,33 +30,33 @@
 
 }
 
-
-.Gallery-slice__albums>.AlbumCard:nth-child(5n+1) {
-	grid-area: b;
-	grid-column-start: 1;
-	grid-row-start: 5;
-	grid-row-end: 3;
+.AlbumCard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-
-
-
-.active-b {
-	grid-area: b;
+.AlbumCard:before {
+	//counter-increment: div;
+	//content: counter(div);
 }
 
-.active-a {
-	grid-area: a;
+.AlbumCard:nth-child(10n+1) {
+	grid-row: auto /span 2;
+	grid-column: auto /span 2;
+
+	.AlbumCard__photo {
+		width: 580px;
+		height: 580px;
+	}
 }
 
-.active-c {
-	grid-area: c;
-}
+.AlbumCard:nth-child(10n+8) {
+	grid-row: auto /span 2;
+	grid-column: auto /span 2;
 
-.active-d {
-	grid-area: d;
-}
-
-.active-e {
-	grid-area: e;
+	.AlbumCard__photo {
+		width: 580px;
+		height: 580px;
+	}
 }
